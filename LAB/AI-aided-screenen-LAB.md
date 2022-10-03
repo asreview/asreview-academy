@@ -164,13 +164,13 @@ settings). 
    
 When performing a systematic review with your own data, you need to
 decide on the prior knowledge yourself (at least one relevant and one
-irrelevant record). However, because you are using the Exploration Mode
-of ASReview, the relevant records are already known because the original
-authors read ALL records.
+irrelevant record). However, because you are using the Exploration Mode 
+of ASReview, the relevant records are known; the original authors have 
+already read ALL records
 
 To select the prior knowledge you first need to click on the ‘ADD’
-button next to ‘Add prior knowledge’; see also the
-[documentation](https://asreview.readthedocs.io/en/latest/project_create.html#select-prior-knowledge).
+button next to ‘Add prior knowledge’; see also the documentation 
+about the selection of [prior knowledge]](https://asreview.readthedocs.io/en/latest/project_create.html#select-prior-knowledge).
 Now you will see a menu about selecting prior knowledge.
 
 The following five papers are known to be relevant:
@@ -188,16 +188,16 @@ The following five papers are known to be relevant:
 -   Trajectories of trauma symptoms and resilience in deployed US
     military service members: Prospective cohort study
 
-To add the relevant records, you click on ‘Search’ and copy and paste
-the titles of these relevant records one by one in the search bar, and
-you add them as relevant. 
+To add the relevant records, you click on ‘Search’, copy and paste the titles
+of these relevant records one by one in the search bar and add them as
+relevant.
 
 <img src="images/Interface7.png" style="display: block; margin: auto;" />
 
 After adding all five relevant records, you can add some irrelevant ones
 by clicking the ‘Random’ button (use the arrow in the upper left corner
 to be able to select this button) and by changing ‘relevant’ to
-‘irrelevant’. Select five irrelevant records and can click on ‘CLOSE’. 
+‘irrelevant’. Select five irrelevant records and click on ‘CLOSE’. 
 
    
 *Have you selected five relevant and five irrelevant records? If so, you
@@ -234,13 +234,12 @@ After the project is successfully initialized, you can start reviewing.
 
 Everything is set up and ready to screen, well done! 
 
-Since we are in the Exploration Mode of ASReview, you can pretend to be
-an expert on the topic of PTSD and pretend you have all the knowledge of
-the original screeners. All records in the dataset have been labeled as
-relevant/irrelevant, which is indicated to the user through a banner
-above each article. Click on the heart shaped Relevant button if the
-record is marked as relevant. If not, you can press the Irrelevant
-button.
+Since we are in the Exploration Mode of ASReview, you can pretend to be an
+expert on the topic of PTSD and pretend you have all the knowledge of the
+original screeners. All records in the dataset have been labeled as
+relevant/irrelevant, which is indicated through a banner above each article.
+Click on the heart shaped Relevant button if the record is marked as relevant.
+If not, you can press the Irrelevant button.
 
 Now, all we need is a Stopping Rule to determine when you are confident
 that you have identified (almost) all relevant records in your dataset.
@@ -269,7 +268,7 @@ quicker compared to the original screeners of the dataset!
 
 You probably had to screen about only 2-3% of the data. Amazing right?!
 Chances are though that you did not get to see a couple of relevant
-records before you stopped screening. Do you think that is acceptable?
+records before you stopped screening. Do you think this is acceptable?
 There is a trade-off between the time spent screening and the error
 rate: the more records you screen, the lower the risk of missing a
 relevant record. However, screening all records in your dataset is still
@@ -296,19 +295,20 @@ You can find all the data that was originally imported to ASReview in
 the exported data file, in a new order and with two new columns added at
 the end.
 
-Using the information on the [Read the Docs
+Using the information about the [Read the Docs
 page](https://asreview.readthedocs.io/en/latest/progress.html#export-results)
 can you reorder your data to appear in the order in which you loaded
 them into ASReview? And back to the order provided by ASReview?
 
-Check if the number of records coded `included = 1` corresponds to the
-number of relevant records on your Analytics page. Where in the original
-order do the included articles come from?
+Check if the number of records coded `included = 1` corresponds to the number
+of relevant records on your Analytics page. From which row number, based on
+the original ordering, do the included articles come from?
 
-Lastly, check out the first few records with no number in the `included`
-column. Are those articles labeled as ‘relevant’ in the original
-dataset? (Whether or not a record was pre-labeled as relevant is shown
-in the column `label_included` in the original dataset.)
+For the last exercise, it is important to change the order back to the order
+provided by ASReview. Lastly, check out the first few records with no number
+in the `included` column. Are those articles labeled as ‘relevant’ in the
+original dataset? (Whether or not a record was pre-labeled as relevant is
+shown in the column `label_included` in the original dataset.)
 
 ## Goal
 
