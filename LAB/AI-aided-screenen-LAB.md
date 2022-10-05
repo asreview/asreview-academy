@@ -131,12 +131,10 @@ More detailed information about setting up a project can be found on
 
 ### Step 4: The dataset
 
-Now that you have created your ASReview project (woohoo!), you need to
-set it up.   
-   
-Without data, we have nothing to screen. So you need to tell ELAS which
-data you want to use for screening.   
-   
+Now that you have created your ASReview project (woohoo!), you need to set it
+up. Without data, we have nothing to screen. So, you need to tell ELAS
+which dataset you want to screen for relevant articles.      
+
 Click on the ‘ADD’ button next to ‘Add dataset’. Now a menu appears
 where you can choose how to load the dataset. You can add your dataset
 by selecting a file or providing an URL. For this exercise, we will use
@@ -163,30 +161,30 @@ you with the record that is most likely to be relevant (default
 settings).   
    
 When performing a systematic review with your own data, you need to
-decide on the prior knowledge yourself (at least one relevant and one
+provide the prior knowledge yourself (at least one relevant and one
 irrelevant record). However, because you are using the Exploration Mode 
 of ASReview, the relevant records are known; the original authors have 
-already read ALL records
+already read ALL records.
 
 To select the prior knowledge you first need to click on the ‘ADD’
 button next to ‘Add prior knowledge’; see also the documentation 
-about the selection of [prior knowledge]](https://asreview.readthedocs.io/en/latest/project_create.html#select-prior-knowledge).
+about the selection of [prior knowledge](https://asreview.readthedocs.io/en/latest/project_create.html#select-prior-knowledge).
 Now you will see a menu about selecting prior knowledge.
 
 The following five papers are known to be relevant:
 
 -   Latent trajectories of trauma symptoms and resilience: the 3-year
     longitudinal prospective USPER study of Danish veterans deployed in
-    Afghanistan
+    Afghanistan (DOI: [10.4088/JCP.13m08914](https://doi.org/10.4088/jcp.13m08914))
 -   A Latent Growth Mixture Modeling Approach to PTSD Symptoms in Rape
-    Victims
+    Victims (DOI: [10.1177/1534765610395627](https://doi.org/10.1177/1534765610395627))
 -   Peace and War: Trajectories of Posttraumatic Stress Disorder
     Symptoms Before, During, and After Military Deployment in
-    Afghanistan
+    Afghanistan (DOI: [10.1177/0956797612457389](https://doi.org/10.1177/0956797612457389))
 -   The relationship between course of PTSD symptoms in deployed U.S.
-    Marines and degree of combat exposure
+    Marines and degree of combat exposure (DOI: [10.1002/jts.21988](https://doi.org/10.1002/jts.21988))
 -   Trajectories of trauma symptoms and resilience in deployed US
-    military service members: Prospective cohort study
+    military service members: Prospective cohort study (DOI: [10.1192/bjp.bp.111.096552](https://doi.org/10.1192/bjp.bp.111.096552))
 
 To add the relevant records, you click on ‘Search’, copy and paste the titles
 of these relevant records one by one in the search bar and add them as
