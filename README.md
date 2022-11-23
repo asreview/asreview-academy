@@ -1,6 +1,9 @@
 # Open teaching materials
 
-This repository contains open teaching materials for using ASReview.
+This repository contains open teaching materials for using ASReview:
+
+
+- [Introductory exercise to AI-aided screening using ASReview LAB](https://github.com/asreview/asreview-academy/blob/main/introducing-ASReview-LAB/AI-aided-screenen-LAB.md)
 
 
 # License 
