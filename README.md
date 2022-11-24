@@ -3,12 +3,12 @@
 This repository contains open teaching materials for using ASReview:
 
 
-- [Introductory exercise to AI-aided screening using ASReview LAB](https://github.com/asreview/asreview-academy/blob/main/introducing-ASReview-LAB/AI-aided-screenen-LAB.md)
+- [Introductory exercise to AI-aided screening using ASReview LAB](https://github.com/asreview/asreview-academy/blob/main/introducing-ASReview-LAB/README.md)
 
 
 # License 
 
-The work is licensed under Creative Commons License (CC BY 4.0).
+The work is published under the CC BY 4.0 license.
 
 ## Contact
 
