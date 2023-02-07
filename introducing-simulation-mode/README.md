@@ -382,7 +382,7 @@ pip install asreview-insights asreview-datatools asreview-wordcloud asreview-mak
 
 ### Getting started
 
-1.  Follow the first three steps under the \[Getting
+1.  Follow the first three steps under the [`Getting
     started`](https://github.com/asreview/asreview-makita#getting-started)            section. The result should be a new project folder including a subfolder titled     'data'. Put at least two [benchmark     datasets](https://github.com/asreview/systematic-review-datasets#datasets)     in de the 'data' folder. Make sure to save them as`.csv\`
     files!
 
