@@ -330,7 +330,7 @@ asreview simulate data/[name_of_your_data.csv] --state_file output/[results_name
 ```
 
 You should search in the data to identigy the row numbers of the records
-you want to use. Bbe aware we start counting row numbers at zero (and
+you want to use. Be aware we start counting row numbers at zero (and
 mind the column names).
 
 You can compare the three runs by looking at (for example) the variation
@@ -383,7 +383,7 @@ pip install asreview-insights asreview-datatools asreview-wordcloud asreview-mak
 ### Getting started
 
 1.  Follow the first three steps under the [`Getting
-    started`](https://github.com/asreview/asreview-makita#getting-started)            section. The result should be a new project folder including a subfolder titled     'data'. Put at least two [benchmark     datasets](https://github.com/asreview/systematic-review-datasets#datasets)     in de the 'data' folder. Make sure to save them as`.csv\`
+    started`](https://github.com/asreview/asreview-makita#getting-started) section. The result should be a new project folder including a subfolder titled 'data'. Put at least two [benchmark datasets](https://github.com/asreview/systematic-review-datasets#datasets) in the 'data' folder. Make sure to save them as `.csv`
     files!
 
     *Note: if multiple datasets are available in this folder, Makita
