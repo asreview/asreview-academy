@@ -329,7 +329,7 @@ asreview simulate data/[name_of_your_data.csv] --state_file output/[results_name
 --seed [your favorite number] --prior_idx [row nr. relevant record] [row nr. irrelevant record]
 ```
 
-You should search in the data to identigy the row numbers of the records
+You should search in the data to identify the row numbers of the records
 you want to use. Be aware we start counting row numbers at zero (and
 mind the column names).
 
