@@ -5,6 +5,7 @@ This repository contains open teaching materials for using ASReview:
 
 - [Introductory exercise to AI-aided screening using ASReview LAB](https://github.com/asreview/asreview-academy/blob/main/introducing-ASReview-LAB/README.md)
 - [Introductory exercise to learn how to simulate the performance of active learning](https://github.com/asreview/asreview-academy/blob/main/introducing-simulation-mode/README.md)
+- [Tutorials how to use DataTools](https://github.com/asreview/asreview-datatools/blob/master/Tutorials.md)
 
 # License 
 
