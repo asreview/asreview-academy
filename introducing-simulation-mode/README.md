@@ -185,14 +185,31 @@ the example below:
 
 ### Step 3: Choose a dataset
 
-To run a simulation, we need a dataset that is already labeled. You can
-find [labeled
-datasets](https://github.com/asreview/systematic-review-datasets#datasets)
-in the benchmark GitHub repository of ASReview. Scroll down to the
-`datasets` table and pick one of the datasets. Right-click on its ID and
-click `Save Link As...`. Save the file to the `data` folder. Make sure
-it is in `.csv` format.
+Before we get started, we need a dataset that is already labeled. You can use a dataset from the SYNERGY dataset via the synergy-dataset Python package. 
 
+1. *Open the command prompt, by typing ‘cmd’ (for Windows) or
+    ‘terminal’ (for Apple) in your computer’s search bar;* 
+    
+2.  *Navigate to the folder structure;*
+
+You can navigate to your folder structure with:
+
+``` bash
+cd [file_path]
+```
+
+3. *Install the synergy-dataset Python package with:*
+
+``` bash
+pip install synergy-dataset
+```
+4. *Built the dataset.*     
+
+To download and build the SYNERGY dataset, run the following command in the command line:
+
+``` bash
+python -m synergy_dataset get -o data
+```
   
 You can also choose to use your own dataset. Do make sure that the
 dataset is fully labeled and [prepared for
