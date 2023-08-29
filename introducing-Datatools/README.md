@@ -104,7 +104,7 @@ Note: 'data/' is in front of the name of your dataset, since the datasets are st
 
 ### Tool 2: Compose
 
-Next, you are going to compose a dataset out of two other datasets. The code starts similary to the code of the Describe tool (`asreview data compose`), but now the output path should always be specified (`output/[name_of_your_output_file.csv]`) and you need to assign a corresponsing proporty to the datasets you want to merge. The Synergy datasets are labeled datasets, so you need to assign the argument `-l`.
+Next, you are going to compose a dataset out of two datasets; a labeled and an unlabeled dataset. The code starts similary to the code of the Describe tool (`asreview data compose`), but now the output path should always be specified (`output/[name_of_your_output_file.csv]`) and you need to assign a corresponsing proporty to the datasets you want to merge. The labeled dataset you need to assign the argument `-l` and the unlabeled dataset you need to assign a `-u`.
 
 Furthermore, in case of conflict, you need to determine which label to keep (`-c`). Let's say you want to keep one of the labels, you can do so with the `keep_one` command. By default the hierarchy in determining which label to keep is: relevant, irrelevant, unlabeled.
 
@@ -113,7 +113,7 @@ See the [Datatools README](https://github.com/asreview/asreview-datatools#data-c
 You can compose a dataset with:
 
 ``` bash
-asreview data compose output/[name_of_your_output_file.csv] -l data/[name_of_your_data.csv] -l data/[name_of_your_data.csv] -c keep_one
+asreview data compose output/[name_of_your_output_file.csv] -l data/[name_of_your_data.csv] -u data/[name_of_your_data.csv] -c keep_one
 ```
 
 ### Tool 3: Convert
