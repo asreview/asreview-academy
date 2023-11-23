@@ -1,21 +1,19 @@
-Introductory exercise to AI-aided screening using ASReview LAB
-================
-The ASReview Academy Team
-
-<img src="images/Elas_afstudeerhoedje.png" width="50%" style="display: block; margin: auto;" />
+---
+title: "Introductory exercise to AI-aided screening using ASReview LAB"
+author: "The ASReview Academy Team"
+---
 
 ## Introduction to the software ASReview LAB
 
 The **goal** of this exercise is to get familiar with AI-aided screening
-by making use of ASReview LAB v1.x. 
+by making use of ASReview LAB v1.x.
 
 You will learn how to install and set up the software, upload data,
 screen records, and export and interpret the results. The exercise will
 guide you through all the steps of AI-aided screening as described in
 the [workflow on
 Read-the-Docs](https://asreview.readthedocs.io/en/latest/about.html#labeling-workflow-with-asreview).
-   
-   
+
 Enjoy!
 
 ## Getting familiar
@@ -44,19 +42,19 @@ ASReview](https://asreview.nl/download/) on the ASReview-website.
 More detailed installation information, troubleshooting, and
 installation on a server or via a Docker are available on
 [ReadTheDocs](https://asreview.readthedocs.io/en/latest/installation.html#install-asreview).  
-   
+
 *Have you installed the latest version of ASReview? You can proceed to
 step 2!*
 
 ### Step 2: Starting ASReview LAB
 
 To open ASReview LAB in your browser, you need to start it in the
-command prompt (i.e. CMD.exe or Terminal). You can open your command
+command prompt (i.e. CMD.exe or Terminal). You can open your command
 prompt by typing ‘cmd’ (for Windows) or ‘terminal’ (for Apple) in your
 computer’s search bar (select ‘Run as administrator’ if you have this
 option).
 
-<img src="images/CMD1.png" height="50%" style="display: block; margin: auto;" />
+![](images/ASReviewLAB/CMD1.png){width=95%}
 
 The command prompt will open, in which you can type the following
 command and press enter:
@@ -65,11 +63,11 @@ command and press enter:
 asreview lab
 ```
 
-<img src="images/CMD2.png" height="50%" style="display: block; margin: auto;" />
+![](images/ASReviewLAB/CMD2.png){width=95%}
 
 It takes a few seconds for ELAS - your Electronic Learning Assistant -
-to start the software. It will appear in your (default) web browser.    
-   
+to start the software. It will appear in your (default) web browser. 
+
 But why do you need to start it up by running code in your command
 prompt? This ensures that ASReview LAB is run locally. More
 specifically, <u>your data is and stays your own</u>. Small price to pay
@@ -84,7 +82,7 @@ You can also run the software via a server, but you need to take care of
 yourself](https://asreview.readthedocs.io/en/latest/installation.html#server-installation)
 (or ask your IT-department).
 
-   
+
 *Have you opened ASReview LAB in your browser? If so, you can proceed to
 step 3!*
 
@@ -100,14 +98,14 @@ mode](https://asreview.readthedocs.io/en/latest/screening.html#display).
 Hover your mouse over the ‘create’ button with the plus sign in the
 bottom right corner.
 
-<img src="images/Interface2.png" style="display: block; margin: auto;" />
+![](images/ASReviewLAB/Interface2.png){width=95%}
 
 2.  *Project name;*
 
 Select Exploration Mode, fill out a project name and press ‘NEXT’. Note
 that you can fill out your name and a description as well.
 
-<img src="images/Interface3.png" style="display: block; margin: auto;" />
+![](images/ASReviewLAB/Interface3.png){width=95%}
 
 For this exercise we are screening in the so-called ‘Exploration Mode’
 of ASReview. By screening in the [Exploration
@@ -123,7 +121,7 @@ to make the decisions.
 More detailed information about setting up a project can be found on
 [ReadTheDocs](https://asreview.readthedocs.io/en/latest/project_create.html#project-information).
 
-   
+ 
 *Have you started creating a new project? If so, you can proceed to step
 4!*
 
@@ -132,21 +130,22 @@ More detailed information about setting up a project can be found on
 ### Step 4: The dataset
 
 Now that you have created your ASReview project (woohoo!), you need to set it
-up. Without data, we have nothing to screen. So, you need to tell ELAS
-which dataset you want to screen for relevant articles.      
+up.Without data, we have nothing to screen. So, you need to tell ELAS
+which dataset you want to screen for relevant articles.     
 
 Click on the ‘ADD’ button next to ‘Add dataset’. Now a menu appears
 where you can choose how to load the dataset. You can add your dataset
 by selecting a file or providing an URL. For this exercise, we will use
-a benchmark dataset.   
-   
-Go to the ‘Benchmark datasets’ button, open the first dataset (i.e. the
+a benchmark dataset.
+
+Go to the ‘Benchmark datasets’ button, open the first dataset (i.e. the
 Van de Schoot (2017) dataset about PTSD trajectories) and click on
 ‘SELECT’. After you select the dataset, click on ‘SAVE’.
 
-<img src="images/Interface5.png" style="display: block; margin: auto;" />
+![](images/ASReviewLAB/Interface5.png){width=95%}
 
-   
+
+
 *Have you successfully selected/uploaded the dataset? If so, you can
 proceed to step 5!*
 
@@ -158,8 +157,8 @@ not</u> looking for (i.e., relevant and irrelevant records,
 respectively). We call this *prior knowledge*. Based on the prior
 knowledge you provide, ELAS will reorder the stack of papers and provide
 you with the record that is most likely to be relevant (default
-settings).   
-   
+settings).
+
 When performing a systematic review with your own data, you need to
 provide the prior knowledge yourself (at least one relevant and one
 irrelevant record). However, because you are using the Exploration Mode 
@@ -190,27 +189,27 @@ To add the relevant records, you click on ‘Search’, copy and paste the title
 of these relevant records one by one in the search bar and add them as
 relevant.
 
-<img src="images/Interface7.png" style="display: block; margin: auto;" />
+![](images/ASReviewLAB/Interface7.png){width=95%}
+
 
 After adding all five relevant records, you can add some irrelevant ones
 by clicking the ‘Random’ button (use the arrow in the upper left corner
 to be able to select this button) and by changing ‘relevant’ to
-‘irrelevant’. Select five irrelevant records and click on ‘CLOSE’. 
+‘irrelevant’. Select five irrelevant records and click on ‘CLOSE’.
 
-   
 *Have you selected five relevant and five irrelevant records? If so, you
 can proceed to step 6!*
 
 ### Step 6: Active learning model
 
 The last step to complete the setup is to select the active learning
-model you want to use. The default settings (i.e. Naïve Bayes, Max and
+model you want to use. The default settings (i.e. Naïve Bayes, Max and
 tf-idf) will suffice for this exercise. If you want to change the mode,
 read which options are
 [built-in](https://asreview.readthedocs.io/en/latest/project_create.html#model)
 or add your own model via a
-[template](https://github.com/asreview/template-extension-new-model).   
-   
+[template](https://github.com/asreview/template-extension-new-model). 
+
 You can click on ‘NEXT’. A menu with the defaults will appear. Since we
 are using the defaults, you can click on ‘NEXT’ again. In the last step
 of the setup, ASReview LAB runs the feature extractor, trains a model,
@@ -221,16 +220,15 @@ Learning?](https://asreview.nl/blog/active-learning-explained/)).
 
 After the project is successfully initialized, you can start reviewing.
 
-<img src="images/Interface9.png" style="display: block; margin: auto;" />
+![](images/ASReviewLAB/Interface9.png){width=95%}
 
-   
 *Have you finished the setup? If so, you can proceed to step 7!*
 
 ## Screening phase
 
 ### Step 7: Screening the records
 
-Everything is set up and ready to screen, well done! 
+Everything is set up and ready to screen, well done!
 
 Since we are in the Exploration Mode of ASReview, you can pretend to be an
 expert on the topic of PTSD and pretend you have all the knowledge of the
@@ -278,7 +276,7 @@ Your willingness to accept the risk that you may exclude some relevant
 records is something to take into account when deciding on a Stopping
 Rule. Read more about Stopping Rules and how to decide on a good
 strategy for your data on the [discussion
-platform](https://github.com/asreview/asreview/discussions).  
+platform](https://github.com/asreview/asreview/discussions). 
 
 ### Step 8: Extracting and inspecting the data
 
@@ -312,7 +310,7 @@ shown in the column `label_included` in the original dataset.)
 
 In the beginning of the LAB the following goal was specified: “The
 **goal** of this LAB is to get familiar with AI-aided screening by
-making use of ASReview LAB.”   
+making use of ASReview LAB.”
 Did you achieve this goal?
 
 If so: **congratulations!** You now know all the steps to create and
@@ -344,7 +342,8 @@ Some suggestions:
     code](https://github.com/asreview/asreview/tree/master/asreview) on
     Github… +1 for open-science!)
 
-<img src="images/card_game.png" style="display: block; margin: auto;" />
+
+![](images/ASReviewLAB/card_game.png){width=95%}
 
 [^1]: Wang Z, Nayfeh T, Tetzlaff J, O’Blenis P, Murad MH (2020) Error
     rates of human reviewers during abstract screening in systematic

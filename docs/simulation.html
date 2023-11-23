@@ -1,0 +1,742 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.4.90">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="author" content="The ASReview Academy Team">
+
+<title>Asreview Acadamy - Introductory exercise on Using the ASReview Simulation Mode</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+</style>
+
+
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<link href="./images/ASReviewLAB/Elas_afstudeerhoedje.png" rel="icon" type="image/png">
+<script src="site_libs/quarto-html/quarto.js"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 20,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+
+<link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="nav-sidebar docked">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./ASReviewLAB.html">Introduction Courses</a></li><li class="breadcrumb-item"><a href="./simulation.html">Simulation Mode</a></li></ol></nav>
+      <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+      </a>
+      <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal sidebar-navigation docked overflow-auto">
+    <div class="pt-lg-2 mt-2 text-center sidebar-header">
+      <a href="./index.html" class="sidebar-logo-link">
+      <img src="./images/ASReviewLAB/Elas_afstudeerhoedje.png" alt="" class="sidebar-logo py-0 d-lg-inline d-none">
+      </a>
+      <div class="sidebar-tools-main">
+    <a href="https://github.com/asreview/asreview-acadamy/" title="GitHub organization" class="quarto-navigation-tool px-1" aria-label="GitHub organization"><i class="bi bi-github"></i></a>
+</div>
+      </div>
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Search"></div>
+        </div>
+        </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Home</span></a>
+  </div>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true">
+ <span class="menu-text">Introduction Courses</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./ASReviewLAB.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">ASReview LAB</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./datatools.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Datatools</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./simulation.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text">Simulation Mode</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#introduction" id="toc-introduction" class="nav-link active" data-scroll-target="#introduction">Introduction</a></li>
+  <li><a href="#conducting-a-simulation-via-the-web-browser" id="toc-conducting-a-simulation-via-the-web-browser" class="nav-link" data-scroll-target="#conducting-a-simulation-via-the-web-browser">Conducting a simulation via the web browser</a></li>
+  <li><a href="#conducting-a-simulation-via-the-command-line-interface" id="toc-conducting-a-simulation-via-the-command-line-interface" class="nav-link" data-scroll-target="#conducting-a-simulation-via-the-command-line-interface">Conducting a simulation via the command line interface</a>
+  <ul class="collapse">
+  <li><a href="#step-1-choose-a-research-question" id="toc-step-1-choose-a-research-question" class="nav-link" data-scroll-target="#step-1-choose-a-research-question">Step 1: Choose a research question</a></li>
+  <li><a href="#step-2-create-a-folder-structure" id="toc-step-2-create-a-folder-structure" class="nav-link" data-scroll-target="#step-2-create-a-folder-structure">Step 2: Create a folder structure</a></li>
+  <li><a href="#step-3-choose-a-dataset" id="toc-step-3-choose-a-dataset" class="nav-link" data-scroll-target="#step-3-choose-a-dataset">Step 3: Choose a dataset</a></li>
+  <li><a href="#step-4-write-and-run-the-simulation-script" id="toc-step-4-write-and-run-the-simulation-script" class="nav-link" data-scroll-target="#step-4-write-and-run-the-simulation-script">Step 4: Write and run the simulation script</a></li>
+  <li><a href="#step-5-obtaining-a-recall-curve-and-the-metrics" id="toc-step-5-obtaining-a-recall-curve-and-the-metrics" class="nav-link" data-scroll-target="#step-5-obtaining-a-recall-curve-and-the-metrics">Step 5: Obtaining a recall curve and the metrics</a></li>
+  <li><a href="#research-question-1" id="toc-research-question-1" class="nav-link" data-scroll-target="#research-question-1">Research Question 1</a></li>
+  <li><a href="#research-question-2" id="toc-research-question-2" class="nav-link" data-scroll-target="#research-question-2">Research Question 2</a></li>
+  <li><a href="#research-question-3" id="toc-research-question-3" class="nav-link" data-scroll-target="#research-question-3">Research Question 3</a></li>
+  </ul></li>
+  <li><a href="#make-it-automatic" id="toc-make-it-automatic" class="nav-link" data-scroll-target="#make-it-automatic">Make it automatic</a>
+  <ul class="collapse">
+  <li><a href="#getting-started" id="toc-getting-started" class="nav-link" data-scroll-target="#getting-started">Getting started</a></li>
+  <li><a href="#addressing-the-research-questions" id="toc-addressing-the-research-questions" class="nav-link" data-scroll-target="#addressing-the-research-questions">Addressing the research questions</a></li>
+  </ul></li>
+  <li><a href="#what-else" id="toc-what-else" class="nav-link" data-scroll-target="#what-else">What else?</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Introductory exercise on Using the ASReview Simulation Mode</h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    <div>
+    <div class="quarto-title-meta-heading">Author</div>
+    <div class="quarto-title-meta-contents">
+             <p>The ASReview Academy Team </p>
+          </div>
+  </div>
+    
+  
+    
+  </div>
+  
+
+</header>
+
+<section id="introduction" class="level2">
+<h2 class="anchored" data-anchor-id="introduction">Introduction</h2>
+<p>The <strong>goal</strong> of this exercise is to learn how you can perform simulations on a labeled systematic review dataset using the web browser of ASReview, the command line interface, and the package titled Makita.</p>
+<p>A simulation in the context of AI-assisted reviewing involves mimicking the screening process with a particular model. In a simulation setting, it is already known which records are labeled as relevant, and the software can automatically reenact the screening process as if a human were labeling the records in interaction with the Active Learning model. This allows you to answer questions about the (workings of) the model itself and compare the performance of different models under different circumstances. Read the <a href="https://asreview.readthedocs.io/en/latest/simulation_overview.html">documentation</a> for more information about running simulations.</p>
+<p>If writing scripts and running simulations is new to you, don’t worry, you can make it as simple or complicated as you want.</p>
+<p>In this exercise, you will learn how to prepare, run, and interpret the results of a simulation yourself. You will first do this using the web browser with the click-and-run interface you know from the <a href="https://github.com/asreview/asreview-academy/tree/main/introducing-ASReview-LAB">first exercise</a>. Then you will be guided through the same process in the command-line interface, which has more options than the LAB interface. Lastly, you will run the same simulations, this time using the Makita package. This package automates much of the process, which is great for large-scale simulation studies.</p>
+<p>Enjoy!</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/Simulation/RecallCurves.png" class="img-fluid figure-img" style="width:95.0%"></p>
+<figcaption class="figure-caption">Example of what the output of multiple simulation studies can look like. This shows the recall curves for the first 4K records (out of &gt;50K) for 10 simulation runs, each with a different model configuration, so you can compare their performance on any given dataset at a glance. Source: Teijema, J., Hofstee, L., Brouwer, M., de Bruin, J., Ferdinands, G., de Boer, J., … Bagheri, A. (2022, July 15). Active learning-based Systematic reviewing using switching classification models: the case of the onset, maintenance, and relapse of depressive disorders. https://doi.org/10.31234/osf.io/t7bpd”</figcaption>
+</figure>
+</div>
+</section>
+<section id="conducting-a-simulation-via-the-web-browser" class="level2">
+<h2 class="anchored" data-anchor-id="conducting-a-simulation-via-the-web-browser">Conducting a simulation via the web browser</h2>
+<p>To start off easy, we will run a simulation study using the PTSD benchmark dataset we also used in the <a href="https://github.com/asreview/asreview-academy/tree/main/introducing-ASReview-LAB">introductory exercise</a>.</p>
+<p>For this exercise, we assume you have already installed Python and the ASReview LAB application. If you haven’t done so yet, you can follow <a href="https://asreview.ai/download">the instructions on installation</a>.</p>
+<ol type="1">
+<li>Open ASReview LAB via the CLI (Command Line Interface) and start a new project in Simulation Mode. Follow the steps described in the <a href="https://asreview.readthedocs.io/en/latest/simulation_webapp.html">documentation</a> and select the PTSD benchmark dataset.</li>
+</ol>
+<p>Add these five prior relevant studies:</p>
+<ul>
+<li><p>Latent trajectories of trauma symptoms and resilience: the 3-year longitudinal prospective USPER study of Danish veterans deployed in Afghanistan</p></li>
+<li><p>A Latent Growth Mixture Modeling Approach to PTSD Symptoms in Rape Victims</p></li>
+<li><p>Peace and War: Trajectories of Posttraumatic Stress Disorder Symptoms Before, During, and After Military Deployment in Afghanistan</p></li>
+<li><p>The relationship between course of PTSD symptoms in deployed U.S. Marines and degree of combat exposure</p></li>
+<li><p>Trajectories of trauma symptoms and resilience in deployed US military service members: Prospective cohort study</p></li>
+</ul>
+<p>Now, also choose five (random) prior irrelevant papers and <strong>copy-paste these titles to a separate file</strong>, as we need to select the exact same studies later!</p>
+<p>Select the default model and initiate the simulation by clicking “NEXT”.</p>
+<p>Proceed by navigating to the Analytics page and check if the simulation study is finished. ELAS is holding a card with the status of your project. If your simulation is not finished yet, click the REFRESH button in the upper right corner.</p>
+<p>Note: it can be that running the simulation takes a long time because of the size of your dataset in combination with the chosen model. To give you an idea of the possible differences in runtime between models, see Table 1 on page 15 of <a href="https://psyarxiv.com/t7bpd">Teijema et al. (2022)</a>. Training the feature matrix for a dataset with 15K records took .23 seconds with TF-IDF, but 6 hours with sBert.</p>
+<p>When the simulation is done, save the recall plot on your laptop. For instructions on how to do this, see the <a href="https://asreview.readthedocs.io/en/latest/progress.html#summary-statistics">documentation</a>.</p>
+<p>Woohoo! You just performed a simulation study! Easy right?</p>
+<p>Let’s do some more:</p>
+<ol start="2" type="1">
+<li><p>Start a new project (use a different name), add the same dataset, and add the same relevant <em>and</em> irrelevant articles as priors but this time choose a different classification model such as Random Forest or Logistic Regression. Run the simuation study and save the recall plot.</p></li>
+<li><p>Repeat the same process, but now choose a different feature extractor, query strategy or balancing strategy. Run the simulation and save the recall plot.</p></li>
+</ol>
+<p>Compare the three recall plots. What is your conclusion in terms of performance for the three different models? You might observe some differences in how long it takes each model to arrive at the total number of relevant records found.</p>
+<p>Many papers have been written about such comparisons; for an overview of such comparisons, see the <a href="https://asreview.nl/blog/project/evaluating-the-performance-of-active-learning-within-systematic-reviews/">systematic review</a> on this topic.</p>
+</section>
+<section id="conducting-a-simulation-via-the-command-line-interface" class="level2">
+<h2 class="anchored" data-anchor-id="conducting-a-simulation-via-the-command-line-interface">Conducting a simulation via the command line interface</h2>
+<section id="step-1-choose-a-research-question" class="level3">
+<h3 class="anchored" data-anchor-id="step-1-choose-a-research-question">Step 1: Choose a research question</h3>
+<p>Many more options for the configuration are available via the <a href="https://asreview.readthedocs.io/en/latest/simulation_cli.html#simulation-options">command line interface</a>. This is useful because 1001 questions can be answered by running a simulation study and every simulation study requires slightly different settings. As example, we will work on three example questions.</p>
+<p>In the second part of the exercise, you will also be introduced to some <a href="https://github.com/asreview/asreview-insights#performance-metrics">performance metrics</a> that you can use to assess the performance of your model.</p>
+<p><strong>Research questions:</strong></p>
+<ol type="1">
+<li></li>
+</ol>
+<p>When using AI-aided screening to find 95 percent of the relevant records, how much time did I save compared to random screening?</p>
+<p>This question can be addressed by examining the Work Saved over Sampling (WSS) statistic at a recall of .95, which reflects the proportion of screening time saved by using active learning at the cost of failing to identify .05 of relevant publications.</p>
+<ol start="2" type="1">
+<li></li>
+</ol>
+<p>How much variation is there between three runs of the same model with different prior records selected for training the model?</p>
+<p>This question can be addressed by running the exact same simulation three times, but with different prior knowledge selection. We introduce the metric the percentage of Relevant Records Found (RRF) at a given recall (e.g., after screening 10% of the total number of records).</p>
+<ol start="3" type="1">
+<li></li>
+</ol>
+<p>Does, for example, the classifier Naive Bayes (‘nb’) or Logistic Regression (‘logistic’) perform better for a given dataset, when keeping the other settings fixed? For this question, we introduce the metrics the Extra Relevant Records found (ERF) and the Average Time to Discovery (ATD).</p>
+<p>To keep your results organized, we suggest you fill out the table below with your simulation results for each model you run.</p>
+</section>
+<section id="step-2-create-a-folder-structure" class="level3">
+<h3 class="anchored" data-anchor-id="step-2-create-a-folder-structure">Step 2: Create a folder structure</h3>
+<p>We recommend you to create a designated folder to run a simulation in, to keep your project organised. Create a folder and give it a name, for example “Simulation_study_PTSD”. Within this folder, create two sub-folders called ‘data’ and ‘output’. Also using NotePad (on Windows) or Text Edit (on Mac/OS) to create an empty text file called <code>jobs.txt</code> in the main folder. This is where you will save the scripts you run. See the example below:</p>
+<p><img src="images/Simulation/Folderstructure.png" class="img-fluid" style="width:95.0%"></p>
+</section>
+<section id="step-3-choose-a-dataset" class="level3">
+<h3 class="anchored" data-anchor-id="step-3-choose-a-dataset">Step 3: Choose a dataset</h3>
+<p>Before we get started, we need a dataset that is already labeled. You can use a dataset from the SYNERGY dataset via the synergy-dataset Python package.</p>
+<ol type="1">
+<li><p><em>Open the command prompt, by typing ‘cmd’ (for Windows) or ‘terminal’ (for Apple) in your computer’s search bar;</em></p></li>
+<li><p><em>Navigate to the folder structure;</em></p></li>
+</ol>
+<p>You can navigate to your folder structure with:</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="bu">cd</span> <span class="pp">[</span><span class="ss">file_path</span><span class="pp">]</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<ol start="3" type="1">
+<li><em>Install the synergy-dataset Python package with:</em></li>
+</ol>
+<div class="sourceCode" id="cb2"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="ex">pip</span> install synergy-dataset</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<ol start="4" type="1">
+<li><em>Built the dataset.</em></li>
+</ol>
+<p>To download and build the SYNERGY dataset, run the following command in the command line:</p>
+<div class="sourceCode" id="cb3"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="ex">python</span> <span class="at">-m</span> synergy_dataset get <span class="at">-o</span> data</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>You can also choose to use your own dataset. Do make sure that the dataset is fully labeled and <a href="https://asreview.readthedocs.io/en/latest/data_labeled.html#fully-labeled-data">prepared for simulation</a>.</p>
+</section>
+<section id="step-4-write-and-run-the-simulation-script" class="level3">
+<h3 class="anchored" data-anchor-id="step-4-write-and-run-the-simulation-script">Step 4: Write and run the simulation script</h3>
+<p>Below you will find a step by step guide on how to run a simulation with the ASReview software. Depending on your research question, you need to add or change things (e.g.run multiple simulations if you want to compare runs of the same model with different seeds or to compare different models question 2 and 3).</p>
+<p>The parts between the brackets [ ] need to be filled out by you.</p>
+<ol type="1">
+<li><p><em>Open the command prompt, by typing ‘cmd’ (for Windows) or ‘terminal’ (for Apple) in your computer’s search bar;</em></p></li>
+<li><p><em>Navigate to the folder structure;</em></p></li>
+</ol>
+<p>You can navigate to your folder structure with:</p>
+<div class="sourceCode" id="cb4"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="bu">cd</span> <span class="pp">[</span><span class="ss">file_path</span><span class="pp">]</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>The file_path is the path to the folder which you can copy and paste from your explorer.</p>
+<ol start="3" type="1">
+<li><em>Run the simulation;</em></li>
+</ol>
+<p>Now, we’re going to write the script to run your simulation, using the code below. You still need to fill out at least three pieces of information: the dataset’s name, the name of the output file and two seed values, to make the results reproducible. Some processes in ASReview require (pseudo-)random number generation. The user can give such a process a fixed “seed” to start from, which means the same sequence is generated each time, making any simulation reproducible. The <code>--model_seed</code> command controls the seed of the random number generation that is used after model initialization. The <code>--init_seed</code> command controls the random set of papers to train the model on.</p>
+<div class="sourceCode" id="cb5"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="ex">asreview</span> simulate data/<span class="pp">[</span><span class="ss">name_of_your_data.csv</span><span class="pp">]</span> <span class="at">--state_file</span> output/<span class="pp">[</span><span class="ss">results_name</span><span class="pp">]</span>.asreview </span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a><span class="ex">--seed</span> [your favorite number] <span class="at">--init_seed</span> [your second favorite number]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>Save this script in the <code>jobs.txt</code> file you just made, to keep track of which code you ran!</p>
+<p>You can also decide to <a href="https://asreview.readthedocs.io/en/latest/simulation_cli.html#simulation-via-command-line">supply more arguments</a>, for example to employ a different model or to specify prior knowledge yourself instead of using <code>--init_seed</code> to select random ones . If no prior knowledge is specified, one relevant and one irrelevant prior are randomly selected. If no model is specified, the software’s <a href="https://asreview.readthedocs.io/en/latest/simulation_cli.html#active-learning">default active learning model</a> is used.</p>
+<p>Run the simulation by copy-pasting the code in the command line interface.</p>
+<p>While your simulation is running, you can check whether the priors were correctly specified as they appear in the command prompt and you can stare at the progress bar.</p>
+</section>
+<section id="step-5-obtaining-a-recall-curve-and-the-metrics" class="level3">
+<h3 class="anchored" data-anchor-id="step-5-obtaining-a-recall-curve-and-the-metrics">Step 5: Obtaining a recall curve and the metrics</h3>
+<p>For the next steps, you first need to install some extra extensions. You can do so with:</p>
+<div class="sourceCode" id="cb6"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="ex">pip</span> install asreview-insights asreview-datatools asreview-wordcloud asreview-makita</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>You can get the recall plot with this line of code:</p>
+<div class="sourceCode" id="cb7"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="ex">asreview</span> plot recall output/<span class="pp">[</span><span class="ss">results_name</span><span class="pp">]</span>.asreview <span class="at">-o</span> output/results.png</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>Run the code in the CLI (and put it in your <code>jobs.txt</code> file).</p>
+<p>The plot file will appear in your output folder. Inspect the recall curve from the asreview-insights extension. It should look something like the figure below.</p>
+<p><img src="images/Simulation/Example_recall_curve.png" class="img-fluid" style="width:95.0%"></p>
+<p>You can get the metrics with:</p>
+<div class="sourceCode" id="cb8"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="ex">asreview</span> metrics output/<span class="pp">[</span><span class="ss">results_name</span><span class="pp">]</span>.asreview <span class="at">-o</span> output/output.json</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>The output will appear in your command prompt and will be saved in the ‘output.json’ file in your output folder. You can scroll up in your CLI or open the file with a text editor like Notepad (or R, Python, or a Jupiter Notebook) to look at the metrics we got from the asreview-insights.</p>
+<p>Fill out the performance statistics in your table under model 1. But what do those statistics mean? Check out the readme of the <a href="https://github.com/asreview/asreview-insights#performance-metrics">Insights packages</a>.</p>
+</section>
+<section id="research-question-1" class="level3">
+<h3 class="anchored" data-anchor-id="research-question-1">Research Question 1</h3>
+<p>To answer <u>research question 1</u>, look at the WSS@95 statistic, reflecting the proportion of records you did <strong>not</strong> have to screen by using active learning compared to random reading, at the cost of failing to identify .05 of relevant publications. In the above example, we did not have to screen 65% of the records to find 95% of relevant records in the dataset.</p>
+</section>
+<section id="research-question-2" class="level3">
+<h3 class="anchored" data-anchor-id="research-question-2">Research Question 2</h3>
+<p>To answer <u>research question 2</u>, you can rerun the same model once more with a different value for <code>--init_seed</code>. A different seed value will result in a different selection of prior knowledge.</p>
+<p>Make sure to store the results under a different name and write the results in your table under Model 2.</p>
+<p>Can you confirm that the model used different prior knowledge in this run using the information printed in your console?</p>
+<p>Then, run the model a third time (Model 3), but this time specify a specific set of records to be used as training data by using the <code>--prior_idx</code> argument:</p>
+<div class="sourceCode" id="cb9"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="ex">asreview</span> simulate data/<span class="pp">[</span><span class="ss">name_of_your_data.csv</span><span class="pp">]</span> <span class="at">--state_file</span> output/<span class="pp">[</span><span class="ss">results_name</span><span class="pp">]</span>.asreview </span>
+<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a><span class="ex">--seed</span> [your favorite number] <span class="at">--prior_idx</span> [row nr. relevant record] [row nr. irrelevant record]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>You should search in the data to identify the row numbers of the records you want to use. Be aware we start counting row numbers at zero (and mind the column names).</p>
+<p>You can compare the three runs by looking at (for example) the variation in recall curves and the RRF@10 statistics. A higher percentage of Relevant Records Found after screening any portion of the total records (in this case 10%), indicates a more efficient model.</p>
+</section>
+<section id="research-question-3" class="level3">
+<h3 class="anchored" data-anchor-id="research-question-3">Research Question 3</h3>
+<p>To answer <u>research question 3</u>, rerun the model with the <code>logistic</code> model classifier instead of the default Naive Bayes (<code>nb</code>) setting:</p>
+<div class="sourceCode" id="cb10"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="ex">asreview</span> simulate data/<span class="pp">[</span><span class="ss">name_of_your_data</span><span class="pp">]</span>.csv <span class="at">-m</span> logistic </span>
+<span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a><span class="ex">--state_file</span> output/<span class="pp">[</span><span class="ss">results_name</span><span class="pp">]</span>.asreview  <span class="at">--seed</span> [your favorite number]</span>
+<span id="cb10-3"><a href="#cb10-3" aria-hidden="true" tabindex="-1"></a><span class="ex">--init_seed</span> [your second favorite number]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>You can compare the performance of the models by looking at the (for example) ERF and the ATD. A higher number of Extra Relevant Records found compared to random screening, indicates a a more efficient model. Conversely, a lower Average Time to Discovery means that the model was quicker to find all relevant records in the dataset.</p>
+</section>
+</section>
+<section id="make-it-automatic" class="level2">
+<h2 class="anchored" data-anchor-id="make-it-automatic">Make it automatic</h2>
+<p>By now, you can probably imagine that writing the code for running many different simulations is quite time-consuming. Keeping track of everything you ran in a separate <code>jobs.txt</code> file to keep your simulations reproducible and manually filling out that table for comparison can also become cumbersome for large projects. Luckily we have automatized the process ofcreating a folder structure and writing many lines of code by using templates. For this, we use the package <code>Makita</code>: ASReview’s <a href="https://github.com/asreview/asreview-makita"><code>Make It Automatic</code></a>.</p>
+<p>With a single command, Makita generates a folder according to a reproducible folder format, a jobs script with all simulation commands and even a readme file! This way, your study is ready for the world right off the bat.</p>
+<p>For the next steps, you first need to install some extra extensions. You can do so with:</p>
+<div class="sourceCode" id="cb11"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="ex">pip</span> install asreview-insights asreview-datatools asreview-wordcloud asreview-makita</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<section id="getting-started" class="level3">
+<h3 class="anchored" data-anchor-id="getting-started">Getting started</h3>
+<ol type="1">
+<li><p>Follow the first three steps under the <a href="https://github.com/asreview/asreview-makita#getting-started"><code>Getting     started</code></a> section. The result should be a new project folder including a subfolder titled ‘data’. Put at least two <a href="https://github.com/asreview/systematic-review-datasets#datasets">benchmark datasets</a> in the ‘data’ folder. Make sure to save them as <code>.csv</code> files!</p>
+<p><em>Note: if multiple datasets are available in this folder, Makita will automatically create code for running a simulation study for all datasets stored in the data-folder.</em></p>
+<p>To create a study using the <code>basic</code> template, navigate to the folder and run the code:</p>
+<pre><code>asreview makita template basic</code></pre>
+<p>If you’re on a Windows machine, make sure to read the information in the <a href="https://github.com/asreview/asreview-makita#windows-support"><code>Windows support</code> section</a>. In Windows, your final command should look like this:</p>
+<pre><code>asreview makita template basic -f jobs.bat</code></pre></li>
+<li><p>Run the generated jobs file by clicking on it for Windows, or by typing <code>jobs.sh</code> (Mac/OS) in the CLI. This will start the simulation.</p></li>
+</ol>
+<p>After the simulations have been completed, explore the README.md file that has been created in your project folder. This file can be opened with a text editor and contains a navigation tree showing which output is stored where.</p>
+<p>A big advantage of using Makita is that your project folder is already made fully reproducible and ready for publishing on your Github! Also note that in contrast with the code you ran above, we did not ask you to set a seed. That is because Makita takes care of this too! Makita sets a default seed for you, which automatically makes your simulation study reproducible. If you prefer to set the seed yourself, for example to avoid long-term seed bias, you can still do so using the <a href="https://github.com/asreview/asreview-makita#templates">optional arguments</a>.</p>
+</section>
+<section id="addressing-the-research-questions" class="level3">
+<h3 class="anchored" data-anchor-id="addressing-the-research-questions">Addressing the research questions</h3>
+<p>Now, we are going to address the research question(s), this time using Makita.</p>
+<ol type="1">
+<li></li>
+</ol>
+<p>For this question, compare the WSS@95 statistic of multiple datasets. If you had not done so already in the above section, pick two or three datasets from the <a href="https://github.com/asreview/systematic-review-datasets#datasets">benchmark datasets</a> and save them to the ‘data’ folder. Use the basic template to run your simulations and navigate to the output folder. You can find the WSS@95 of the simulation for each of your datasets in the ‘output/tables’ folder, in the file <code>data_metrics</code>. Compare the WSS@95 statistics, for which of the datasets the metric is lowest?</p>
+<ol start="2" type="1">
+<li></li>
+</ol>
+<p>Suppose we are investigating the effect using different prior knowledge <em>of relevant records</em>, i.e.&nbsp;keeping the prior knowledge of irrelevant records stable. To answer this question, we can conveniently use the All Relevant, Fixed Irrelevant <a href="https://github.com/asreview/asreview-makita#arfi-template">(ARFI) template</a>. You only need one dataset in your ‘data’ folder, but you can choose to use multiple if you like.</p>
+<p>Run the following code if you work on Mac/OS:</p>
+<div class="sourceCode" id="cb14"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a><span class="ex">asreview</span> makita template arfi</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>or this line if you work on Windows</p>
+<div class="sourceCode" id="cb15"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a><span class="ex">asreview</span> makita template arfi <span class="at">-f</span> jobs.bat</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>Then run the <code>jobs.sh/bat</code> file.</p>
+<p>NB: One simulation will be run for each relevant record in the dataset (with 50 relevant records, 50 simulation runs will be conduct; for each run the same 10 randomly chosen irrelevant records will be used), so this can take a while! Keep your CLI open to keep an eye on the progress, or go drink some hot chocolate.</p>
+<p>The metrics can be found appear in the ‘tables’ folder. A recall plot summarizing all results can be found in the folder <code>output/simulation/[DATASET NAME]</code>.</p>
+<ol start="3" type="1">
+<li></li>
+</ol>
+<p>Makita also contains a <a href="https://github.com/asreview/asreview-makita#multiple-models-template">template</a> to easily compare multiple models.</p>
+<p>Run the following code if you work on Mac/OS:</p>
+<div class="sourceCode" id="cb16"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a><span class="ex">asreview</span> makita template multiple_models</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>or this line if you work on Windows</p>
+<div class="sourceCode" id="cb17"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a><span class="ex">asreview</span> makita template multiple_models <span class="at">-f</span> jobs.bat</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>Then run the <code>jobs.sh/bat</code> file.</p>
+<p>The metrics can be found appear in the ‘tables’ folder. A recall plot summarizing all results can be found in the folder <code>output/simulation/[DATASET NAME]</code>.</p>
+</section>
+</section>
+<section id="what-else" class="level2">
+<h2 class="anchored" data-anchor-id="what-else">What else?</h2>
+<p>We introduced some basic templates, but you can answer many more different types of research questions using Makita by using <a href="https://github.com/asreview/asreview-makita#advanced-usage">customized templates</a>, or adding <a href="https://github.com/asreview/template-extension-new-model">new models</a>.</p>
+<p><strong>If you like the functionality of Makita, don’t forget to give it a star on GitHub!</strong></p>
+
+
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    text: function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+    const config = {
+      allowHTML: true,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start',
+    };
+    if (contentFn) {
+      config.content = contentFn;
+    }
+    if (onTriggerFn) {
+      config.onTrigger = onTriggerFn;
+    }
+    if (onUntriggerFn) {
+      config.onUntrigger = onUntriggerFn;
+    }
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+  const xrefs = window.document.querySelectorAll('a.quarto-xref');
+  const processXRef = (id, note) => {
+    if (id.startsWith('sec-')) {
+      // Special case sections, only their first couple elements
+      const container = document.createElement("div");
+      if (note.children && note.children.length > 2) {
+        for (let i = 0; i < 2; i++) {
+          container.appendChild(note.children[i].cloneNode(true));
+        }
+        return container.innerHTML
+      } else {
+        return note.innerHTML;
+      }
+    } else {
+      return note.innerHTML;
+    }
+  }
+  for (var i=0; i<xrefs.length; i++) {
+    const xref = xrefs[i];
+    tippyHover(xref, undefined, function(instance) {
+      instance.disable();
+      let url = xref.getAttribute('href');
+      let hash = undefined; 
+      try { hash = new URL(url).hash; } catch {}
+      const id = hash.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      if (note !== null) {
+        try {
+          const html = processXRef(id, note);
+          instance.setContent(html);
+        } finally {
+          instance.enable();
+          instance.show();
+        }
+      } else {
+        // See if we can fetch this
+        fetch(url.split('#')[0])
+        .then(res => res.text())
+        .then(html => {
+          const parser = new DOMParser();
+          const htmlDoc = parser.parseFromString(html, "text/html");
+          const note = htmlDoc.getElementById(id);
+          console.log(htmlDoc.body.innerHTML);
+          if (note !== null) {
+            const html = processXRef(id, note);
+            instance.setContent(html);
+          } 
+        }).finally(() => {
+          instance.enable();
+          instance.show();
+        });
+      }
+    }, function(instance) {
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+</div> <!-- /content -->
+
+
+
+</body></html>

@@ -1,15 +1,7 @@
 ---
-output:
-  html_document: default
-  pdf_document: default
+title: "Introductory exercise on Using ASReview Datatools"
+author: "The ASReview Academy Team"
 ---
-Exercise on Using ASReview Datatools
-================
-The ASReview Academy Team
-
-
-
-<img src="images/Elas_afstudeerhoedje.png" width="50%" style="display: block; margin: auto;" />
 
 ## Introduction
 

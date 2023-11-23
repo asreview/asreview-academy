@@ -1,18 +1,16 @@
-Exercise on Using the ASReview Simulation Mode
-================
-The ASReview Academy Team
+---
+title: "Introductory exercise on Using the ASReview Simulation Mode"
+author: "The ASReview Academy Team"
+---
 
-
-
-<img src="images/Elas_afstudeerhoedje.png" width="50%" style="display: block; margin: auto;" />
 
 ## Introduction
 
 The **goal** of this exercise is to learn how you can perform
 simulations on a labeled systematic review dataset using the web browser
 of ASReview, the command line interface, and the package titled
-Makita.   
-   
+Makita. 
+
 A simulation in the context of AI-assisted reviewing involves mimicking
 the screening process with a particular model. In a simulation setting,
 it is already known which records are labeled as relevant, and the
@@ -39,7 +37,8 @@ simulation studies.
 
 Enjoy!
 
-<img src="images/RecallCurves.png" title="Example of what the output of multiple simulation studies can look like. This shows the recall curves for the first 4K records (out of &gt;50K) for 10 simulation runs, each with a different model configuration, so you can compare their performance on any given dataset at a glance. \newline{} \newline{} Source: Teijema, J., Hofstee, L., Brouwer, M., de Bruin, J., Ferdinands, G., de Boer, J., … Bagheri, A. (2022, July 15). Active learning-based Systematic reviewing using switching classification models: the case of the onset, maintenance, and relapse of depressive disorders. https://doi.org/10.31234/osf.io/t7bpd" alt="Example of what the output of multiple simulation studies can look like. This shows the recall curves for the first 4K records (out of &gt;50K) for 10 simulation runs, each with a different model configuration, so you can compare their performance on any given dataset at a glance. \newline{} \newline{} Source: Teijema, J., Hofstee, L., Brouwer, M., de Bruin, J., Ferdinands, G., de Boer, J., … Bagheri, A. (2022, July 15). Active learning-based Systematic reviewing using switching classification models: the case of the onset, maintenance, and relapse of depressive disorders. https://doi.org/10.31234/osf.io/t7bpd" style="display: block; margin: auto;" />
+![Example of what the output of multiple simulation studies can look like. This shows the recall curves for the first 4K records (out of &gt;50K) for 10 simulation runs, each with a different model configuration, so you can compare their performance on any given dataset at a glance. Source: Teijema, J., Hofstee, L., Brouwer, M., de Bruin, J., Ferdinands, G., de Boer, J., … Bagheri, A. (2022, July 15). Active learning-based Systematic reviewing using switching classification models: the case of the onset, maintenance, and relapse of depressive disorders. https://doi.org/10.31234/osf.io/t7bpd" ](images/Simulation/RecallCurves.png){width=95%}
+
 
 ## Conducting a simulation via the web browser
 
@@ -181,7 +180,8 @@ or Text Edit (on Mac/OS) to create an empty text file called `jobs.txt`
 in the main folder. This is where you will save the scripts you run. See
 the example below:
 
-<img src="images/Folderstructure.png" style="display: block; margin: auto;" />
+![](images/Simulation/Folderstructure.png){width=95%}
+
 
 ### Step 3: Choose a dataset
 
@@ -219,7 +219,7 @@ simulation](https://asreview.readthedocs.io/en/latest/data_labeled.html#fully-la
 
 Below you will find a step by step guide on how to run a simulation with
 the ASReview software. Depending on your research question, you need to
-add or change things (e.g. run multiple simulations if you want to
+add or change things (e.g.run multiple simulations if you want to
 compare runs of the same model with different seeds or to compare
 different models question 2 and 3).
 
@@ -298,7 +298,7 @@ The plot file will appear in your output folder. Inspect the recall
 curve from the asreview-insights extension. It should look something
 like the figure below.
 
-<img src="images/Example_recall_curve.png" style="display: block; margin: auto auto auto 0;" />
+![](images/Simulation/Example_recall_curve.png){width=95%}
 
 You can get the metrics with:
 
