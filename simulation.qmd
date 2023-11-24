@@ -19,7 +19,7 @@ were labeling the records in interaction with the Active Learning model.
 This allows you to answer questions about the (workings of) the model
 itself and compare the performance of different models under different
 circumstances. Read the
-[documentation](https://asreview.readthedocs.io/en/latest/simulation_overview.html)
+[documentation](https://asreview.readthedocs.io/en/latest/simulation_overview.html){target="_blank"}
 for more information about running simulations.
 
 If writing scripts and running simulations is new to you, don’t worry,
@@ -28,7 +28,7 @@ you can make it as simple or complicated as you want.
 In this exercise, you will learn how to prepare, run, and interpret the
 results of a simulation yourself. You will first do this using the web
 browser with the click-and-run interface you know from the [first
-exercise](https://github.com/asreview/asreview-academy/tree/main/introducing-ASReview-LAB).
+exercise](https://github.com/asreview/asreview-academy/tree/main/introducing-ASReview-LAB){target="_blank"}.
 Then you will be guided through the same process in the command-line
 interface, which has more options than the LAB interface. Lastly, you
 will run the same simulations, this time using the Makita package. This
@@ -44,15 +44,15 @@ Enjoy!
 
 To start off easy, we will run a simulation study using the PTSD
 benchmark dataset we also used in the [introductory
-exercise](https://github.com/asreview/asreview-academy/tree/main/introducing-ASReview-LAB).
+exercise](ASReviewLAB.qmd){target="_blank"}.
 
 For this exercise, we assume you have already installed Python and the
 ASReview LAB application. If you haven’t done so yet, you can follow
-[the instructions on installation](https://asreview.ai/download).
+[the instructions on installation](https://asreview.ai/download){target="_blank"}.
 
 1.  Open ASReview LAB via the CLI (Command Line Interface) and start a
     new project in Simulation Mode. Follow the steps described in the
-    [documentation](https://asreview.readthedocs.io/en/latest/simulation_webapp.html)
+    [documentation](https://asreview.readthedocs.io/en/latest/simulation_webapp.html){target="_blank"}
     and select the PTSD benchmark dataset.
 
 Add these five prior relevant studies:
@@ -89,13 +89,13 @@ Note: it can be that running the simulation takes a long time because of
 the size of your dataset in combination with the chosen model. To give
 you an idea of the possible differences in runtime between models, see
 Table 1 on page 15 of [Teijema et al.
-(2022)](https://psyarxiv.com/t7bpd). Training the feature matrix for a
+(2022)](https://psyarxiv.com/t7bpd){target="_blank"}. Training the feature matrix for a
 dataset with 15K records took .23 seconds with TF-IDF, but 6 hours with
 sBert.
 
 When the simulation is done, save the recall plot on your laptop. For
 instructions on how to do this, see the
-[documentation](https://asreview.readthedocs.io/en/latest/progress.html#summary-statistics).
+[documentation](https://asreview.readthedocs.io/en/latest/progress.html#summary-statistics){target="_blank"}.
 
 Woohoo! You just performed a simulation study! Easy right?
 
@@ -118,7 +118,7 @@ number of relevant records found.
 
 Many papers have been written about such comparisons; for an overview of
 such comparisons, see the [systematic
-review](https://asreview.nl/blog/project/evaluating-the-performance-of-active-learning-within-systematic-reviews/)
+review](https://asreview.nl/blog/project/evaluating-the-performance-of-active-learning-within-systematic-reviews/){target="_blank"}
 on this topic.
 
 ## Conducting a simulation via the command line interface
@@ -127,14 +127,14 @@ on this topic.
 
 Many more options for the configuration are available via the [command
 line
-interface](https://asreview.readthedocs.io/en/latest/simulation_cli.html#simulation-options).
+interface](https://asreview.readthedocs.io/en/latest/simulation_cli.html#simulation-options){target="_blank"}.
 This is useful because 1001 questions can be answered by running a
 simulation study and every simulation study requires slightly different
 settings. As example, we will work on three example questions.
 
 In the second part of the exercise, you will also be introduced to some
 [performance
-metrics](https://github.com/asreview/asreview-insights#performance-metrics)
+metrics](https://github.com/asreview/asreview-insights#performance-metrics){target="_blank"}
 that you can use to assess the performance of your model.  
 
 **Research questions:**
@@ -213,7 +213,7 @@ python -m synergy_dataset get -o data
   
 You can also choose to use your own dataset. Do make sure that the
 dataset is fully labeled and [prepared for
-simulation](https://asreview.readthedocs.io/en/latest/data_labeled.html#fully-labeled-data).
+simulation](https://asreview.readthedocs.io/en/latest/data_labeled.html#fully-labeled-data){target="_blank"}.
 
 ### Step 4: Write and run the simulation script
 
@@ -261,13 +261,13 @@ Save this script in the `jobs.txt` file you just made, to keep track of
 which code you ran!
 
 You can also decide to [supply more
-arguments](https://asreview.readthedocs.io/en/latest/simulation_cli.html#simulation-via-command-line),
+arguments](https://asreview.readthedocs.io/en/latest/simulation_cli.html#simulation-via-command-line){target="_blank"},
 for example to employ a different model or to specify prior knowledge
 yourself instead of using `--init_seed` to select random ones . If no
 prior knowledge is specified, one relevant and one irrelevant prior are
 randomly selected. If no model is specified, the software’s [default
 active learning
-model](https://asreview.readthedocs.io/en/latest/simulation_cli.html#active-learning)
+model](https://asreview.readthedocs.io/en/latest/simulation_cli.html#active-learning){target="_blank"}
 is used.
 
 Run the simulation by copy-pasting the code in the command line
@@ -314,7 +314,7 @@ asreview-insights.
 
 Fill out the performance statistics in your table under model 1. But
 what do those statistics mean? Check out the readme of the [Insights
-packages](https://github.com/asreview/asreview-insights#performance-metrics).
+packages](https://github.com/asreview/asreview-insights#performance-metrics){target="_blank"}.
 
 ### Research Question 1
 
@@ -383,7 +383,7 @@ comparison can also become cumbersome for large projects. Luckily we
 have automatized the process ofcreating a folder structure and writing
 many lines of code by using templates. For this, we use the package
 `Makita`: ASReview’s
-[`Make It Automatic`](https://github.com/asreview/asreview-makita).
+[`Make It Automatic`](https://github.com/asreview/asreview-makita){target="_blank"}.
 
 With a single command, Makita generates a folder according to a
 reproducible folder format, a jobs script with all simulation commands
@@ -399,8 +399,7 @@ pip install asreview-insights asreview-datatools asreview-wordcloud asreview-mak
 
 ### Getting started
 
-1.  Follow the first three steps under the [`Getting
-    started`](https://github.com/asreview/asreview-makita#getting-started) section. The result should be a new project folder including a subfolder titled 'data'. Put at least two [benchmark datasets](https://github.com/asreview/systematic-review-datasets#datasets) in the 'data' folder. Make sure to save them as `.csv`
+1.  Follow the first three steps under the [`Getting started`](https://github.com/asreview/asreview-makita#getting-started){target="_blank"} section. The result should be a new project folder including a subfolder titled 'data'. Put at least two [benchmark datasets](https://github.com/asreview/systematic-review-datasets#datasets){target="_blank"} in the 'data' folder. Make sure to save them as `.csv`
     files!
 
     *Note: if multiple datasets are available in this folder, Makita
@@ -414,7 +413,7 @@ pip install asreview-insights asreview-datatools asreview-wordcloud asreview-mak
 
     If you’re on a Windows machine, make sure to read the information in
     the [`Windows support`
-    section](https://github.com/asreview/asreview-makita#windows-support).
+    section](https://github.com/asreview/asreview-makita#windows-support){target="_blank"}.
     In Windows, your final command should look like this:
 
         asreview makita template basic -f jobs.bat
@@ -435,7 +434,7 @@ set a seed. That is because Makita takes care of this too! Makita sets a
 default seed for you, which automatically makes your simulation study
 reproducible. If you prefer to set the seed yourself, for example to
 avoid long-term seed bias, you can still do so using the [optional
-arguments](https://github.com/asreview/asreview-makita#templates).
+arguments](https://github.com/asreview/asreview-makita#templates){target="_blank"}.
 
 ### Addressing the research questions
 
@@ -447,7 +446,7 @@ Makita.
 For this question, compare the WSS@95 statistic of multiple datasets. If
 you had not done so already in the above section, pick two or three
 datasets from the [benchmark
-datasets](https://github.com/asreview/systematic-review-datasets#datasets)
+datasets](https://github.com/asreview/systematic-review-datasets#datasets){target="_blank"}
 and save them to the ‘data’ folder. Use the basic template to run your
 simulations and navigate to the output folder. You can find the WSS@95
 of the simulation for each of your datasets in the ‘output/tables’
@@ -457,10 +456,10 @@ which of the datasets the metric is lowest?
 2.  
 
 Suppose we are investigating the effect using different prior knowledge
-*of relevant records*, i.e. keeping the prior knowledge of irrelevant
+*of relevant records*, i.e.keeping the prior knowledge of irrelevant
 records stable. To answer this question, we can conveniently use the All
 Relevant, Fixed Irrelevant [(ARFI)
-template](https://github.com/asreview/asreview-makita#arfi-template).
+template](https://github.com/asreview/asreview-makita#arfi-template){target="_blank"}.
 You only need one dataset in your ‘data’ folder, but you can choose to
 use multiple if you like.
 
@@ -491,7 +490,7 @@ summarizing all results can be found in the folder
 3.  
 
 Makita also contains a
-[template](https://github.com/asreview/asreview-makita#multiple-models-template)
+[template](https://github.com/asreview/asreview-makita#multiple-models-template){target="_blank"}
 to easily compare multiple models.
 
 Run the following code if you work on Mac/OS:
@@ -516,9 +515,9 @@ summarizing all results can be found in the folder
 
 We introduced some basic templates, but you can answer many more
 different types of research questions using Makita by using [customized
-templates](https://github.com/asreview/asreview-makita#advanced-usage),
+templates](https://github.com/asreview/asreview-makita#advanced-usage){target="_blank"},
 or adding [new
-models](https://github.com/asreview/template-extension-new-model).
+models](https://github.com/asreview/template-extension-new-model){target="_blank"}.
 
 **If you like the functionality of Makita, don’t forget to give it a
 star on GitHub!**

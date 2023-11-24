@@ -273,7 +273,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <h3 class="anchored" data-anchor-id="tool-2-compose">Tool 2: Compose</h3>
 <p>Next, you are going to compose a dataset out of two datasets; a labeled and an unlabeled dataset. The code starts similary to the code of the Describe tool (<code>asreview data compose</code>), but now the output path should always be specified (<code>output/[name_of_your_output_file.csv]</code>) and you need to assign a corresponsing proporty to the datasets you want to merge. The labeled dataset you need to assign the argument <code>-l</code> and the unlabeled dataset you need to assign a <code>-u</code>.</p>
 <p>Furthermore, in case of conflict, you need to determine which label to keep (<code>-c</code>). Let’s say you want to keep one of the labels, you can do so with the <code>keep_one</code> command. By default the hierarchy in determining which label to keep is: relevant, irrelevant, unlabeled.</p>
-<p>See the <a href="https://github.com/asreview/asreview-datatools#data-compose-experimental">Datatools README</a> for other possible arguments.</p>
+<p>See the <a href="https://github.com/asreview/asreview-datatools#data-compose-experimental" target="_blank">Datatools README</a> for other possible arguments.</p>
 <p>You can compose a dataset with:</p>
 <div class="sourceCode" id="cb9"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="ex">asreview</span> data compose output/<span class="pp">[</span><span class="ss">name_of_your_output_file.csv</span><span class="pp">]</span> <span class="at">-l</span> data/<span class="pp">[</span><span class="ss">name_of_your_data.csv</span><span class="pp">]</span> <span class="at">-u</span> data/<span class="pp">[</span><span class="ss">name_of_your_data.csv</span><span class="pp">]</span> <span class="at">-c</span> keep_one</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </section>
@@ -288,7 +288,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </section>
 <section id="what-else" class="level2">
 <h2 class="anchored" data-anchor-id="what-else">What else?</h2>
-<p>We introduced some of the datatools, but there are more tools available in the <a href="https://github.com/asreview/asreview-datatools">ASReview Datatools</a> package.</p>
+<p>We introduced some of the datatools, but there are more tools available in the <a href="https://github.com/asreview/asreview-datatools" target="_blank">ASReview Datatools</a> package.</p>
 <p><strong>If you like the functionality of Datatools, don’t forget to give it a star on GitHub!</strong></p>
 
 
