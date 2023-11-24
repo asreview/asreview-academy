@@ -1,0 +1,10 @@
+---
+title: "ASReview Acadamy"
+---
+
+Welcome to the ASReview Academy! This website contains open teaching materials for using ASReview. These resources are created to facilitate learning and proficiency in utilizing the ASReview software for AI-aided systematic reviews. We hope you enjoy the materials and find them useful.
+
+## License 
+
+The work is published under the CC BY 4.0 license.
+

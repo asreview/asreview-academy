@@ -1,15 +1,7 @@
 ---
-output:
-  html_document: default
-  pdf_document: default
+title: "Introductory exercise on Using ASReview Datatools"
+author: "The ASReview Academy Team"
 ---
-Exercise on Using ASReview Datatools
-================
-The ASReview Academy Team
-
-
-
-<img src="images/Elas_afstudeerhoedje.png" width="50%" style="display: block; margin: auto;" />
 
 ## Introduction
 
@@ -108,7 +100,7 @@ Next, you are going to compose a dataset out of two datasets; a labeled and an u
 
 Furthermore, in case of conflict, you need to determine which label to keep (`-c`). Let's say you want to keep one of the labels, you can do so with the `keep_one` command. By default the hierarchy in determining which label to keep is: relevant, irrelevant, unlabeled.
 
-See the [Datatools README](https://github.com/asreview/asreview-datatools#data-compose-experimental) for other possible arguments.
+See the [Datatools README](https://github.com/asreview/asreview-datatools#data-compose-experimental){target="_blank"} for other possible arguments.
 
 You can compose a dataset with:
 
@@ -134,7 +126,7 @@ asreview data convert data/[name_of_your_data].csv output/[name_of_your_output_f
 
 ## What else?
 
-We introduced some of the datatools, but there are more tools available in the [ASReview Datatools](https://github.com/asreview/asreview-datatools) package.
+We introduced some of the datatools, but there are more tools available in the [ASReview Datatools](https://github.com/asreview/asreview-datatools){target="_blank"} package.
 
 **If you like the functionality of Datatools, don’t forget to give it a
 star on GitHub!**
