@@ -1,5 +1,5 @@
 ---
-title: "Introductory exercise to AI-aided screening using ASReview LAB"
+title: "Introductory exercise to ASReview LAB"
 author: "The ASReview Academy Team"
 ---
 
@@ -12,7 +12,7 @@ You will learn how to install and set up the software, upload data,
 screen records, and export and interpret the results. The exercise will
 guide you through all the steps of AI-aided screening as described in
 the [workflow on
-Read-the-Docs](https://asreview.readthedocs.io/en/latest/about.html#labeling-workflow-with-asreview).
+Read-the-Docs](https://asreview.readthedocs.io/en/latest/about.html#labeling-workflow-with-asreview){target="_blank"}.
 
 Enjoy!
 
@@ -41,7 +41,7 @@ ASReview](https://asreview.nl/download/) on the ASReview-website.
 
 More detailed installation information, troubleshooting, and
 installation on a server or via a Docker are available on
-[ReadTheDocs](https://asreview.readthedocs.io/en/latest/installation.html#install-asreview).  
+[ReadTheDocs](https://asreview.readthedocs.io/en/latest/installation.html#install-asreview){target="_blank"}.  
 
 *Have you installed the latest version of ASReview? You can proceed to
 step 2!*
@@ -79,7 +79,7 @@ using ASReview LAB, even though the interface is in your browser!
 
 You can also run the software via a server, but you need to take care of
 [hosting the server
-yourself](https://asreview.readthedocs.io/en/latest/installation.html#server-installation)
+yourself](https://asreview.readthedocs.io/en/latest/installation.html#server-installation){target="_blank"}
 (or ask your IT-department).
 
 
@@ -119,7 +119,7 @@ dataset - the relevant papers will not be marked; you, the oracle, have
 to make the decisions.
 
 More detailed information about setting up a project can be found on
-[ReadTheDocs](https://asreview.readthedocs.io/en/latest/project_create.html#project-information).
+[ReadTheDocs](https://asreview.readthedocs.io/en/latest/project_create.html#project-information){target="_blank"}.
 
  
 *Have you started creating a new project? If so, you can proceed to step
