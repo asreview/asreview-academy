@@ -1,6 +1,6 @@
 # Open teaching materials
 
-This repository contains a website with open teaching materials for using ASReview. You can find the website [here](https://asreview.github.io/asreview-acadamy/).
+This repository contains a website with open teaching materials for using ASReview. You can find the website [here](https://asreview.github.io/asreview-academy/).
 
 
 - [Introductory exercise to AI-aided screening using ASReview LAB](https://github.com/asreview/asreview-academy/blob/main/ASReviewLAB.qmd)

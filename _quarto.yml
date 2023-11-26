@@ -3,17 +3,17 @@ project:
   output-dir: docs
 
 website:
-  title: "Asreview Acadamy"
+  title: "Asreview Academy"
   favicon: "images/ASReviewLAB/Elas_afstudeerhoedje.png"
 
   sidebar:
    background: "#FDCB25" #5287C6
    logo: "images/ASReviewLAB/Elas_afstudeerhoedje.png"
    pinned: true
-   align: center
+   align: left
    tools:
       - icon: github
-        href: https://github.com/asreview/asreview-acadamy/
+        href: https://github.com/asreview/asreview-academy/
         text: "GitHub organization"
    style: "docked"
    search: true
