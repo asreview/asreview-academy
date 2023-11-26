@@ -13,6 +13,7 @@ website:
    align: left
    tools:
       - icon: github
+        align: left
         href: https://github.com/asreview/asreview-academy/
         text: "GitHub organization"
    style: "docked"
