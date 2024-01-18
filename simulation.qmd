@@ -198,12 +198,17 @@ You can navigate to your folder structure with:
 cd [file_path]
 ```
 
+For MacOS: 
+1. Right-click on created folder.
+2. Click “New Terminal at Folder”.
+Then the data set will be automatically be put into the designated data folder.
+
 3. *Install the synergy-dataset Python package with:*
 
 ``` bash
 pip install synergy-dataset
 ```
-4. *Built the dataset.*     
+4. *Build the dataset.*     
 
 To download and build the SYNERGY dataset, run the following command in the command line:
 
@@ -226,7 +231,7 @@ different models question 2 and 3).
 The parts between the brackets \[ \] need to be filled out by you.
 
 1.  *Open the command prompt, by typing ‘cmd’ (for Windows) or
-    ‘terminal’ (for Apple) in your computer’s search bar;*
+    ‘terminal’ (for MacOS) in your computer’s search bar;*
 
 2.  *Navigate to the folder structure;*
 
@@ -238,6 +243,11 @@ cd [file_path]
 
 The file_path is the path to the folder which you can copy and paste
 from your explorer.
+
+For MacOS: 
+1. Right-click on created folder.
+2. Click “New Terminal at Folder”.
+Then the data set will be automatically be put into the designated data folder.
 
 3.  *Run the simulation;*
 
