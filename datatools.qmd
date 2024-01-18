@@ -71,7 +71,7 @@ Note: if you installed ASReview datatools before, make sure you install the late
 pip install --upgrade asreview-datatools
 ```
 
-Before you are going to write your script, here is a general explaination of how you can get started with ASReview datatools. The parts between the brackets need to be filled out by you when using ASReview Datatools.
+Before you are going to write your script, here is a general explanation of how you can get started with ASReview datatools. The parts between the brackets need to be filled out by you when using ASReview Datatools.
 
 ```bash
 asreview data [name_of_tool]
