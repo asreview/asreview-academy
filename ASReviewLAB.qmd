@@ -130,7 +130,7 @@ More detailed information about setting up a project can be found on
 ### Step 4: The dataset
 
 Now that you have created your ASReview project (woohoo!), you need to set it
-up.Without data, we have nothing to screen. So, you need to tell ELAS
+up. Without data, we have nothing to screen. So, you need to tell ELAS
 which dataset you want to screen for relevant articles.     
 
 Click on the ‘ADD’ button next to ‘Add dataset’. Now a menu appears
