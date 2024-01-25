@@ -27,7 +27,7 @@ in the main folder. This is where you will save the scripts you run.
 Before we get started, we need a dataset that is already labeled. You can use a dataset from the SYNERGY dataset via the synergy-dataset Python package. 
 
 1. *Open the command prompt, by typing ‘cmd’ (for Windows) or
-    ‘terminal’ (for Apple) in your computer’s search bar;* 
+    ‘terminal’ (for MacOS) in your computer’s search bar;* 
     
 2.  *Navigate to the folder structure;*
 
@@ -36,13 +36,17 @@ You can navigate to your folder structure with:
 ``` bash
 cd [file_path]
 ```
+For MacOS: 
+1. Right-click on created folder.
+2. Click “New Terminal at Folder”.
+Then the data set will be automatically be put into the designated data folder.
 
 3. *Install the synergy-dataset Python package with:*
 
 ``` bash
 pip install synergy-dataset
 ```
-4. *Built the dataset.*     
+4. *Build the dataset.*     
 
 To download and build the SYNERGY dataset, run the following command in the command line:
 
@@ -67,7 +71,7 @@ Note: if you installed ASReview datatools before, make sure you install the late
 pip install --upgrade asreview-datatools
 ```
 
-Before you are going to write your script, here is a general explaination of how you can get started with ASReview datatools. The parts between the brackets need to be filled out by you when using ASReview Datatools.
+Before you are going to write your script, here is a general explanation of how you can get started with ASReview datatools. The parts between the brackets need to be filled out by you when using ASReview Datatools.
 
 ```bash
 asreview data [name_of_tool]
@@ -96,7 +100,7 @@ Note: 'data/' is in front of the name of your dataset, since the datasets are st
 
 ### Tool 2: Compose
 
-Next, you are going to compose a dataset out of two datasets; a labeled and an unlabeled dataset. The code starts similary to the code of the Describe tool (`asreview data compose`), but now the output path should always be specified (`output/[name_of_your_output_file.csv]`) and you need to assign a corresponsing proporty to the datasets you want to merge. The labeled dataset you need to assign the argument `-l` and the unlabeled dataset you need to assign a `-u`.
+Next, you are going to compose a dataset out of two datasets; a labeled and an unlabeled dataset. The code starts similarly to the code of the Describe tool (`asreview data compose`), but now the output path should always be specified (`output/[name_of_your_output_file.csv]`) and you need to assign a corresponding property to the datasets you want to merge. To the labeled dataset you need to assign the argument `-l`, and to the unlabeled dataset you need to assign a `-u`.
 
 Furthermore, in case of conflict, you need to determine which label to keep (`-c`). Let's say you want to keep one of the labels, you can do so with the `keep_one` command. By default the hierarchy in determining which label to keep is: relevant, irrelevant, unlabeled.
 
