@@ -102,13 +102,13 @@ bottom right corner.
 
 2.  *Project name;*
 
-Select Exploration Mode, fill out a project name and press ‘NEXT’. Note
+Select Validation Mode, fill out a project name and press ‘NEXT’. Note
 that you can fill out your name and a description as well.
 
 ![](images/ASReviewLAB/Interface3.png){width=95%}
 
-For this exercise we are screening in the so-called ‘Exploration Mode’
-of ASReview. By screening in the [Exploration
+For this exercise we are screening in the so-called ‘Validation Mode’
+of ASReview. By screening in the [Validation
 Mode](https://asreview.readthedocs.io/en/latest/project_create.html#project-modes){target="_blank"},
 we are going to make use of a [benchmark
 dataset](https://asreview.readthedocs.io/en/latest/data_labeled.html#fully-labeled-data){target="_blank"}.
@@ -161,7 +161,7 @@ settings).
 
 When performing a systematic review with your own data, you need to
 provide the prior knowledge yourself (at least one relevant and one
-irrelevant record). However, because you are using the Exploration Mode 
+irrelevant record). However, because you are using the Validation Mode 
 of ASReview, the relevant records are known; the original authors have 
 already read ALL records.
 
@@ -230,7 +230,7 @@ After the project is successfully initialized, you can start reviewing.
 
 Everything is set up and ready to screen, well done!
 
-Since we are in the Exploration Mode of ASReview, you can pretend to be an
+Since we are in the Validation Mode of ASReview, you can pretend to be an
 expert on the topic of PTSD and pretend you have all the knowledge of the
 original screeners. All records in the dataset have been labeled as
 relevant/irrelevant, which is indicated through a banner above each article.
