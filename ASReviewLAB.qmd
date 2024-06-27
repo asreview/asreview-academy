@@ -105,7 +105,7 @@ bottom right corner.
 Select Validation Mode, fill out a project name and press ‘NEXT’. Note
 that you can fill out your name and a description as well.
 
-![](images/ASReviewLAB/Interface3.png){width=95%}
+![](https://raw.githubusercontent.com/asreview/asreview/main/docs/images/setup_project_modes.png){width=95%}
 
 For this exercise we are screening in the so-called ‘Validation Mode’
 of ASReview. By screening in the [Validation
@@ -189,7 +189,7 @@ To add the relevant records, you click on ‘Search’, copy and paste the title
 of these relevant records one by one in the search bar and add them as
 relevant.
 
-![](images/ASReviewLAB/Interface7.png){width=95%}
+![](https://raw.githubusercontent.com/asreview/asreview/main/docs/images/setup_prior_knowledge_random_validate.png){width=95%}
 
 
 After adding all five relevant records, you can add some irrelevant ones
@@ -343,7 +343,7 @@ Some suggestions:
     Github… +1 for open-science!)
 
 
-![](images/ASReviewLAB/card_game.png){width=95%}
+![](https://raw.githubusercontent.com/asreview/asreview/main/docs/images/game.png){width=95%}
 
 [^1]: Wang Z, Nayfeh T, Tetzlaff J, O’Blenis P, Murad MH (2020) Error
     rates of human reviewers during abstract screening in systematic
