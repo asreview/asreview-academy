@@ -28,7 +28,7 @@ you can make it as simple or complicated as you want.
 In this exercise, you will learn how to prepare, run, and interpret the
 results of a simulation yourself. You will first do this using the web
 browser with the click-and-run interface you know from the [first
-exercise](https://github.com/asreview/asreview-academy/tree/main/introducing-ASReview-LAB){target="_blank"}.
+exercise](ASReviewLAB.qmd){target="_blank"}.
 Then you will be guided through the same process in the command-line
 interface, which has more options than the LAB interface. Lastly, you
 will run the same simulations, this time using the Makita package. This

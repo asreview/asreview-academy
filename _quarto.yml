@@ -12,10 +12,9 @@ website:
    pinned: true
    align: left
    tools:
-      - icon: github
-        align: left
-        href: https://github.com/asreview/asreview-academy/
-        text: "GitHub organization"
+     - icon: github
+       href: https://github.com/asreview/asreview-academy/
+       text: "GitHub organization"
    style: "docked"
    search: true
    collapse-level: 1
