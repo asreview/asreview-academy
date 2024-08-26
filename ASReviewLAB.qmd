@@ -48,15 +48,13 @@ step 2!*
 
 ### Step 2: Starting ASReview LAB
 
-To open ASReview LAB in your browser, you need to start it in the
-command prompt (i.e. CMD.exe or Terminal). You can open your command
-prompt by typing ‘cmd’ (for Windows) or ‘terminal’ (for Apple) in your
-computer’s search bar (select ‘Run as administrator’ if you have this
-option).
+To open ASReview LAB in your browser, you need to start it in the terminal. You can 
+open your terminal by typing ‘terminal’ (`cmd` on Windows 10 or lower) in your 
+computer’s search bar (select ‘Run as administrator’ if you have this option).
 
-![](images/ASReviewLAB/step_1.png){width=95%}
+![](images/ASReviewLAB/step_1.png)
 
-The command prompt will open, in which you can type the following
+The terminal will open, in which you can type the following
 command and press enter:
 
 ``` bash
