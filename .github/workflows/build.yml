@@ -1,38 +1,34 @@
-name: Build Quarto Document
-
 on:
   push:
     branches:
       - main
-  pull_request:
-    branches:
-      - main
+
+name: Render and Publish Quarto Site
+
+permissions:
+  contents: write
+  pages: write
 
 jobs:
-  build:
+  build-deploy:
     runs-on: ubuntu-latest
     
     steps:
-    - name: Checkout repository
-      uses: actions/checkout@v4
+      - name: Check out repository
+        uses: actions/checkout@v4
+        
+      - name: Set up Quarto
+        uses: quarto-dev/quarto-actions/setup@v2
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
-    - name: Set up Quarto
-      uses: quarto-dev/quarto-actions/setup@v2
+      - name: Render Quarto project
+        run: |
+          quarto render
 
-    - name: Render Quarto documents
-      run: |
-        quarto render index.qmd --output docs/index.html
-        quarto render simulation.qmd --output docs/simulation.html
-        quarto render datatools.qmd --output docs/datatools.html
-        quarto render ASReviewLAB.qmd --output docs/ASReviewLAB.html
-
-    - name: Commit and push changes
-      run: |
-        git config --global user.name "github-actions[bot]"
-        git config --global user.email "github-actions[bot]@users.noreply.github.com"
-        git add docs/index.html
-        git add docs/simulation.html
-        git add docs/datatools.html
-        git add docs/ASReviewLAB.html
-        git commit -m "Build HTML Files (GitHub Action)"
-        git push
+      - name: Publish to GitHub Pages
+        uses: quarto-dev/quarto-actions/publish@v2
+        with:
+          target: gh-pages
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

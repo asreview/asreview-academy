@@ -1,32 +1,39 @@
-name: Build Quarto Document
+project:
+  type: website
+  output-dir: docs
 
-on:
-  push:
-    branches:
-      - main
-  pull_request:
-    branches:
-      - main
+website:
+  title: "Asreview Academy"
+  favicon: "docs/images/ASReviewLAB/Elas_afstudeerhoedje.png"
 
-jobs:
-  build:
-    runs-on: ubuntu-latest
-    
-    steps:
-    - name: Checkout repository
-      uses: actions/checkout@v4
+  sidebar:
+   background: "#FDCB25" #5287C6
+   logo: "docs/images/ASReviewLAB/Elas_afstudeerhoedje.png"
+   pinned: true
+   align: left
+   tools:
+     - icon: github
+       href: https://github.com/asreview/asreview-academy/
+       text: "GitHub organization"
+   style: "docked"
+   search: true
+   collapse-level: 1
+   contents:
+     - href: index.qmd
+       text: Home
+     # - href: about.qmd
+     #   text: About
+     - section: "Introduction Courses"
+       contents:
+         - href: ASReviewLAB.qmd
+           text: ASReview LAB
+         - href: datatools.qmd
+           text: Datatools
+         - href: simulation.qmd
+           text: Simulation Mode
 
-    - name: Set up Quarto
-      uses: quarto-dev/quarto-actions/setup@v2
-
-    - name: Render Quarto documents
-      run: |
-        quarto render
-
-    - name: Commit and push changes
-      run: |
-        git config --global user.name "github-actions[bot]"
-        git config --global user.email "github-actions[bot]@users.noreply.github.com"
-        git add docs/
-        git commit -m "Build HTML Files (GitHub Action)"
-        git push
+format:
+  html:
+    theme: cosmo
+    css: styles.css
+    toc: true
