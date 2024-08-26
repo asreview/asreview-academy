@@ -54,7 +54,7 @@ prompt by typing ‘cmd’ (for Windows) or ‘terminal’ (for Apple) in your
 computer’s search bar (select ‘Run as administrator’ if you have this
 option).
 
-![](images/ASReviewLAB/CMD1.png){width=95%}
+![](docs/images/ASReviewLAB/step_1.png){width=95%}
 
 The command prompt will open, in which you can type the following
 command and press enter:
@@ -63,7 +63,7 @@ command and press enter:
 asreview lab
 ```
 
-![](images/ASReviewLAB/CMD2.png){width=95%}
+![](docs/images/ASReviewLAB/step_2.png){width=95%}
 
 It takes a few seconds for ELAS - your Electronic Learning Assistant -
 to start the software. It will appear in your (default) web browser. 
@@ -98,14 +98,14 @@ mode](https://asreview.readthedocs.io/en/latest/screening.html#display){target="
 Hover your mouse over the ‘create’ button with the plus sign in the
 bottom right corner.
 
-![](images/ASReviewLAB/Interface2.png){width=95%}
+![](docs/images/ASReviewLAB/step_3.png){width=95%}
 
 2.  *Project name;*
 
 Select Validation Mode, fill out a project name and press ‘NEXT’. Note
 that you can fill out your name and a description as well.
 
-![](https://raw.githubusercontent.com/asreview/asreview/main/docs/images/setup_project_modes.png){width=95%}
+![](docs/images/ASReviewLAB/step_3b){width=95%}
 
 For this exercise we are screening in the so-called ‘Validation Mode’
 of ASReview. By screening in the [Validation
@@ -140,9 +140,9 @@ a benchmark dataset.
 
 Go to the ‘Benchmark datasets’ button, open the first dataset (i.e. the
 Van de Schoot (2017) dataset about PTSD trajectories) and click on
-‘SELECT’. After you select the dataset, click on ‘SAVE’.
+‘ADD’. After you select the dataset, click on ‘SAVE’.
 
-![](images/ASReviewLAB/Interface5.png){width=95%}
+![](docs/images/ASReviewLAB/step_4.png){width=95%}
 
 
 
@@ -172,9 +172,8 @@ Now you will see a menu about selecting prior knowledge.
 
 The following five papers are known to be relevant:
 
--   Latent trajectories of trauma symptoms and resilience: the 3-year
-    longitudinal prospective USPER study of Danish veterans deployed in
-    Afghanistan (DOI: [10.4088/JCP.13m08914](https://doi.org/10.4088/jcp.13m08914){target="_blank"})
+-   Latent Trajectories of Trauma Symptoms and Resilience 
+    (DOI: [10.4088/JCP.13m08914](https://doi.org/10.4088/jcp.13m08914){target="_blank"})
 -   A Latent Growth Mixture Modeling Approach to PTSD Symptoms in Rape
     Victims (DOI: [10.1177/1534765610395627](https://doi.org/10.1177/1534765610395627){target="_blank"})
 -   Peace and War: Trajectories of Posttraumatic Stress Disorder
@@ -189,7 +188,7 @@ To add the relevant records, you click on ‘Search’, copy and paste the title
 of these relevant records one by one in the search bar and add them as
 relevant.
 
-![](https://raw.githubusercontent.com/asreview/asreview/main/docs/images/setup_prior_knowledge_random_validate.png){width=95%}
+![](docs/images/ASReviewLAB/step_5){width=95%}
 
 
 After adding all five relevant records, you can add some irrelevant ones
@@ -220,13 +219,15 @@ Learning?](https://asreview.nl/blog/active-learning-explained/){target="_blank"}
 
 After the project is successfully initialized, you can start reviewing.
 
-![](images/ASReviewLAB/Interface9.png){width=95%}
+![](docs/images/ASReviewLAB/step_6){width=95%}
 
 *Have you finished the setup? If so, you can proceed to step 7!*
 
 ## Screening phase
 
 ### Step 7: Screening the records
+
+![](docs/images/ASReviewLAB/step_7){width=95%}
 
 Everything is set up and ready to screen, well done!
 
@@ -254,7 +255,7 @@ statistics and interpret the corresponding charts, check out the
 [documentation](https://asreview.readthedocs.io/en/latest/progress.html#analytics){target="_blank"}
 on the Analytics page.
 
-The Van de Schoot (2017) dataset contained 43 relevant records in this
+The Van de Schoot (2017) dataset contained 38 relevant records in this
 particular example. Did you get to label all of them as relevant before
 you reached your Stopping Rule? If you did, great!
 
