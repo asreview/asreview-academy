@@ -1,34 +1,32 @@
+name: Build Quarto Document
+
 on:
   push:
     branches:
       - main
-
-name: Render and Publish Quarto Site
-
-permissions:
-  contents: write
-  pages: write
+  pull_request:
+    branches:
+      - main
 
 jobs:
-  build-deploy:
+  build:
     runs-on: ubuntu-latest
     
     steps:
-      - name: Check out repository
-        uses: actions/checkout@v4
-        
-      - name: Set up Quarto
-        uses: quarto-dev/quarto-actions/setup@v2
-        env:
-          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+    - name: Checkout repository
+      uses: actions/checkout@v4
 
-      - name: Render Quarto project
-        run: |
-          quarto render
+    - name: Set up Quarto
+      uses: quarto-dev/quarto-actions/setup@v2
 
-      - name: Publish to GitHub Pages
-        uses: quarto-dev/quarto-actions/publish@v2
-        with:
-          target: gh-pages
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+    - name: Render Quarto documents
+      run: |
+        quarto render
+
+    - name: Commit and push changes
+      run: |
+        git config --global user.name "github-actions[bot]"
+        git config --global user.email "github-actions[bot]@users.noreply.github.com"
+        git add docs/
+        git commit -m "Build HTML Files (GitHub Action)"
+        git push
