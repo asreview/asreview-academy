@@ -10,13 +10,13 @@ permissions:
   pages: write
 
 jobs:
-  build-deploy:
+  build:
     runs-on: ubuntu-latest
-    
+
     steps:
       - name: Check out repository
         uses: actions/checkout@v4
-        
+
       - name: Set up Quarto
         uses: quarto-dev/quarto-actions/setup@v2
         env:
@@ -26,9 +26,8 @@ jobs:
         run: |
           quarto render
 
-      - name: Publish to GitHub Pages
-        uses: quarto-dev/quarto-actions/publish@v2
+      - name: Upload HTML files as artifact
+        uses: actions/upload-artifact@v4
         with:
-          target: gh-pages
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          name: quarto-html-output
+          path: docs/**/*.html
