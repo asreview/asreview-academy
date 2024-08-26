@@ -64,7 +64,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./docs/images/ASReviewLAB/Elas_afstudeerhoedje.png" rel="icon" type="image/png">
+<link href="./images/ASReviewLAB/Elas_afstudeerhoedje.png" rel="icon" type="image/png">
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -130,7 +130,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto">
     <div class="pt-lg-2 mt-2 text-left sidebar-header">
       <a href="./index.html" class="sidebar-logo-link">
-      <img src="./docs/images/ASReviewLAB/Elas_afstudeerhoedje.png" alt="" class="sidebar-logo py-0 d-lg-inline d-none">
+      <img src="./images/ASReviewLAB/Elas_afstudeerhoedje.png" alt="" class="sidebar-logo py-0 d-lg-inline d-none">
       </a>
       <div class="sidebar-tools-main">
     <a href="https://github.com/asreview/asreview-academy/" title="GitHub organization" class="quarto-navigation-tool px-1" aria-label="GitHub organization"><i class="bi bi-github"></i></a>
@@ -267,10 +267,10 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <section id="step-2-starting-asreview-lab" class="level3">
 <h3 class="anchored" data-anchor-id="step-2-starting-asreview-lab">Step 2: Starting ASReview LAB</h3>
 <p>To open ASReview LAB in your browser, you need to start it in the command prompt (i.e.&nbsp;CMD.exe or Terminal). You can open your command prompt by typing ‘cmd’ (for Windows) or ‘terminal’ (for Apple) in your computer’s search bar (select ‘Run as administrator’ if you have this option).</p>
-<p><img src="docs/images/ASReviewLAB/step_1.png" class="img-fluid" style="width:95.0%"></p>
+<p><img src="images/ASReviewLAB/step_1.png" class="img-fluid" style="width:95.0%"></p>
 <p>The command prompt will open, in which you can type the following command and press enter:</p>
 <div class="sourceCode" id="cb1"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="ex">asreview</span> lab</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<p><img src="docs/images/ASReviewLAB/step_2.png" class="img-fluid" style="width:95.0%"></p>
+<p><img src="images/ASReviewLAB/step_2.png" class="img-fluid" style="width:95.0%"></p>
 <p>It takes a few seconds for ELAS - your Electronic Learning Assistant - to start the software. It will appear in your (default) web browser.</p>
 <p>But why do you need to start it up by running code in your command prompt? This ensures that ASReview LAB is run locally. More specifically, <u>your data is and stays your own</u>. Small price to pay for complete privacy, right?! Read more about the key principles in the <a href="https://asreview.nl/blog/the-zen-of-elas/" target="_blank">Zen of Elas</a>!</p>
 <p>Note that you have to keep your command-line interpreter running while using ASReview LAB, even though the interface is in your browser!</p>
@@ -284,12 +284,12 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <li><em>New project;</em></li>
 </ol>
 <p>Hover your mouse over the ‘create’ button with the plus sign in the bottom right corner.</p>
-<p><img src="docs/images/ASReviewLAB/step_3.png" class="img-fluid" style="width:95.0%"></p>
+<p><img src="images/ASReviewLAB/step_3.png" class="img-fluid" style="width:95.0%"></p>
 <ol start="2" type="1">
 <li><em>Project name;</em></li>
 </ol>
 <p>Select Validation Mode, fill out a project name and press ‘NEXT’. Note that you can fill out your name and a description as well.</p>
-<p><img src="docs/images/ASReviewLAB/step_3b.png" class="img-fluid" style="width:95.0%"></p>
+<p><img src="images/ASReviewLAB/step_3b.png" class="img-fluid" style="width:95.0%"></p>
 <p>For this exercise we are screening in the so-called ‘Validation Mode’ of ASReview. By screening in the <a href="https://asreview.readthedocs.io/en/latest/project_create.html#project-modes" target="_blank">Validation Mode</a>, we are going to make use of a <a href="https://asreview.readthedocs.io/en/latest/data_labeled.html#fully-labeled-data" target="_blank">benchmark dataset</a>. This means that all records in the dataset have already been labeled as relevant or irrelevant. This is indicated to the user through a banner above each article. Note that in ‘Oracle Mode’ - when screening your own dataset - the relevant papers will not be marked; you, the oracle, have to make the decisions.</p>
 <p>More detailed information about setting up a project can be found on <a href="https://asreview.readthedocs.io/en/latest/project_create.html#project-information" target="_blank">ReadTheDocs</a>.</p>
 <p><em>Have you started creating a new project? If so, you can proceed to step 4!</em></p>
@@ -302,7 +302,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <p>Now that you have created your ASReview project (woohoo!), you need to set it up. Without data, we have nothing to screen. So, you need to tell ELAS which dataset you want to screen for relevant articles.</p>
 <p>Click on the ‘ADD’ button next to ‘Add dataset’. Now a menu appears where you can choose how to load the dataset. You can add your dataset by selecting a file or providing an URL. For this exercise, we will use a benchmark dataset.</p>
 <p>Go to the ‘Benchmark datasets’ button, open the first dataset (i.e.&nbsp;the Van de Schoot (2017) dataset about PTSD trajectories) and click on ‘ADD’. After you select the dataset, click on ‘SAVE’.</p>
-<p><img src="docs/images/ASReviewLAB/step_4.png" class="img-fluid" style="width:95.0%"></p>
+<p><img src="images/ASReviewLAB/step_4.png" class="img-fluid" style="width:95.0%"></p>
 <p><em>Have you successfully selected/uploaded the dataset? If so, you can proceed to step 5!</em></p>
 </section>
 <section id="step-5-prior-knowledge" class="level3">
@@ -319,7 +319,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <li>Trajectories of trauma symptoms and resilience in deployed US military service members: Prospective cohort study (DOI: <a href="https://doi.org/10.1192/bjp.bp.111.096552" target="_blank">10.1192/bjp.bp.111.096552</a>)</li>
 </ul>
 <p>To add the relevant records, you click on ‘Search’, copy and paste the titles of these relevant records one by one in the search bar and add them as relevant.</p>
-<p><img src="docs/images/ASReviewLAB/step_5.png" class="img-fluid" style="width:95.0%"></p>
+<p><img src="images/ASReviewLAB/step_5.png" class="img-fluid" style="width:95.0%"></p>
 <p>After adding all five relevant records, you can add some irrelevant ones by clicking the ‘Random’ button (use the arrow in the upper left corner to be able to select this button) and by changing ‘relevant’ to ‘irrelevant’. Select five irrelevant records and click on ‘CLOSE’.</p>
 <p><em>Have you selected five relevant and five irrelevant records? If so, you can proceed to step 6!</em></p>
 </section>
@@ -328,7 +328,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <p>The last step to complete the setup is to select the active learning model you want to use. The default settings (i.e.&nbsp;Naïve Bayes, Max and tf-idf) will suffice for this exercise. If you want to change the mode, read which options are <a href="https://asreview.readthedocs.io/en/latest/project_create.html#model" target="_blank">built-in</a> or add your own model via a <a href="https://github.com/asreview/template-extension-new-model" target="_blank">template</a>.</p>
 <p>You can click on ‘NEXT’. A menu with the defaults will appear. Since we are using the defaults, you can click on ‘NEXT’ again. In the last step of the setup, ASReview LAB runs the feature extractor, trains a model, and ranks the records in your dataset. Depending on the model and the size of your dataset, this can take a couple of minutes (meanwhile, you can enjoy the animation video or read the blog post on <a href="https://asreview.nl/blog/active-learning-explained/" target="_blank">What is Active Learning?</a>).</p>
 <p>After the project is successfully initialized, you can start reviewing.</p>
-<p><img src="docs/images/ASReviewLAB/step_6.png" class="img-fluid" style="width:95.0%"></p>
+<p><img src="images/ASReviewLAB/step_6.png" class="img-fluid" style="width:95.0%"></p>
 <p><em>Have you finished the setup? If so, you can proceed to step 7!</em></p>
 </section>
 </section>
@@ -336,7 +336,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <h2 class="anchored" data-anchor-id="screening-phase">Screening phase</h2>
 <section id="step-7-screening-the-records" class="level3">
 <h3 class="anchored" data-anchor-id="step-7-screening-the-records">Step 7: Screening the records</h3>
-<p><img src="docs/images/ASReviewLAB/step_7.png" class="img-fluid" style="width:95.0%"></p>
+<p><img src="images/ASReviewLAB/step_7.png" class="img-fluid" style="width:95.0%"></p>
 <p>Everything is set up and ready to screen, well done!</p>
 <p>Since we are in the Validation Mode of ASReview, you can pretend to be an expert on the topic of PTSD and pretend you have all the knowledge of the original screeners. All records in the dataset have been labeled as relevant/irrelevant, which is indicated through a banner above each article. Click on the heart shaped Relevant button if the record is marked as relevant. If not, you can press the Irrelevant button.</p>
 <p>Now, all we need is a Stopping Rule to determine when you are confident that you have identified (almost) all relevant records in your dataset. For this exercise, continue screening records until you have marked <em>50 consecutive records as irrelevant</em>. You can check up on your progress in the <a href="https://asreview.readthedocs.io/en/latest/progress.html" target="_blank">Analytics page</a>.</p>
