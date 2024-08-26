@@ -32,12 +32,22 @@ jobs:
           name: quarto-html-output
           path: docs/**/*.html
 
-      - name: Commit and push changes
+      - name: Commit and push specific files
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
-          git add docs/  # Add the rendered HTML files from the docs directory
-          git commit -m "Update rendered HTML files"
-          git push origin your-branch-name  # Push the changes back to the current branch
+          
+          git add LICENSE.md
+          git add simulation.qmd
+          git add ASReviewLAB.qmd
+          git add datatools.qmd
+          git add index.qmd
+          
+          if git diff --cached --quiet; then
+            echo "No changes to commit."
+          else
+            git commit -m "Update Quarto files"
+            git push origin main
+          fi
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}  # Use the token to push changes
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
