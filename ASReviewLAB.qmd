@@ -50,7 +50,7 @@ step 2!*
 
 To open ASReview LAB in your browser, you need to start it in the terminal. You can 
 open your terminal by typing ‘`terminal`’ (`cmd` on Windows 10 or lower) in your 
-computer`’s search bar (select ‘`Run as administrator`’ if you have this option).
+computer`s search bar (select ‘`Run as administrator`’ if you have this option).
 
 ![](images/ASReviewLAB/step_1.png)
 
@@ -319,7 +319,7 @@ Do you like the software, leave a star on
 [Github](https://github.com/asreview/asreview){target="_blank"}; this will help to
 increase the visibility of the open-source project.
 
-## What`’s next?
+## What’s next?
 
 Some suggestions:
 
@@ -344,7 +344,7 @@ Some suggestions:
 
 ![](https://raw.githubusercontent.com/asreview/asreview/main/docs/images/game.png){width=95%}
 
-[^1]: Wang Z, Nayfeh T, Tetzlaff J, O`’Blenis P, Murad MH (2020) Error
+[^1]: Wang Z, Nayfeh T, Tetzlaff J, O’Blenis P, Murad MH (2020) Error
     rates of human reviewers during abstract screening in systematic
     reviews. PLOS ONE 15(1): e0227742.
     <[https://doi.org/10.1371/journal.pone.0227742](https://doi.org/10.1371/journal.pone.0227742){target="_blank"}>
