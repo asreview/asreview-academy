@@ -26,9 +26,9 @@ jobs:
         run: |
           quarto render
 
-      - name: Copy static assets to docs
+      - name: Copy static assets to public folder
         run: |
-          cp -R images/* docs/images/  # Copies all static assets (including images) to the docs folder
+          cp -R images/* public/images/
 
       - name: Upload HTML files as artifact
         uses: actions/upload-artifact@v4
@@ -46,7 +46,7 @@ jobs:
           git add public/ASReviewLAB.html
           git add public/datatools.html
 
-          git add docs/images/
+          git add public/images/
           
           if git diff --cached --quiet; then
             echo "No changes to commit."
