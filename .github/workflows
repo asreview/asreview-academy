@@ -1,0 +1,35 @@
+name: Build Quarto Document
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v4
+
+    - name: Set up Quarto
+      uses: quarto-dev/quarto-actions/setup@v2
+
+    - name: Render Quarto documents
+      run: |
+        quarto render index.qmd --output docs/index.html
+        quarto render simulation.qmd --output docs/simulation.html
+        quarto render datatools.qmd --output docs/datatools.html
+        quarto render ASReviewLAB.qmd --output docs/ASReviewLAB.html
+
+    - name: Commit and push changes
+      run: |
+        git config --global user.name "github-actions[bot]"
+        git config --global user.email "github-actions[bot]@users.noreply.github.com"
+        git add docs/ASReviewLAB.html
+        git commit -m "Update ASReviewLAB.html"
+        git push
