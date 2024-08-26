@@ -105,7 +105,7 @@ bottom right corner.
 Select Validation Mode, fill out a project name and press ‘NEXT’. Note
 that you can fill out your name and a description as well.
 
-![](images/ASReviewLAB/step_3b){width=95%}
+![](images/ASReviewLAB/step_3b.png){width=95%}
 
 For this exercise we are screening in the so-called ‘Validation Mode’
 of ASReview. By screening in the [Validation
@@ -188,7 +188,7 @@ To add the relevant records, you click on ‘Search’, copy and paste the title
 of these relevant records one by one in the search bar and add them as
 relevant.
 
-![](images/ASReviewLAB/step_5){width=95%}
+![](images/ASReviewLAB/step_5.png){width=95%}
 
 
 After adding all five relevant records, you can add some irrelevant ones
@@ -219,7 +219,7 @@ Learning?](https://asreview.nl/blog/active-learning-explained/){target="_blank"}
 
 After the project is successfully initialized, you can start reviewing.
 
-![](images/ASReviewLAB/step_6){width=95%}
+![](images/ASReviewLAB/step_6.png){width=95%}
 
 *Have you finished the setup? If so, you can proceed to step 7!*
 
@@ -227,7 +227,7 @@ After the project is successfully initialized, you can start reviewing.
 
 ### Step 7: Screening the records
 
-![](images/ASReviewLAB/step_7){width=95%}
+![](images/ASReviewLAB/step_7.png){width=95%}
 
 Everything is set up and ready to screen, well done!
 
