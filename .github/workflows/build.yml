@@ -37,11 +37,11 @@ jobs:
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
           
-          git add LICENSE.md
-          git add simulation.qmd
-          git add ASReviewLAB.qmd
-          git add datatools.qmd
-          git add index.qmd
+          git add LICENSE.html
+          git add docs/index.html
+          git add docs/simulation.html
+          git add docs/ASReviewLAB.html
+          git add docs/datatools.html
           
           if git diff --cached --quiet; then
             echo "No changes to commit."
