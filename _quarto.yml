@@ -4,11 +4,11 @@ project:
 
 website:
   title: "Asreview Academy"
-  favicon: "docs/images/ASReviewLAB/Elas_afstudeerhoedje.png"
+  favicon: "images/ASReviewLAB/Elas_afstudeerhoedje.png"
 
   sidebar:
    background: "#FDCB25" #5287C6
-   logo: "docs/images/ASReviewLAB/Elas_afstudeerhoedje.png"
+   logo: "images/ASReviewLAB/Elas_afstudeerhoedje.png"
    pinned: true
    align: left
    tools:

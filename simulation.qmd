@@ -37,7 +37,7 @@ simulation studies.
 
 Enjoy!
 
-![Example of what the output of multiple simulation studies can look like. This shows the recall curves for the first 4K records (out of &gt;50K) for 10 simulation runs, each with a different model configuration, so you can compare their performance on any given dataset at a glance. Source: Teijema, J., Hofstee, L., Brouwer, M., de Bruin, J., Ferdinands, G., de Boer, J., … Bagheri, A. (2022, July 15). Active learning-based Systematic reviewing using switching classification models: the case of the onset, maintenance, and relapse of depressive disorders. https://doi.org/10.31234/osf.io/t7bpd" ](docs/images/Simulation/RecallCurves.png){width=95%}
+![Example of what the output of multiple simulation studies can look like. This shows the recall curves for the first 4K records (out of &gt;50K) for 10 simulation runs, each with a different model configuration, so you can compare their performance on any given dataset at a glance. Source: Teijema, J., Hofstee, L., Brouwer, M., de Bruin, J., Ferdinands, G., de Boer, J., … Bagheri, A. (2022, July 15). Active learning-based Systematic reviewing using switching classification models: the case of the onset, maintenance, and relapse of depressive disorders. https://doi.org/10.31234/osf.io/t7bpd" ](images/Simulation/RecallCurves.png){width=95%}
 
 
 ## Conducting a simulation via the web browser
@@ -180,7 +180,7 @@ or Text Edit (on Mac/OS) to create an empty text file called `jobs.txt`
 in the main folder. This is where you will save the scripts you run. See
 the example below:
 
-![](docs/images/Simulation/Folderstructure.png){width=95%}
+![](images/Simulation/Folderstructure.png){width=95%}
 
 
 ### Step 3: Choose a dataset
@@ -308,7 +308,7 @@ The plot file will appear in your output folder. Inspect the recall
 curve from the asreview-insights extension. It should look something
 like the figure below.
 
-![](docs/images/Simulation/Example_recall_curve.png){width=95%}
+![](images/Simulation/Example_recall_curve.png){width=95%}
 
 You can get the metrics with:
 
