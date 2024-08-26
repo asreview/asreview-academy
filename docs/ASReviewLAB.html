@@ -2,13 +2,13 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.4.90">
+<meta name="generator" content="quarto-1.5.56">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="The ASReview Academy Team">
 
-<title>Asreview Academy - Introductory exercise to ASReview LAB</title>
+<title>Introductory exercise to ASReview LAB – Asreview Academy</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -23,7 +23,7 @@ ul.task-list li input[type="checkbox"] {
 }
 /* CSS for syntax highlighting */
 pre > code.sourceCode { white-space: pre; position: relative; }
-pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span { line-height: 1.25; }
 pre > code.sourceCode > span:empty { height: 1.2em; }
 .sourceCode { overflow: visible; }
 code.sourceCode > span { color: inherit; text-decoration: inherit; }
@@ -34,7 +34,7 @@ div.sourceCode { overflow: auto; }
 }
 @media print {
 pre > code.sourceCode { white-space: pre-wrap; }
-pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
 }
 pre.numberSource code
   { counter-reset: source-line 0; }
@@ -80,7 +80,13 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   "collapse-after": 3,
   "panel-placement": "start",
   "type": "textbox",
-  "limit": 20,
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
   "language": {
     "search-no-results-text": "No results",
     "search-matching-documents-text": "matching documents",
@@ -89,6 +95,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     "search-more-match-text": "more match in this document",
     "search-more-matches-text": "more matches in this document",
     "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
     "search-detached-cancel-button-title": "Cancel",
     "search-submit-button-title": "Submit",
     "search-label": "Search"
@@ -105,13 +112,13 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   <header id="quarto-header" class="headroom fixed-top">
   <nav class="quarto-secondary-nav">
     <div class="container-fluid d-flex">
-      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./ASReviewLAB.html">Introduction Courses</a></li><li class="breadcrumb-item"><a href="./ASReviewLAB.html">ASReview LAB</a></li></ol></nav>
-      <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
-      </a>
-      <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./ASReviewLAB.html">Introduction Courses</a></li><li class="breadcrumb-item"><a href="./ASReviewLAB.html">ASReview LAB</a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+      <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
         <i class="bi bi-search"></i>
       </button>
     </div>
@@ -120,7 +127,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <!-- content -->
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
 <!-- sidebar -->
-  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal sidebar-navigation docked overflow-auto">
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto">
     <div class="pt-lg-2 mt-2 text-left sidebar-header">
       <a href="./index.html" class="sidebar-logo-link">
       <img src="./docs/images/ASReviewLAB/Elas_afstudeerhoedje.png" alt="" class="sidebar-logo py-0 d-lg-inline d-none">
@@ -144,9 +151,9 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true">
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true">
  <span class="menu-text">Introduction Courses</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true" aria-label="Toggle section">
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
@@ -174,7 +181,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     </ul>
     </div>
 </nav>
-<div id="quarto-sidebar-glass" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass"></div>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
         <nav id="TOC" role="doc-toc" class="toc-active">
@@ -208,7 +215,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default">
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./ASReviewLAB.html">Introduction Courses</a></li><li class="breadcrumb-item"><a href="./ASReviewLAB.html">ASReview LAB</a></li></ol></nav>
 <div class="quarto-title">
 <h1 class="title">Introductory exercise to ASReview LAB</h1>
 </div>
@@ -229,7 +236,9 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   </div>
   
 
+
 </header>
+
 
 <section id="introduction-to-the-software-asreview-lab" class="level2">
 <h2 class="anchored" data-anchor-id="introduction-to-the-software-asreview-lab">Introduction to the software ASReview LAB</h2>
@@ -258,10 +267,10 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <section id="step-2-starting-asreview-lab" class="level3">
 <h3 class="anchored" data-anchor-id="step-2-starting-asreview-lab">Step 2: Starting ASReview LAB</h3>
 <p>To open ASReview LAB in your browser, you need to start it in the command prompt (i.e.&nbsp;CMD.exe or Terminal). You can open your command prompt by typing ‘cmd’ (for Windows) or ‘terminal’ (for Apple) in your computer’s search bar (select ‘Run as administrator’ if you have this option).</p>
-<p><img src="images/ASReviewLAB/CMD1.png" class="img-fluid" style="width:95.0%"></p>
+<p><img src="docs/images/ASReviewLAB/step_1.png" class="img-fluid" style="width:95.0%"></p>
 <p>The command prompt will open, in which you can type the following command and press enter:</p>
 <div class="sourceCode" id="cb1"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="ex">asreview</span> lab</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<p><img src="images/ASReviewLAB/CMD2.png" class="img-fluid" style="width:95.0%"></p>
+<p><img src="docs/images/ASReviewLAB/step_2.png" class="img-fluid" style="width:95.0%"></p>
 <p>It takes a few seconds for ELAS - your Electronic Learning Assistant - to start the software. It will appear in your (default) web browser.</p>
 <p>But why do you need to start it up by running code in your command prompt? This ensures that ASReview LAB is run locally. More specifically, <u>your data is and stays your own</u>. Small price to pay for complete privacy, right?! Read more about the key principles in the <a href="https://asreview.nl/blog/the-zen-of-elas/" target="_blank">Zen of Elas</a>!</p>
 <p>Note that you have to keep your command-line interpreter running while using ASReview LAB, even though the interface is in your browser!</p>
@@ -275,12 +284,12 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <li><em>New project;</em></li>
 </ol>
 <p>Hover your mouse over the ‘create’ button with the plus sign in the bottom right corner.</p>
-<p><img src="images/ASReviewLAB/Interface2.png" class="img-fluid" style="width:95.0%"></p>
+<p><img src="docs/images/ASReviewLAB/step_3.png" class="img-fluid" style="width:95.0%"></p>
 <ol start="2" type="1">
 <li><em>Project name;</em></li>
 </ol>
 <p>Select Validation Mode, fill out a project name and press ‘NEXT’. Note that you can fill out your name and a description as well.</p>
-<p><img src="https://raw.githubusercontent.com/asreview/asreview/main/docs/images/setup_project_modes.png" class="img-fluid" style="width:95.0%"></p>
+<p><img src="docs/images/ASReviewLAB/step_3b.png" class="img-fluid" style="width:95.0%"></p>
 <p>For this exercise we are screening in the so-called ‘Validation Mode’ of ASReview. By screening in the <a href="https://asreview.readthedocs.io/en/latest/project_create.html#project-modes" target="_blank">Validation Mode</a>, we are going to make use of a <a href="https://asreview.readthedocs.io/en/latest/data_labeled.html#fully-labeled-data" target="_blank">benchmark dataset</a>. This means that all records in the dataset have already been labeled as relevant or irrelevant. This is indicated to the user through a banner above each article. Note that in ‘Oracle Mode’ - when screening your own dataset - the relevant papers will not be marked; you, the oracle, have to make the decisions.</p>
 <p>More detailed information about setting up a project can be found on <a href="https://asreview.readthedocs.io/en/latest/project_create.html#project-information" target="_blank">ReadTheDocs</a>.</p>
 <p><em>Have you started creating a new project? If so, you can proceed to step 4!</em></p>
@@ -292,8 +301,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <h3 class="anchored" data-anchor-id="step-4-the-dataset">Step 4: The dataset</h3>
 <p>Now that you have created your ASReview project (woohoo!), you need to set it up. Without data, we have nothing to screen. So, you need to tell ELAS which dataset you want to screen for relevant articles.</p>
 <p>Click on the ‘ADD’ button next to ‘Add dataset’. Now a menu appears where you can choose how to load the dataset. You can add your dataset by selecting a file or providing an URL. For this exercise, we will use a benchmark dataset.</p>
-<p>Go to the ‘Benchmark datasets’ button, open the first dataset (i.e.&nbsp;the Van de Schoot (2017) dataset about PTSD trajectories) and click on ‘SELECT’. After you select the dataset, click on ‘SAVE’.</p>
-<p><img src="images/ASReviewLAB/Interface5.png" class="img-fluid" style="width:95.0%"></p>
+<p>Go to the ‘Benchmark datasets’ button, open the first dataset (i.e.&nbsp;the Van de Schoot (2017) dataset about PTSD trajectories) and click on ‘ADD’. After you select the dataset, click on ‘SAVE’.</p>
+<p><img src="docs/images/ASReviewLAB/step_4.png" class="img-fluid" style="width:95.0%"></p>
 <p><em>Have you successfully selected/uploaded the dataset? If so, you can proceed to step 5!</em></p>
 </section>
 <section id="step-5-prior-knowledge" class="level3">
@@ -303,14 +312,14 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <p>To select the prior knowledge you first need to click on the ‘ADD’ button next to ‘Add prior knowledge’; see also the documentation about the selection of <a href="https://asreview.readthedocs.io/en/latest/project_create.html#select-prior-knowledge" target="_blank">prior knowledge</a>. Now you will see a menu about selecting prior knowledge.</p>
 <p>The following five papers are known to be relevant:</p>
 <ul>
-<li>Latent trajectories of trauma symptoms and resilience: the 3-year longitudinal prospective USPER study of Danish veterans deployed in Afghanistan (DOI: <a href="https://doi.org/10.4088/jcp.13m08914" target="_blank">10.4088/JCP.13m08914</a>)</li>
+<li>Latent Trajectories of Trauma Symptoms and Resilience (DOI: <a href="https://doi.org/10.4088/jcp.13m08914" target="_blank">10.4088/JCP.13m08914</a>)</li>
 <li>A Latent Growth Mixture Modeling Approach to PTSD Symptoms in Rape Victims (DOI: <a href="https://doi.org/10.1177/1534765610395627" target="_blank">10.1177/1534765610395627</a>)</li>
 <li>Peace and War: Trajectories of Posttraumatic Stress Disorder Symptoms Before, During, and After Military Deployment in Afghanistan (DOI: <a href="https://doi.org/10.1177/0956797612457389" target="_blank">10.1177/0956797612457389</a>)</li>
 <li>The relationship between course of PTSD symptoms in deployed U.S. Marines and degree of combat exposure (DOI: <a href="https://doi.org/10.1002/jts.21988" target="_blank">10.1002/jts.21988</a>)</li>
 <li>Trajectories of trauma symptoms and resilience in deployed US military service members: Prospective cohort study (DOI: <a href="https://doi.org/10.1192/bjp.bp.111.096552" target="_blank">10.1192/bjp.bp.111.096552</a>)</li>
 </ul>
 <p>To add the relevant records, you click on ‘Search’, copy and paste the titles of these relevant records one by one in the search bar and add them as relevant.</p>
-<p><img src="https://raw.githubusercontent.com/asreview/asreview/main/docs/images/setup_prior_knowledge_random_validate.png" class="img-fluid" style="width:95.0%"></p>
+<p><img src="docs/images/ASReviewLAB/step_5.png" class="img-fluid" style="width:95.0%"></p>
 <p>After adding all five relevant records, you can add some irrelevant ones by clicking the ‘Random’ button (use the arrow in the upper left corner to be able to select this button) and by changing ‘relevant’ to ‘irrelevant’. Select five irrelevant records and click on ‘CLOSE’.</p>
 <p><em>Have you selected five relevant and five irrelevant records? If so, you can proceed to step 6!</em></p>
 </section>
@@ -319,7 +328,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <p>The last step to complete the setup is to select the active learning model you want to use. The default settings (i.e.&nbsp;Naïve Bayes, Max and tf-idf) will suffice for this exercise. If you want to change the mode, read which options are <a href="https://asreview.readthedocs.io/en/latest/project_create.html#model" target="_blank">built-in</a> or add your own model via a <a href="https://github.com/asreview/template-extension-new-model" target="_blank">template</a>.</p>
 <p>You can click on ‘NEXT’. A menu with the defaults will appear. Since we are using the defaults, you can click on ‘NEXT’ again. In the last step of the setup, ASReview LAB runs the feature extractor, trains a model, and ranks the records in your dataset. Depending on the model and the size of your dataset, this can take a couple of minutes (meanwhile, you can enjoy the animation video or read the blog post on <a href="https://asreview.nl/blog/active-learning-explained/" target="_blank">What is Active Learning?</a>).</p>
 <p>After the project is successfully initialized, you can start reviewing.</p>
-<p><img src="images/ASReviewLAB/Interface9.png" class="img-fluid" style="width:95.0%"></p>
+<p><img src="docs/images/ASReviewLAB/step_6.png" class="img-fluid" style="width:95.0%"></p>
 <p><em>Have you finished the setup? If so, you can proceed to step 7!</em></p>
 </section>
 </section>
@@ -327,11 +336,12 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <h2 class="anchored" data-anchor-id="screening-phase">Screening phase</h2>
 <section id="step-7-screening-the-records" class="level3">
 <h3 class="anchored" data-anchor-id="step-7-screening-the-records">Step 7: Screening the records</h3>
+<p><img src="docs/images/ASReviewLAB/step_7.png" class="img-fluid" style="width:95.0%"></p>
 <p>Everything is set up and ready to screen, well done!</p>
 <p>Since we are in the Validation Mode of ASReview, you can pretend to be an expert on the topic of PTSD and pretend you have all the knowledge of the original screeners. All records in the dataset have been labeled as relevant/irrelevant, which is indicated through a banner above each article. Click on the heart shaped Relevant button if the record is marked as relevant. If not, you can press the Irrelevant button.</p>
 <p>Now, all we need is a Stopping Rule to determine when you are confident that you have identified (almost) all relevant records in your dataset. For this exercise, continue screening records until you have marked <em>50 consecutive records as irrelevant</em>. You can check up on your progress in the <a href="https://asreview.readthedocs.io/en/latest/progress.html" target="_blank">Analytics page</a>.</p>
 <p>When you have reached your Stopping Rule and you are done screening, go back to the Analytics page. Here you can see the summary statistics of your project such as the number of records you have labeled relevant or irrelevant. It also shows how many records are in your dataset and how many records you labeled irrelevant since you have screened the last relevant record. For more information about how to read these summary statistics and interpret the corresponding charts, check out the <a href="https://asreview.readthedocs.io/en/latest/progress.html#analytics" target="_blank">documentation</a> on the Analytics page.</p>
-<p>The Van de Schoot (2017) dataset contained 43 relevant records in this particular example. Did you get to label all of them as relevant before you reached your Stopping Rule? If you did, great!</p>
+<p>The Van de Schoot (2017) dataset contained 38 relevant records in this particular example. Did you get to label all of them as relevant before you reached your Stopping Rule? If you did, great!</p>
 <p>What is the percentage of total papers you needed to screen to find the number of relevant records you have found? Is it &lt;100%? Then, you were quicker compared to the original screeners of the dataset!</p>
 <p>You probably had to screen about only 2-3% of the data. Amazing right?! Chances are though that you did not get to see a couple of relevant records before you stopped screening. Do you think this is acceptable? There is a trade-off between the time spent screening and the error rate: the more records you screen, the lower the risk of missing a relevant record. However, screening all records in your dataset is still no guarantee for an error rate of zero, since even traditional screening by humans - which is the gold standard to which we compare AI-assisted screening - is not perfect <a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a>.</p>
 <p>Your willingness to accept the risk that you may exclude some relevant records is something to take into account when deciding on a Stopping Rule. Read more about Stopping Rules and how to decide on a good strategy for your data on the <a href="https://github.com/asreview/asreview/discussions" target="_blank">discussion platform</a>.</p>
@@ -368,14 +378,14 @@ Do you like the software, leave a star on <a href="https://github.com/asreview/a
 
 
 </section>
-<aside id="footnotes" class="footnotes footnotes-end-of-document" role="doc-endnotes">
-<hr>
+
+
+<div id="quarto-appendix" class="default"><section id="footnotes" class="footnotes footnotes-end-of-document" role="doc-endnotes"><h2 class="anchored quarto-appendix-heading">Footnotes</h2>
+
 <ol>
 <li id="fn1"><p>Wang Z, Nayfeh T, Tetzlaff J, O’Blenis P, Murad MH (2020) Error rates of human reviewers during abstract screening in systematic reviews. PLOS ONE 15(1): e0227742. &lt;<a href="https://doi.org/10.1371/journal.pone.0227742" target="_blank">https://doi.org/10.1371/journal.pone.0227742</a>&gt;<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
 </ol>
-</aside>
-
-</main> <!-- /main -->
+</section></div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
@@ -411,18 +421,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     }
     return false;
   }
-  const clipboard = new window.ClipboardJS('.code-copy-button', {
-    text: function(trigger) {
-      const codeEl = trigger.previousElementSibling.cloneNode(true);
-      for (const childEl of codeEl.children) {
-        if (isCodeAnnotation(childEl)) {
-          childEl.remove();
-        }
-      }
-      return codeEl.innerText;
-    }
-  });
-  clipboard.on('success', function(e) {
+  const onCopySuccess = function(e) {
     // button target
     const button = e.trigger;
     // don't keep focus
@@ -454,7 +453,47 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     }, 1000);
     // clear code selection
     e.clearSelection();
+  }
+  const getTextToCopy = function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+    text: getTextToCopy
   });
+  clipboard.on('success', onCopySuccess);
+  if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+    // For code content inside modals, clipBoardJS needs to be initialized with a container option
+    // TODO: Check when it could be a function (https://github.com/zenorocha/clipboard.js/issues/860)
+    const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+      text: getTextToCopy,
+      container: window.document.getElementById('quarto-embedded-source-code-modal')
+    });
+    clipboardModal.on('success', onCopySuccess);
+  }
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+    var mailtoRegex = new RegExp(/^mailto:/);
+      var filterRegex = new RegExp('/' + window.location.host + '/');
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+        // undo the damage that might have been done by quarto-nav.js in the case of
+        // links that we want to consider external
+        if (link.dataset.originalHref !== undefined) {
+          link.href = link.dataset.originalHref;
+        }
+      }
+    }
   function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
     const config = {
       allowHTML: true,
@@ -489,24 +528,64 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       try { href = new URL(href).hash; } catch {}
       const id = href.replace(/^#\/?/, "");
       const note = window.document.getElementById(id);
-      return note.innerHTML;
+      if (note) {
+        return note.innerHTML;
+      } else {
+        return "";
+      }
     });
   }
   const xrefs = window.document.querySelectorAll('a.quarto-xref');
   const processXRef = (id, note) => {
-    if (id.startsWith('sec-')) {
+    // Strip column container classes
+    const stripColumnClz = (el) => {
+      el.classList.remove("page-full", "page-columns");
+      if (el.children) {
+        for (const child of el.children) {
+          stripColumnClz(child);
+        }
+      }
+    }
+    stripColumnClz(note)
+    if (id === null || id.startsWith('sec-')) {
       // Special case sections, only their first couple elements
       const container = document.createElement("div");
       if (note.children && note.children.length > 2) {
-        for (let i = 0; i < 2; i++) {
-          container.appendChild(note.children[i].cloneNode(true));
+        container.appendChild(note.children[0].cloneNode(true));
+        for (let i = 1; i < note.children.length; i++) {
+          const child = note.children[i];
+          if (child.tagName === "P" && child.innerText === "") {
+            continue;
+          } else {
+            container.appendChild(child.cloneNode(true));
+            break;
+          }
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(container);
         }
         return container.innerHTML
       } else {
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
         return note.innerHTML;
       }
     } else {
-      return note.innerHTML;
+      // Remove any anchor links if they are present
+      const anchorLink = note.querySelector('a.anchorjs-link');
+      if (anchorLink) {
+        anchorLink.remove();
+      }
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(note);
+      }
+      // TODO in 1.5, we should make sure this works without a callout special case
+      if (note.classList.contains("callout")) {
+        return note.outerHTML;
+      } else {
+        return note.innerHTML;
+      }
     }
   }
   for (var i=0; i<xrefs.length; i++) {
@@ -515,28 +594,56 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       instance.disable();
       let url = xref.getAttribute('href');
       let hash = undefined; 
-      try { hash = new URL(url).hash; } catch {}
-      const id = hash.replace(/^#\/?/, "");
-      const note = window.document.getElementById(id);
-      if (note !== null) {
-        try {
-          const html = processXRef(id, note);
-          instance.setContent(html);
-        } finally {
-          instance.enable();
-          instance.show();
+      if (url.startsWith('#')) {
+        hash = url;
+      } else {
+        try { hash = new URL(url).hash; } catch {}
+      }
+      if (hash) {
+        const id = hash.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note !== null) {
+          try {
+            const html = processXRef(id, note.cloneNode(true));
+            instance.setContent(html);
+          } finally {
+            instance.enable();
+            instance.show();
+          }
+        } else {
+          // See if we can fetch this
+          fetch(url.split('#')[0])
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.getElementById(id);
+            if (note !== null) {
+              const html = processXRef(id, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
         }
       } else {
-        // See if we can fetch this
-        fetch(url.split('#')[0])
+        // See if we can fetch a full url (with no hash to target)
+        // This is a special case and we should probably do some content thinning / targeting
+        fetch(url)
         .then(res => res.text())
         .then(html => {
           const parser = new DOMParser();
           const htmlDoc = parser.parseFromString(html, "text/html");
-          const note = htmlDoc.getElementById(id);
-          console.log(htmlDoc.body.innerHTML);
+          const note = htmlDoc.querySelector('main.content');
           if (note !== null) {
-            const html = processXRef(id, note);
+            // This should only happen for chapter cross references
+            // (since there is no id in the URL)
+            // remove the first header
+            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+              note.children[0].remove();
+            }
+            const html = processXRef(null, note);
             instance.setContent(html);
           } 
         }).finally(() => {
@@ -588,6 +695,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
             }
             div.style.top = top - 2 + "px";
             div.style.height = height + 4 + "px";
+            div.style.left = 0;
             let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
             if (gutterDiv === null) {
               gutterDiv = window.document.createElement("div");
@@ -613,6 +721,32 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
         });
         selectedAnnoteEl = undefined;
       };
+        // Handle positioning of the toggle
+    window.addEventListener(
+      "resize",
+      throttle(() => {
+        elRect = undefined;
+        if (selectedAnnoteEl) {
+          selectCodeLines(selectedAnnoteEl);
+        }
+      }, 10)
+    );
+    function throttle(fn, ms) {
+    let throttle = false;
+    let timer;
+      return (...args) => {
+        if(!throttle) { // first call gets through
+            fn.apply(this, args);
+            throttle = true;
+        } else { // all the others get throttled
+            if(timer) clearTimeout(timer); // cancel #2
+            timer = setTimeout(() => {
+              fn.apply(this, args);
+              timer = throttle = false;
+            }, ms);
+        }
+      };
+    }
       // Attach click handler to the DT
       const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
       for (const annoteDlNode of annoteDls) {
@@ -673,6 +807,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 });
 </script>
 </div> <!-- /content -->
+
 
 
 
