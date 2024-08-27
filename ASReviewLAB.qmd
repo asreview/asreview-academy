@@ -50,7 +50,7 @@ step 2!*
 
 To open ASReview LAB in your browser, you need to start it in the terminal. You can 
 open your terminal by typing ‘`terminal`’ (`cmd` on Windows 10 or lower) in your 
-computer`s search bar (select ‘`Run as administrator`’ if you have this option).
+computer’s search bar (select ‘`Run as administrator`’ if you have this option).
 
 ![](images/ASReviewLAB/step_1.png)
 
