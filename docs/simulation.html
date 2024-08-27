@@ -307,7 +307,11 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <section id="step-2-create-a-folder-structure" class="level3">
 <h3 class="anchored" data-anchor-id="step-2-create-a-folder-structure">Step 2: Create a folder structure</h3>
 <p>We recommend you to create a designated folder to run a simulation in, to keep your project organised. Create a folder and give it a name, for example “Simulation_study_PTSD”. Within this folder, create two sub-folders called ‘data’ and ‘output’. Also using NotePad (on Windows) or Text Edit (on Mac/OS) to create an empty text file called <code>jobs.txt</code> in the main folder. This is where you will save the scripts you run. See the example below:</p>
-<p><img src="images/Simulation/Folderstructure.png" class="img-fluid" style="width:85.0%"></p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/Simulation/Folderstructure.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:85.0%"></p>
+</figure>
+</div>
 </section>
 <section id="step-3-choose-a-dataset" class="level3">
 <h3 class="anchored" data-anchor-id="step-3-choose-a-dataset">Step 3: Choose a dataset</h3>
@@ -361,7 +365,11 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <div class="sourceCode" id="cb7"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="ex">asreview</span> plot recall output/<span class="pp">[</span><span class="ss">results_name</span><span class="pp">]</span>.asreview <span class="at">-o</span> output/results.png</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p>Run the code in the CLI (and put it in your <code>jobs.txt</code> file).</p>
 <p>The plot file will appear in your output folder. Inspect the recall curve from the asreview-insights extension. It should look something like the figure below.</p>
-<p><img src="images/Simulation/Example_recall_curve.png" class="img-fluid" style="width:85.0%"></p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/Simulation/Example_recall_curve.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:85.0%"></p>
+</figure>
+</div>
 <p>You can get the metrics with:</p>
 <div class="sourceCode" id="cb8"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="ex">asreview</span> metrics output/<span class="pp">[</span><span class="ss">results_name</span><span class="pp">]</span>.asreview <span class="at">-o</span> output/output.json</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p>The output will appear in your command prompt and will be saved in the ‘output.json’ file in your output folder. You can scroll up in your CLI or open the file with a text editor like Notepad (or R, Python, or a Jupiter Notebook) to look at the metrics we got from the asreview-insights.</p>
