@@ -25,6 +25,8 @@ To start off easy, we will run a simulation study using the PTSD benchmark datas
 
 For this exercise, we assume you have already installed Python and the ASReview LAB application. If you haven’t done so yet, you can follow [the instructions on installation](https://asreview.ai/download){target="_blank"}.
 
+![](images/Simulation/Sim_Mode.png){width=85% fig-align="center"}
+
 1.  Open ASReview LAB with the terminal and start a new project using ‘`Simulation`’ mode. Follow the steps described in the [documentation](https://asreview.readthedocs.io/en/latest/simulation_webapp.html){target="_blank"}, and select the `van de Schoot et al. (2017)` PTSD Trajectories benchmark dataset.
 
 Add these five prior relevant studies:
@@ -75,21 +77,15 @@ In the second part of the exercise, you will also be introduced to some [perform
 
 **Research questions:**
 
-1.  
-
-When using AI-aided screening to find 95 percent of the relevant records, how much time did I save compared to random screening?
+1. When using AI-aided screening to find 95 percent of the relevant records, how much time did I save compared to random screening?
 
 This question can be addressed by examining the Work Saved over Sampling (WSS) statistic at a recall of .95, which reflects the proportion of screening time saved by using active learning at the cost of failing to identify .05 of relevant publications.  
 
-2.  
-
-How much variation is there between three runs of the same model with different prior records selected for training the model?
+2.  How much variation is there between three runs of the same model with different prior records selected for training the model?
 
 This question can be addressed by running the exact same simulation three times, but with different prior knowledge selection. We introduce the metric the percentage of Relevant Records Found (RRF) at a given recall (e.g., after screening 10% of the total number of records).
 
-3.  
-
-Does, for example, the classifier Naive Bayes (‘nb’) or Logistic Regression (‘logistic’) perform better for a given dataset, when keeping the other settings fixed? For this question, we introduce the metrics the Extra Relevant Records found (ERF) and the Average Time to Discovery (ATD).
+3.  Does, for example, the classifier Naive Bayes (‘nb’) or Logistic Regression (‘logistic’) perform better for a given dataset, when keeping the other settings fixed? For this question, we introduce the metrics the Extra Relevant Records found (ERF) and the Average Time to Discovery (ATD).
 
 To keep your results organized, we suggest you fill out the table below with your simulation results for each model you run.
 
