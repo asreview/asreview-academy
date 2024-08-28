@@ -390,22 +390,17 @@ ul.task-list li input[type="checkbox"] {
 <h3 class="anchored" data-anchor-id="addressing-the-research-questions">Addressing the research questions</h3>
 <p>Now, we are going to address the research question(s), this time using Makita.</p>
 <ol type="1">
-<li></li>
+<li><p>For this question, compare the WSS@95 statistic of multiple datasets. If you had not done so already in the above section, pick two or three datasets from the <a href="https://github.com/asreview/systematic-review-datasets#datasets" target="_blank">benchmark datasets</a> and save them to the ‘data’ folder. Use the basic template to run your simulations and navigate to the output folder. You can find the WSS@95 of the simulation for each of your datasets in the ‘output/tables’ folder, in the file <code>data_metrics</code>. Compare the WSS@95 statistics, for which of the datasets the metric is lowest?</p></li>
+<li><p>Suppose we are investigating the effect using different prior knowledge <em>of relevant records</em>, i.e.keeping the prior knowledge of irrelevant records stable. To answer this question, we can conveniently use the All Relevant, Fixed Irrelevant <a href="https://github.com/asreview/asreview-makita#arfi-template" target="_blank">(ARFI) template</a>. You only need one dataset in your ‘data’ folder, but you can choose to use multiple if you like.</p></li>
 </ol>
-<p>For this question, compare the WSS@95 statistic of multiple datasets. If you had not done so already in the above section, pick two or three datasets from the <a href="https://github.com/asreview/systematic-review-datasets#datasets" target="_blank">benchmark datasets</a> and save them to the ‘data’ folder. Use the basic template to run your simulations and navigate to the output folder. You can find the WSS@95 of the simulation for each of your datasets in the ‘output/tables’ folder, in the file <code>data_metrics</code>. Compare the WSS@95 statistics, for which of the datasets the metric is lowest?</p>
-<ol start="2" type="1">
-<li></li>
-</ol>
-<p>Suppose we are investigating the effect using different prior knowledge <em>of relevant records</em>, i.e.keeping the prior knowledge of irrelevant records stable. To answer this question, we can conveniently use the All Relevant, Fixed Irrelevant <a href="https://github.com/asreview/asreview-makita#arfi-template" target="_blank">(ARFI) template</a>. You only need one dataset in your ‘data’ folder, but you can choose to use multiple if you like.</p>
 <p>Run the following code:</p>
 <p><code>bash asreview makita template arfi</code></p>
 <p>Then run the <code>jobs.sh/bat</code> file.</p>
 <p>NB: One simulation will be run for each relevant record in the dataset (with 50 relevant records, 50 simulation runs will be conduct; for each run the same 10 randomly chosen irrelevant records will be used), so this can take a while! Keep your CLI open to keep an eye on the progress, or go drink some hot chocolate.</p>
 <p>The metrics can be found appear in the ‘tables’ folder. A recall plot summarizing all results can be found in the folder <code>output/simulation/[DATASET NAME]</code>.</p>
 <ol start="3" type="1">
-<li></li>
+<li>Makita also contains a <a href="https://github.com/asreview/asreview-makita#multiple-models-template" target="_blank">template</a> to easily compare multiple models.</li>
 </ol>
-<p>Makita also contains a <a href="https://github.com/asreview/asreview-makita#multiple-models-template" target="_blank">template</a> to easily compare multiple models.</p>
 <p>Run the following code:</p>
 <p><code>bash asreview makita template multiple_models</code></p>
 <p>Then run the <code>jobs.sh/bat</code> file.</p>
@@ -416,6 +411,7 @@ ul.task-list li input[type="checkbox"] {
 <h2 class="anchored" data-anchor-id="what-else">What else?</h2>
 <p>We introduced some basic templates, but you can answer many more different types of research questions using Makita by using <a href="https://github.com/asreview/asreview-makita#advanced-usage" target="_blank">customized templates</a>, or adding <a href="https://github.com/asreview/template-extension-new-model" target="_blank">new models</a>.</p>
 <p><strong>If you like the functionality of Makita, don’t forget to give it a star on GitHub!</strong></p>
+<p>And if you want to look at even more information, larger simulations, cloud infrastructure? Check out <a href="https://github.com/asreview/cloud-usage">this cloud repo</a>.</p>
 
 
 </section>
