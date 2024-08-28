@@ -73,6 +73,8 @@ Many papers have been written about such comparisons; for an overview of such co
 
 Many more options for the configuration are available via the [command line interface](https://asreview.readthedocs.io/en/latest/simulation_cli.html#simulation-options){target="_blank"}. This is useful because 1001 questions can be answered by running a simulation study and every simulation study requires slightly different settings. As example, we will work on three example questions.
 
+![](images/Simulation/cli.png){width=85% fig-align="center"}
+
 In the second part of the exercise, you will also be introduced to some [performance metrics](https://github.com/asreview/asreview-insights#performance-metrics){target="_blank"} that you can use to assess the performance of your model.  
 
 **Research questions:**
