@@ -208,6 +208,8 @@ You can compare the performance of the models by looking at the (for example) ER
 
 By now, you can probably imagine that writing the code for running many different simulations is quite time-consuming. Keeping track of everything you ran in a separate `jobs.txt` file to keep your simulations reproducible and manually filling out that table for comparison can also become cumbersome for large projects. Luckily we have automatized the process ofcreating a folder structure and writing many lines of code by using templates. For this, we use the package `Makita`: ASReview’s [`Make It Automatic`](https://github.com/asreview/asreview-makita){target="_blank"}.
 
+If you want to take a look at the power of Makita, check out our [simulation page](https://jteijema.github.io/synergy-simulations-website/)!
+
 With a single command, Makita generates a folder according to a reproducible folder format, a jobs script with all simulation commands and even a readme file! This way, your study is ready for the world right off the bat.
 
 For the next steps, you first need to install some extra extensions. You can do so with:
