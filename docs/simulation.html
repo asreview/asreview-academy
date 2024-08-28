@@ -222,6 +222,11 @@ ul.task-list li input[type="checkbox"] {
 <h2 class="anchored" data-anchor-id="conducting-a-simulation-via-the-web-browser">Conducting a simulation via the web browser</h2>
 <p>To start off easy, we will run a simulation study using the PTSD benchmark dataset we also used in the <a href="./ASReviewLAB.html" target="_blank">introductory exercise</a>.</p>
 <p>For this exercise, we assume you have already installed Python and the ASReview LAB application. If you haven’t done so yet, you can follow <a href="https://asreview.ai/download" target="_blank">the instructions on installation</a>.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/Simulation/Sim_Mode.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:85.0%"></p>
+</figure>
+</div>
 <ol type="1">
 <li>Open ASReview LAB with the terminal and start a new project using ‘<code>Simulation</code>’ mode. Follow the steps described in the <a href="https://asreview.readthedocs.io/en/latest/simulation_webapp.html" target="_blank">documentation</a>, and select the <code>van de Schoot et al. (2017)</code> PTSD Trajectories benchmark dataset.</li>
 </ol>
@@ -265,19 +270,16 @@ ul.task-list li input[type="checkbox"] {
 <p>In the second part of the exercise, you will also be introduced to some <a href="https://github.com/asreview/asreview-insights#performance-metrics" target="_blank">performance metrics</a> that you can use to assess the performance of your model.</p>
 <p><strong>Research questions:</strong></p>
 <ol type="1">
-<li></li>
+<li>When using AI-aided screening to find 95 percent of the relevant records, how much time did I save compared to random screening?</li>
 </ol>
-<p>When using AI-aided screening to find 95 percent of the relevant records, how much time did I save compared to random screening?</p>
 <p>This question can be addressed by examining the Work Saved over Sampling (WSS) statistic at a recall of .95, which reflects the proportion of screening time saved by using active learning at the cost of failing to identify .05 of relevant publications.</p>
 <ol start="2" type="1">
-<li></li>
+<li>How much variation is there between three runs of the same model with different prior records selected for training the model?</li>
 </ol>
-<p>How much variation is there between three runs of the same model with different prior records selected for training the model?</p>
 <p>This question can be addressed by running the exact same simulation three times, but with different prior knowledge selection. We introduce the metric the percentage of Relevant Records Found (RRF) at a given recall (e.g., after screening 10% of the total number of records).</p>
 <ol start="3" type="1">
-<li></li>
+<li>Does, for example, the classifier Naive Bayes (‘nb’) or Logistic Regression (‘logistic’) perform better for a given dataset, when keeping the other settings fixed? For this question, we introduce the metrics the Extra Relevant Records found (ERF) and the Average Time to Discovery (ATD).</li>
 </ol>
-<p>Does, for example, the classifier Naive Bayes (‘nb’) or Logistic Regression (‘logistic’) perform better for a given dataset, when keeping the other settings fixed? For this question, we introduce the metrics the Extra Relevant Records found (ERF) and the Average Time to Discovery (ATD).</p>
 <p>To keep your results organized, we suggest you fill out the table below with your simulation results for each model you run.</p>
 </section>
 <section id="step-2-create-a-folder-structure" class="level3">
