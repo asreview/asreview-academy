@@ -234,13 +234,9 @@ A big advantage of using Makita is that your project folder is already made full
 
 Now, we are going to address the research question(s), this time using Makita.
 
-1.  
+1.  For this question, compare the WSS@95 statistic of multiple datasets. If you had not done so already in the above section, pick two or three datasets from the [benchmark datasets](https://github.com/asreview/systematic-review-datasets#datasets){target="_blank"} and save them to the ‘data’ folder. Use the basic template to run your simulations and navigate to the output folder. You can find the WSS@95 of the simulation for each of your datasets in the ‘output/tables’ folder, in the file `data_metrics`. Compare the WSS@95 statistics, for which of the datasets the metric is lowest?
 
-For this question, compare the WSS@95 statistic of multiple datasets. If you had not done so already in the above section, pick two or three datasets from the [benchmark datasets](https://github.com/asreview/systematic-review-datasets#datasets){target="_blank"} and save them to the ‘data’ folder. Use the basic template to run your simulations and navigate to the output folder. You can find the WSS@95 of the simulation for each of your datasets in the ‘output/tables’ folder, in the file `data_metrics`. Compare the WSS@95 statistics, for which of the datasets the metric is lowest?
-
-2.  
-
-Suppose we are investigating the effect using different prior knowledge *of relevant records*, i.e.keeping the prior knowledge of irrelevant records stable. To answer this question, we can conveniently use the All Relevant, Fixed Irrelevant [(ARFI) template](https://github.com/asreview/asreview-makita#arfi-template){target="_blank"}. You only need one dataset in your ‘data’ folder, but you can choose to use multiple if you like.
+2.  Suppose we are investigating the effect using different prior knowledge *of relevant records*, i.e.keeping the prior knowledge of irrelevant records stable. To answer this question, we can conveniently use the All Relevant, Fixed Irrelevant [(ARFI) template](https://github.com/asreview/asreview-makita#arfi-template){target="_blank"}. You only need one dataset in your ‘data’ folder, but you can choose to use multiple if you like.
 
 Run the following code:
 
@@ -252,9 +248,7 @@ NB: One simulation will be run for each relevant record in the dataset (with 50 
 
 The metrics can be found appear in the ‘tables’ folder. A recall plot summarizing all results can be found in the folder `output/simulation/[DATASET NAME]`.
 
-3.  
-
-Makita also contains a [template](https://github.com/asreview/asreview-makita#multiple-models-template){target="_blank"} to easily compare multiple models.
+3.  Makita also contains a [template](https://github.com/asreview/asreview-makita#multiple-models-template){target="_blank"} to easily compare multiple models.
 
 Run the following code:
 
@@ -269,3 +263,5 @@ The metrics can be found appear in the ‘tables’ folder. A recall plot summar
 We introduced some basic templates, but you can answer many more different types of research questions using Makita by using [customized templates](https://github.com/asreview/asreview-makita#advanced-usage){target="_blank"}, or adding [new models](https://github.com/asreview/template-extension-new-model){target="_blank"}.
 
 **If you like the functionality of Makita, don’t forget to give it a star on GitHub!**
+
+And if you want to look at even more information, larger simulations, cloud infrastructure? Check out [this cloud repo](https://github.com/asreview/cloud-usage).
