@@ -43,7 +43,7 @@ Add these five prior relevant studies:
 
 Now, also choose five (random) prior irrelevant papers and **copy-paste the selected irrelevant titles to a separate file**. We will use the same studies later!
 
-Continue to the next screen, and initiate the simulation by clicking “NEXT”.
+Continue to the next screen, Keep the default models and initiate the simulation by clicking “NEXT”.
 
 After `Warming up the AI` is done, click on `GOT IT`. Proceed to the Analytics page and check if the simulation study has finished. ELAS is holding a card with the status of your project. If your simulation is not finished yet, click the REFRESH button in the upper right corner.
 
@@ -116,7 +116,7 @@ For MacOS: 1. Right-click on created folder. 2. Click “New Terminal at Folder�
 For Windows 11 (and sometimes 10): 1. Shift-right click inside the created folder. 2. Click on `Open in Terminal`
 
 3. *Install the synergy-dataset Python package with:*
-(This package will already be installed after installing ASReview, but better save than sorry!)
+(This package will already be installed after installing ASReview, but better safe than sorry!)
 
 ``` bash pip install synergy-dataset ``` 
 
