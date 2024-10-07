@@ -3,6 +3,8 @@ title: "Introductory exercise to ASReview LAB"
 author: "The ASReview Academy Team"
 ---
 
+**This exercise was made using ASReview LAB version 1.6. If you have a different version you can observe differences between your setup and the exercise.**
+
 ## Introduction to the software ASReview LAB
 
 The **goal** of this exercise is to get familiar with AI-aided screening
@@ -48,22 +50,23 @@ step 2!*
 
 ### Step 2: Starting ASReview LAB
 
-To open ASReview LAB in your browser, you need to start it in the
-command prompt (i.e. CMD.exe or Terminal). You can open your command
-prompt by typing ‘cmd’ (for Windows) or ‘terminal’ (for Apple) in your
-computer’s search bar (select ‘Run as administrator’ if you have this
-option).
+To open ASReview LAB in your browser, you need to start it in the terminal. You can 
+open your terminal by typing ‘`terminal`’ (`cmd` on Windows 10 or lower) in your 
+computer’s search bar (select ‘`Run as administrator`’ if you have this option).
 
-![](images/ASReviewLAB/CMD1.png){width=95%}
+![](images/ASReviewLAB/step_1_V1_6.png){width=85% fig-align="center"}
 
-The command prompt will open, in which you can type the following
+The terminal will open, in which you can type the following
 command and press enter:
 
 ``` bash
 asreview lab
 ```
 
-![](images/ASReviewLAB/CMD2.png){width=95%}
+Note that you have to keep your command-line interpreter running while
+using ASReview LAB, even though the interface is in your browser!
+
+![](images/ASReviewLAB/step_2_V1_6.png){width=85% fig-align="center"}
 
 It takes a few seconds for ELAS - your Electronic Learning Assistant -
 to start the software. It will appear in your (default) web browser. 
@@ -73,9 +76,6 @@ prompt? This ensures that ASReview LAB is run locally. More
 specifically, <u>your data is and stays your own</u>. Small price to pay
 for complete privacy, right?! Read more about the key principles in the
 [Zen of Elas](https://asreview.nl/blog/the-zen-of-elas/){target="_blank"}!
-
-Note that you have to keep your command-line interpreter running while
-using ASReview LAB, even though the interface is in your browser!
 
 You can also run the software via a server, but you need to take care of
 [hosting the server
@@ -95,26 +95,26 @@ mode](https://asreview.readthedocs.io/en/latest/screening.html#display){target="
 
 1.  *New project;*
 
-Hover your mouse over the ‘create’ button with the plus sign in the
+Hover your mouse over the ‘`create`’ button with the plus sign in the
 bottom right corner.
 
-![](images/ASReviewLAB/Interface2.png){width=95%}
+![](images/ASReviewLAB/step_3_V1_6.png){width=85% fig-align="center"}
 
 2.  *Project name;*
 
-Select Validation Mode, fill out a project name and press ‘NEXT’. Note
+Select Validation Mode, fill out a project name and press ‘`NEXT`’. Note
 that you can fill out your name and a description as well.
 
-![](https://raw.githubusercontent.com/asreview/asreview/main/docs/images/setup_project_modes.png){width=95%}
+![](images/ASReviewLAB/step_3b_V1_6.png){width=85% fig-align="center"}
 
-For this exercise we are screening in the so-called ‘Validation Mode’
+For this exercise we are screening in the so-called ‘`Validation Mode`’
 of ASReview. By screening in the [Validation
 Mode](https://asreview.readthedocs.io/en/latest/project_create.html#project-modes){target="_blank"},
 we are going to make use of a [benchmark
 dataset](https://asreview.readthedocs.io/en/latest/data_labeled.html#fully-labeled-data){target="_blank"}.
 This means that all records in the dataset have already been labeled as
 relevant or irrelevant. This is indicated to the user through a banner
-above each article. Note that in ‘Oracle Mode’ - when screening your own
+above each article. Note that in ‘`Oracle Mode`’ - when screening your own
 dataset - the relevant papers will not be marked; you, the oracle, have
 to make the decisions.
 
@@ -133,16 +133,16 @@ Now that you have created your ASReview project (woohoo!), you need to set it
 up. Without data, we have nothing to screen. So, you need to tell ELAS
 which dataset you want to screen for relevant articles.     
 
-Click on the ‘ADD’ button next to ‘Add dataset’. Now a menu appears
+Click on the ‘`ADD`’ button next to ‘`Add dataset`’. Now a menu appears
 where you can choose how to load the dataset. You can add your dataset
 by selecting a file or providing an URL. For this exercise, we will use
 a benchmark dataset.
 
-Go to the ‘Benchmark datasets’ button, open the first dataset (i.e. the
+Go to the ‘`Benchmark datasets`’ button, open the first dataset (i.e. the
 Van de Schoot (2017) dataset about PTSD trajectories) and click on
-‘SELECT’. After you select the dataset, click on ‘SAVE’.
+‘`ADD`’. After you select the dataset, click on ‘`SAVE`’.
 
-![](images/ASReviewLAB/Interface5.png){width=95%}
+![](images/ASReviewLAB/step_4_V1_6.png){width=85% fig-align="center"}
 
 
 
@@ -165,16 +165,15 @@ irrelevant record). However, because you are using the Validation Mode
 of ASReview, the relevant records are known; the original authors have 
 already read ALL records.
 
-To select the prior knowledge you first need to click on the ‘ADD’
-button next to ‘Add prior knowledge’; see also the documentation 
+To select the prior knowledge you first need to click on the ‘`ADD`’
+button next to ‘`Add prior knowledge`’; see also the documentation 
 about the selection of [prior knowledge](https://asreview.readthedocs.io/en/latest/project_create.html#select-prior-knowledge){target="_blank"}.
 Now you will see a menu about selecting prior knowledge.
 
 The following five papers are known to be relevant:
 
--   Latent trajectories of trauma symptoms and resilience: the 3-year
-    longitudinal prospective USPER study of Danish veterans deployed in
-    Afghanistan (DOI: [10.4088/JCP.13m08914](https://doi.org/10.4088/jcp.13m08914){target="_blank"})
+-   Latent Trajectories of Trauma Symptoms and Resilience 
+    (DOI: [10.4088/JCP.13m08914](https://doi.org/10.4088/jcp.13m08914){target="_blank"})
 -   A Latent Growth Mixture Modeling Approach to PTSD Symptoms in Rape
     Victims (DOI: [10.1177/1534765610395627](https://doi.org/10.1177/1534765610395627){target="_blank"})
 -   Peace and War: Trajectories of Posttraumatic Stress Disorder
@@ -185,17 +184,17 @@ The following five papers are known to be relevant:
 -   Trajectories of trauma symptoms and resilience in deployed US
     military service members: Prospective cohort study (DOI: [10.1192/bjp.bp.111.096552](https://doi.org/10.1192/bjp.bp.111.096552){target="_blank"})
 
-To add the relevant records, you click on ‘Search’, copy and paste the titles
+To add the relevant records, you click on ‘`Search`’, copy and paste the titles
 of these relevant records one by one in the search bar and add them as
 relevant.
 
-![](https://raw.githubusercontent.com/asreview/asreview/main/docs/images/setup_prior_knowledge_random_validate.png){width=95%}
+![](images/ASReviewLAB/step_5_V1_6.png){width=85% fig-align="center"}
 
 
 After adding all five relevant records, you can add some irrelevant ones
-by clicking the ‘Random’ button (use the arrow in the upper left corner
-to be able to select this button) and by changing ‘relevant’ to
-‘irrelevant’. Select five irrelevant records and click on ‘CLOSE’.
+by clicking the ‘`Random`’ button (use the arrow in the upper left corner
+to be able to select this button) and by changing ‘`relevant`’ to
+‘`irrelevant`’. Select five irrelevant records and click on ‘`CLOSE`’.
 
 *Have you selected five relevant and five irrelevant records? If so, you
 can proceed to step 6!*
@@ -210,8 +209,8 @@ read which options are
 or add your own model via a
 [template](https://github.com/asreview/template-extension-new-model){target="_blank"}. 
 
-You can click on ‘NEXT’. A menu with the defaults will appear. Since we
-are using the defaults, you can click on ‘NEXT’ again. In the last step
+You can click on ‘`NEXT`’. A menu with the defaults will appear. Since we
+are using the defaults, you can click on ‘`NEXT`’ again. In the last step
 of the setup, ASReview LAB runs the feature extractor, trains a model,
 and ranks the records in your dataset. Depending on the model and the
 size of your dataset, this can take a couple of minutes (meanwhile, you
@@ -220,9 +219,11 @@ Learning?](https://asreview.nl/blog/active-learning-explained/){target="_blank"}
 
 After the project is successfully initialized, you can start reviewing.
 
-![](images/ASReviewLAB/Interface9.png){width=95%}
+![](images/ASReviewLAB/step_6_V1_6.png){width=85% fig-align="center"}
 
 *Have you finished the setup? If so, you can proceed to step 7!*
+
+![](images/ASReviewLAB/step_7_V1_6.png){width=85% fig-align="center"}
 
 ## Screening phase
 
@@ -254,7 +255,7 @@ statistics and interpret the corresponding charts, check out the
 [documentation](https://asreview.readthedocs.io/en/latest/progress.html#analytics){target="_blank"}
 on the Analytics page.
 
-The Van de Schoot (2017) dataset contained 43 relevant records in this
+The Van de Schoot (2017) dataset contained 38 relevant records in this
 particular example. Did you get to label all of them as relevant before
 you reached your Stopping Rule? If you did, great!
 
@@ -284,8 +285,8 @@ Now that you found all or most relevant records, you can export your
 data using [these
 instructions](https://asreview.readthedocs.io/en/latest/progress.html#export-results){target="_blank"}.
 If you choose to inspect your data in Excel, download the data in
-‘Excel’ format. If you prefer to inspect your data in R, download the
-‘CSV (UTF-8)’ format and open it in R.
+‘`Excel`’ format. If you prefer to inspect your data in R, download the
+‘`CSV (UTF-8)`’ format and open it in R.
 
 You can find all the data that was originally imported to ASReview in
 the exported data file, in a new order and with two new columns added at
@@ -302,7 +303,7 @@ the original ordering, do the included articles come from?
 
 For the last exercise, it is important to change the order back to the order
 provided by ASReview. Lastly, check out the first few records with no number
-in the `included` column. Are those articles labeled as ‘relevant’ in the
+in the `included` column. Are those articles labeled as ‘`relevant`’ in the
 original dataset? (Whether or not a record was pre-labeled as relevant is
 shown in the column `label_included` in the original dataset.)
 
@@ -343,7 +344,7 @@ Some suggestions:
     Github… +1 for open-science!)
 
 
-![](https://raw.githubusercontent.com/asreview/asreview/main/docs/images/game.png){width=95%}
+![](https://raw.githubusercontent.com/asreview/asreview/main/docs/images/game.png){width=85% fig-align="center"}
 
 [^1]: Wang Z, Nayfeh T, Tetzlaff J, O’Blenis P, Murad MH (2020) Error
     rates of human reviewers during abstract screening in systematic
