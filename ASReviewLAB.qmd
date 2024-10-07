@@ -35,7 +35,7 @@ Before you start, you might want to read a bit more on:
 
 ### Installing ASReview LAB
 
-First, before you start the tutorial ASReview LAB needs to be installed. For instructions on how to install ASReview LAB, please visit the [ASReview website](https://asreview.nl/download/){target="_blank"}.
+Before you start the tutorial ASReview LAB needs to be installed; see for instructions the [ASReview website](https://asreview.nl/download/){target="_blank"}.
 
 *Have you installed ASReview LAB? You can proceed to the exercise!*
 
