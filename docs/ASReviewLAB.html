@@ -21,40 +21,6 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-/* CSS for syntax highlighting */
-pre > code.sourceCode { white-space: pre; position: relative; }
-pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
-pre > code.sourceCode > span:empty { height: 1.2em; }
-.sourceCode { overflow: visible; }
-code.sourceCode > span { color: inherit; text-decoration: inherit; }
-div.sourceCode { margin: 1em 0; }
-pre.sourceCode { margin: 0; }
-@media screen {
-div.sourceCode { overflow: auto; }
-}
-@media print {
-pre > code.sourceCode { white-space: pre-wrap; }
-pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
-}
-pre.numberSource code
-  { counter-reset: source-line 0; }
-pre.numberSource code > span
-  { position: relative; left: -4em; counter-increment: source-line; }
-pre.numberSource code > span > a:first-child::before
-  { content: counter(source-line);
-    position: relative; left: -1em; text-align: right; vertical-align: baseline;
-    border: none; display: inline-block;
-    -webkit-touch-callout: none; -webkit-user-select: none;
-    -khtml-user-select: none; -moz-user-select: none;
-    -ms-user-select: none; user-select: none;
-    padding: 0 4px; width: 4em;
-  }
-pre.numberSource { margin-left: 3em;  padding-left: 4px; }
-div.sourceCode
-  {   }
-@media screen {
-pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
-}
 </style>
 
 
@@ -262,28 +228,12 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <h2 class="anchored" data-anchor-id="exercise">Exercise</h2>
 <section id="step-1-starting-asreview-lab" class="level3">
 <h3 class="anchored" data-anchor-id="step-1-starting-asreview-lab">Step 1: Starting ASReview LAB</h3>
-<p>To open ASReview LAB in your browser, you need to start it in the terminal. You can open your terminal by typing ‘<code>terminal</code>’ (<code>cmd</code> on Windows 10 or lower) in your computer’s search bar.</p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="images/ASReviewLAB/step_1a_V1_6.png" class="img-fluid figure-img" style="width:85.0%"></p>
-</figure>
-</div>
-<p>The terminal will open, in which you can type the following command and press enter:</p>
-<div class="sourceCode" id="cb1"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="ex">asreview</span> lab</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<p>Note that you have to keep your command-line interpreter running while using ASReview LAB, even though the interface is in your browser!</p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="images/ASReviewLAB/step_1b_V1_6.png" class="img-fluid figure-img" style="width:85.0%"></p>
-</figure>
-</div>
-<p>It takes a few seconds for ELAS - your Electronic Learning Assistant - to start the software. It will appear in your (default) web browser.</p>
-<p>But why do you need to start it up by running code in your command prompt? This ensures that ASReview LAB is run locally. More specifically, <u>your data is and stays your own</u>. Small price to pay for complete privacy, right?! Read more about the key principles in the <a href="https://asreview.nl/blog/the-zen-of-elas/" target="_blank">Zen of Elas</a>!</p>
-<p>You can also run the software via a server, but you need to take care of <a href="https://asreview.readthedocs.io/en/latest/installation.html#server-installation" target="_blank">hosting the server yourself</a> (or ask your IT-department).</p>
+<p>Open ASReview LAB in your browser. Note that if you do this via Command Prompt (Windows) or Terminal (MacOS) you have to keep your command-line interpreter running while using ASReview LAB, even though the interface is in your browser!</p>
 <p><em>Have you opened ASReview LAB in your browser? If so, you can proceed to step 2!</em></p>
 </section>
 <section id="step-2-creating-a-project" class="level3">
 <h3 class="anchored" data-anchor-id="step-2-creating-a-project">Step 2: Creating a project</h3>
-<p>Now that you have opened ASReview LAB, you can create a new project. Below you will find a step-by-step guide. Note that the screenshots shown below are made in <a href="https://asreview.readthedocs.io/en/latest/screening.html#display" target="_blank">dark mode</a>.</p>
+<p>Now that you have opened ASReview LAB, you can create a new project. Below you will find a step-by-step guide.</p>
 <ol type="1">
 <li><em>New project;</em></li>
 </ol>

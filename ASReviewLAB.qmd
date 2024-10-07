@@ -43,38 +43,7 @@ Before you start the tutorial ASReview LAB needs to be installed; see for instru
 
 ### Step 1: Starting ASReview LAB
 
-To open ASReview LAB in your browser, you need to start it in the terminal. You can 
-open your terminal by typing ‘`terminal`’ (`cmd` on Windows 10 or lower) in your 
-computer’s search bar.
-
-![](images/ASReviewLAB/step_1a_V1_6.png){width=85% fig-align="center"}
-
-The terminal will open, in which you can type the following
-command and press enter:
-
-``` bash
-asreview lab
-```
-
-Note that you have to keep your command-line interpreter running while
-using ASReview LAB, even though the interface is in your browser!
-
-![](images/ASReviewLAB/step_1b_V1_6.png){width=85% fig-align="center"}
-
-It takes a few seconds for ELAS - your Electronic Learning Assistant -
-to start the software. It will appear in your (default) web browser. 
-
-But why do you need to start it up by running code in your command
-prompt? This ensures that ASReview LAB is run locally. More
-specifically, <u>your data is and stays your own</u>. Small price to pay
-for complete privacy, right?! Read more about the key principles in the
-[Zen of Elas](https://asreview.nl/blog/the-zen-of-elas/){target="_blank"}!
-
-You can also run the software via a server, but you need to take care of
-[hosting the server
-yourself](https://asreview.readthedocs.io/en/latest/installation.html#server-installation){target="_blank"}
-(or ask your IT-department).
-
+Open ASReview LAB in your browser. Note that if you do this via Command Prompt (Windows) or Terminal (MacOS) you have to keep your command-line interpreter running while using ASReview LAB, even though the interface is in your browser!
 
 *Have you opened ASReview LAB in your browser? If so, you can proceed to
 step 2!*
@@ -82,9 +51,7 @@ step 2!*
 ### Step 2: Creating a project
 
 Now that you have opened ASReview LAB, you can create a
-new project. Below you will find a step-by-step guide. Note that the
-screenshots shown below are made in [dark
-mode](https://asreview.readthedocs.io/en/latest/screening.html#display){target="_blank"}.
+new project. Below you will find a step-by-step guide. 
 
 1.  *New project;*
 
