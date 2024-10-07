@@ -5,7 +5,7 @@ author: "The ASReview Academy Team"
 
 **This exercise was made using ASReview LAB version 1.6. If you have a different version you can observe differences between your setup and the exercise.**
 
-## Introduction to the software ASReview LAB
+## Introduction to the software ASReview LAB v1.6
 
 The **goal** of this exercise is to get familiar with AI-aided screening
 by making use of ASReview LAB v1.6.
