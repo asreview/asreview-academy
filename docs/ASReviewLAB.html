@@ -21,40 +21,6 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-/* CSS for syntax highlighting */
-pre > code.sourceCode { white-space: pre; position: relative; }
-pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
-pre > code.sourceCode > span:empty { height: 1.2em; }
-.sourceCode { overflow: visible; }
-code.sourceCode > span { color: inherit; text-decoration: inherit; }
-div.sourceCode { margin: 1em 0; }
-pre.sourceCode { margin: 0; }
-@media screen {
-div.sourceCode { overflow: auto; }
-}
-@media print {
-pre > code.sourceCode { white-space: pre-wrap; }
-pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
-}
-pre.numberSource code
-  { counter-reset: source-line 0; }
-pre.numberSource code > span
-  { position: relative; left: -4em; counter-increment: source-line; }
-pre.numberSource code > span > a:first-child::before
-  { content: counter(source-line);
-    position: relative; left: -1em; text-align: right; vertical-align: baseline;
-    border: none; display: inline-block;
-    -webkit-touch-callout: none; -webkit-user-select: none;
-    -khtml-user-select: none; -moz-user-select: none;
-    -ms-user-select: none; user-select: none;
-    padding: 0 4px; width: 4em;
-  }
-pre.numberSource { margin-left: 3em;  padding-left: 4px; }
-div.sourceCode
-  {   }
-@media screen {
-pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
-}
 </style>
 
 
@@ -108,7 +74,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./ASReviewLAB.html">Introduction Courses</a></li><li class="breadcrumb-item"><a href="./ASReviewLAB.html">ASReview LAB</a></li></ol></nav>
+      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./ASReviewLAB.html">Introduction Courses</a></li><li class="breadcrumb-item"><a href="./ASReviewLAB.html">ASReview LAB v1.6</a></li></ol></nav>
       <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
       </a>
       <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
@@ -154,7 +120,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./ASReviewLAB.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text">ASReview LAB</span></a>
+ <span class="menu-text">ASReview LAB v1.6</span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -183,22 +149,25 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   <ul>
   <li><a href="#introduction-to-the-software-asreview-lab" id="toc-introduction-to-the-software-asreview-lab" class="nav-link active" data-scroll-target="#introduction-to-the-software-asreview-lab">Introduction to the software ASReview LAB</a></li>
   <li><a href="#getting-familiar" id="toc-getting-familiar" class="nav-link" data-scroll-target="#getting-familiar">Getting familiar</a></li>
-  <li><a href="#the-software" id="toc-the-software" class="nav-link" data-scroll-target="#the-software">The software</a>
+  <li><a href="#prerequisites" id="toc-prerequisites" class="nav-link" data-scroll-target="#prerequisites">Prerequisites</a>
   <ul class="collapse">
-  <li><a href="#step-1-installing-python-and-asreview-lab" id="toc-step-1-installing-python-and-asreview-lab" class="nav-link" data-scroll-target="#step-1-installing-python-and-asreview-lab">Step 1: Installing Python and ASReview LAB</a></li>
-  <li><a href="#step-2-starting-asreview-lab" id="toc-step-2-starting-asreview-lab" class="nav-link" data-scroll-target="#step-2-starting-asreview-lab">Step 2: Starting ASReview LAB</a></li>
-  <li><a href="#step-3-creating-a-project" id="toc-step-3-creating-a-project" class="nav-link" data-scroll-target="#step-3-creating-a-project">Step 3: Creating a project</a></li>
+  <li><a href="#installing-asreview-lab" id="toc-installing-asreview-lab" class="nav-link" data-scroll-target="#installing-asreview-lab">Installing ASReview LAB</a></li>
+  </ul></li>
+  <li><a href="#exercise" id="toc-exercise" class="nav-link" data-scroll-target="#exercise">Exercise</a>
+  <ul class="collapse">
+  <li><a href="#step-1-starting-asreview-lab" id="toc-step-1-starting-asreview-lab" class="nav-link" data-scroll-target="#step-1-starting-asreview-lab">Step 1: Starting ASReview LAB</a></li>
+  <li><a href="#step-2-creating-a-project" id="toc-step-2-creating-a-project" class="nav-link" data-scroll-target="#step-2-creating-a-project">Step 2: Creating a project</a></li>
   </ul></li>
   <li><a href="#project-setup" id="toc-project-setup" class="nav-link" data-scroll-target="#project-setup">Project setup</a>
   <ul class="collapse">
-  <li><a href="#step-4-the-dataset" id="toc-step-4-the-dataset" class="nav-link" data-scroll-target="#step-4-the-dataset">Step 4: The dataset</a></li>
-  <li><a href="#step-5-prior-knowledge" id="toc-step-5-prior-knowledge" class="nav-link" data-scroll-target="#step-5-prior-knowledge">Step 5: Prior knowledge</a></li>
-  <li><a href="#step-6-active-learning-model" id="toc-step-6-active-learning-model" class="nav-link" data-scroll-target="#step-6-active-learning-model">Step 6: Active learning model</a></li>
+  <li><a href="#step-3-the-dataset" id="toc-step-3-the-dataset" class="nav-link" data-scroll-target="#step-3-the-dataset">Step 3: The dataset</a></li>
+  <li><a href="#step-4-prior-knowledge" id="toc-step-4-prior-knowledge" class="nav-link" data-scroll-target="#step-4-prior-knowledge">Step 4: Prior knowledge</a></li>
+  <li><a href="#step-5-active-learning-model" id="toc-step-5-active-learning-model" class="nav-link" data-scroll-target="#step-5-active-learning-model">Step 5: Active learning model</a></li>
   </ul></li>
   <li><a href="#screening-phase" id="toc-screening-phase" class="nav-link" data-scroll-target="#screening-phase">Screening phase</a>
   <ul class="collapse">
-  <li><a href="#step-7-screening-the-records" id="toc-step-7-screening-the-records" class="nav-link" data-scroll-target="#step-7-screening-the-records">Step 7: Screening the records</a></li>
-  <li><a href="#step-8-extracting-and-inspecting-the-data" id="toc-step-8-extracting-and-inspecting-the-data" class="nav-link" data-scroll-target="#step-8-extracting-and-inspecting-the-data">Step 8: Extracting and inspecting the data</a></li>
+  <li><a href="#step-6-screening-the-records" id="toc-step-6-screening-the-records" class="nav-link" data-scroll-target="#step-6-screening-the-records">Step 6: Screening the records</a></li>
+  <li><a href="#step-7-extracting-and-inspecting-the-data" id="toc-step-7-extracting-and-inspecting-the-data" class="nav-link" data-scroll-target="#step-7-extracting-and-inspecting-the-data">Step 7: Extracting and inspecting the data</a></li>
   </ul></li>
   <li><a href="#goal" id="toc-goal" class="nav-link" data-scroll-target="#goal">Goal</a></li>
   <li><a href="#whats-next" id="toc-whats-next" class="nav-link" data-scroll-target="#whats-next">What’s next?</a></li>
@@ -231,9 +200,10 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 </header>
 
+<p><strong>This exercise was made using ASReview LAB version 1.6. If you have a different version you can observe differences between your setup and the exercise.</strong></p>
 <section id="introduction-to-the-software-asreview-lab" class="level2">
 <h2 class="anchored" data-anchor-id="introduction-to-the-software-asreview-lab">Introduction to the software ASReview LAB</h2>
-<p>The <strong>goal</strong> of this exercise is to get familiar with AI-aided screening by making use of ASReview LAB v1.x.</p>
+<p>The <strong>goal</strong> of this exercise is to get familiar with AI-aided screening by making use of ASReview LAB v1.6.</p>
 <p>You will learn how to install and set up the software, upload data, screen records, and export and interpret the results. The exercise will guide you through all the steps of AI-aided screening as described in the <a href="https://asreview.readthedocs.io/en/latest/about.html#labeling-workflow-with-asreview" target="_blank">workflow on Read-the-Docs</a>.</p>
 <p>Enjoy!</p>
 </section>
@@ -246,103 +216,121 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <li><p>The paper that was published in <a href="https://www.nature.com/articles/s42256-020-00287-7" target="_blank">Nature Machine Intelligence</a></p></li>
 </ul>
 </section>
-<section id="the-software" class="level2">
-<h2 class="anchored" data-anchor-id="the-software">The software</h2>
-<section id="step-1-installing-python-and-asreview-lab" class="level3">
-<h3 class="anchored" data-anchor-id="step-1-installing-python-and-asreview-lab">Step 1: Installing Python and ASReview LAB</h3>
-<p>First, you need to install <a href="https://www.python.org/downloads/" target="_blank">Python</a>.</p>
-<p>Once you have Python installed, you can go through the easy 3-step <a href="https://asreview.nl/download/" target="_blank">guide to installing (or upgrading) ASReview</a> on the ASReview-website.</p>
-<p>More detailed installation information, troubleshooting, and installation on a server or via a Docker are available on <a href="https://asreview.readthedocs.io/en/latest/installation.html#install-asreview" target="_blank">ReadTheDocs</a>.</p>
-<p><em>Have you installed the latest version of ASReview? You can proceed to step 2!</em></p>
+<section id="prerequisites" class="level2">
+<h2 class="anchored" data-anchor-id="prerequisites">Prerequisites</h2>
+<section id="installing-asreview-lab" class="level3">
+<h3 class="anchored" data-anchor-id="installing-asreview-lab">Installing ASReview LAB</h3>
+<p>Before you start the tutorial ASReview LAB needs to be installed; see for instructions the <a href="https://asreview.nl/download/" target="_blank">ASReview website</a>.</p>
+<p><em>Have you installed ASReview LAB? You can proceed to the exercise!</em></p>
 </section>
-<section id="step-2-starting-asreview-lab" class="level3">
-<h3 class="anchored" data-anchor-id="step-2-starting-asreview-lab">Step 2: Starting ASReview LAB</h3>
-<p>To open ASReview LAB in your browser, you need to start it in the command prompt (i.e.&nbsp;CMD.exe or Terminal). You can open your command prompt by typing ‘cmd’ (for Windows) or ‘terminal’ (for Apple) in your computer’s search bar (select ‘Run as administrator’ if you have this option).</p>
-<p><img src="images/ASReviewLAB/CMD1.png" class="img-fluid" style="width:95.0%"></p>
-<p>The command prompt will open, in which you can type the following command and press enter:</p>
-<div class="sourceCode" id="cb1"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="ex">asreview</span> lab</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<p><img src="images/ASReviewLAB/CMD2.png" class="img-fluid" style="width:95.0%"></p>
-<p>It takes a few seconds for ELAS - your Electronic Learning Assistant - to start the software. It will appear in your (default) web browser.</p>
-<p>But why do you need to start it up by running code in your command prompt? This ensures that ASReview LAB is run locally. More specifically, <u>your data is and stays your own</u>. Small price to pay for complete privacy, right?! Read more about the key principles in the <a href="https://asreview.nl/blog/the-zen-of-elas/" target="_blank">Zen of Elas</a>!</p>
-<p>Note that you have to keep your command-line interpreter running while using ASReview LAB, even though the interface is in your browser!</p>
-<p>You can also run the software via a server, but you need to take care of <a href="https://asreview.readthedocs.io/en/latest/installation.html#server-installation" target="_blank">hosting the server yourself</a> (or ask your IT-department).</p>
-<p><em>Have you opened ASReview LAB in your browser? If so, you can proceed to step 3!</em></p>
 </section>
-<section id="step-3-creating-a-project" class="level3">
-<h3 class="anchored" data-anchor-id="step-3-creating-a-project">Step 3: Creating a project</h3>
-<p>Now that you have installed and opened ASReview LAB, you can create a new project. Below you will find a step-by-step guide. Note that the screenshots shown below are made in <a href="https://asreview.readthedocs.io/en/latest/screening.html#display" target="_blank">dark mode</a>.</p>
+<section id="exercise" class="level2">
+<h2 class="anchored" data-anchor-id="exercise">Exercise</h2>
+<section id="step-1-starting-asreview-lab" class="level3">
+<h3 class="anchored" data-anchor-id="step-1-starting-asreview-lab">Step 1: Starting ASReview LAB</h3>
+<p>Open ASReview LAB in your browser. Note that if you do this via Command Prompt (Windows) or Terminal (MacOS) you have to keep your command-line interpreter running while using ASReview LAB, even though the interface is in your browser!</p>
+<p><em>Have you opened ASReview LAB in your browser? If so, you can proceed to step 2!</em></p>
+</section>
+<section id="step-2-creating-a-project" class="level3">
+<h3 class="anchored" data-anchor-id="step-2-creating-a-project">Step 2: Creating a project</h3>
+<p>Now that you have opened ASReview LAB, you can create a new project. Below you will find a step-by-step guide.</p>
 <ol type="1">
 <li><em>New project;</em></li>
 </ol>
-<p>Hover your mouse over the ‘create’ button with the plus sign in the bottom right corner.</p>
-<p><img src="images/ASReviewLAB/Interface2.png" class="img-fluid" style="width:95.0%"></p>
+<p>Hover your mouse over the ‘<code>create</code>’ button with the plus sign in the bottom right corner.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/ASReviewLAB/step_2a_V1_6.png" class="img-fluid figure-img" style="width:85.0%"></p>
+</figure>
+</div>
 <ol start="2" type="1">
 <li><em>Project name;</em></li>
 </ol>
-<p>Select Validation Mode, fill out a project name and press ‘NEXT’. Note that you can fill out your name and a description as well.</p>
-<p><img src="https://raw.githubusercontent.com/asreview/asreview/main/docs/images/setup_project_modes.png" class="img-fluid" style="width:95.0%"></p>
-<p>For this exercise we are screening in the so-called ‘Validation Mode’ of ASReview. By screening in the <a href="https://asreview.readthedocs.io/en/latest/project_create.html#project-modes" target="_blank">Validation Mode</a>, we are going to make use of a <a href="https://asreview.readthedocs.io/en/latest/data_labeled.html#fully-labeled-data" target="_blank">benchmark dataset</a>. This means that all records in the dataset have already been labeled as relevant or irrelevant. This is indicated to the user through a banner above each article. Note that in ‘Oracle Mode’ - when screening your own dataset - the relevant papers will not be marked; you, the oracle, have to make the decisions.</p>
+<p>Select Validation Mode, fill out a project name and press ‘<code>NEXT</code>’. Note that you can fill out your name and a description as well.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/ASReviewLAB/step_2b_V1_6.png" class="img-fluid figure-img" style="width:85.0%"></p>
+</figure>
+</div>
+<p>For this exercise we are screening in the so-called ‘<code>Validation Mode</code>’ of ASReview. By screening in the <a href="https://asreview.readthedocs.io/en/latest/project_create.html#project-modes" target="_blank">Validation Mode</a>, we are going to make use of a <a href="https://asreview.readthedocs.io/en/latest/data_labeled.html#fully-labeled-data" target="_blank">benchmark dataset</a>. This means that all records in the dataset have already been labeled as relevant or irrelevant. This is indicated to the user through a banner above each article. Note that in ‘<code>Oracle Mode</code>’ - when screening your own dataset - the relevant papers will not be marked; you, the oracle, have to make the decisions.</p>
 <p>More detailed information about setting up a project can be found on <a href="https://asreview.readthedocs.io/en/latest/project_create.html#project-information" target="_blank">ReadTheDocs</a>.</p>
-<p><em>Have you started creating a new project? If so, you can proceed to step 4!</em></p>
+<p><em>Have you started creating a new project? If so, you can proceed to step 3!</em></p>
 </section>
 </section>
 <section id="project-setup" class="level2">
 <h2 class="anchored" data-anchor-id="project-setup">Project setup</h2>
-<section id="step-4-the-dataset" class="level3">
-<h3 class="anchored" data-anchor-id="step-4-the-dataset">Step 4: The dataset</h3>
+<section id="step-3-the-dataset" class="level3">
+<h3 class="anchored" data-anchor-id="step-3-the-dataset">Step 3: The dataset</h3>
 <p>Now that you have created your ASReview project (woohoo!), you need to set it up. Without data, we have nothing to screen. So, you need to tell ELAS which dataset you want to screen for relevant articles.</p>
-<p>Click on the ‘ADD’ button next to ‘Add dataset’. Now a menu appears where you can choose how to load the dataset. You can add your dataset by selecting a file or providing an URL. For this exercise, we will use a benchmark dataset.</p>
-<p>Go to the ‘Benchmark datasets’ button, open the first dataset (i.e.&nbsp;the Van de Schoot (2017) dataset about PTSD trajectories) and click on ‘SELECT’. After you select the dataset, click on ‘SAVE’.</p>
-<p><img src="images/ASReviewLAB/Interface5.png" class="img-fluid" style="width:95.0%"></p>
-<p><em>Have you successfully selected/uploaded the dataset? If so, you can proceed to step 5!</em></p>
+<p>Click on the ‘<code>ADD</code>’ button next to ‘<code>Add dataset</code>’. Now a menu appears where you can choose how to load the dataset. You can add your dataset by selecting a file or providing an URL. For this exercise, we will use a benchmark dataset.</p>
+<p>Go to the ‘<code>Benchmark datasets</code>’ button, open the first dataset (i.e.&nbsp;the Van de Schoot (2017) dataset about PTSD trajectories) and click on ‘<code>ADD</code>’. After you select the dataset, click on ‘<code>SAVE</code>’.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/ASReviewLAB/step_3_V1_6.png" class="img-fluid figure-img" style="width:85.0%"></p>
+</figure>
+</div>
+<p><em>Have you successfully selected/uploaded the dataset? If so, you can proceed to step 4!</em></p>
 </section>
-<section id="step-5-prior-knowledge" class="level3">
-<h3 class="anchored" data-anchor-id="step-5-prior-knowledge">Step 5: Prior knowledge</h3>
+<section id="step-4-prior-knowledge" class="level3">
+<h3 class="anchored" data-anchor-id="step-4-prior-knowledge">Step 4: Prior knowledge</h3>
 <p>Before you can start screening the records, you need to tell ELAS what kind of records you <u>are</u> and what kind of records you <u>are not</u> looking for (i.e., relevant and irrelevant records, respectively). We call this <em>prior knowledge</em>. Based on the prior knowledge you provide, ELAS will reorder the stack of papers and provide you with the record that is most likely to be relevant (default settings).</p>
 <p>When performing a systematic review with your own data, you need to provide the prior knowledge yourself (at least one relevant and one irrelevant record). However, because you are using the Validation Mode of ASReview, the relevant records are known; the original authors have already read ALL records.</p>
-<p>To select the prior knowledge you first need to click on the ‘ADD’ button next to ‘Add prior knowledge’; see also the documentation about the selection of <a href="https://asreview.readthedocs.io/en/latest/project_create.html#select-prior-knowledge" target="_blank">prior knowledge</a>. Now you will see a menu about selecting prior knowledge.</p>
+<p>To select the prior knowledge you first need to click on the ‘<code>ADD</code>’ button next to ‘<code>Add prior knowledge</code>’; see also the documentation about the selection of <a href="https://asreview.readthedocs.io/en/latest/project_create.html#select-prior-knowledge" target="_blank">prior knowledge</a>. Now you will see a menu about selecting prior knowledge.</p>
 <p>The following five papers are known to be relevant:</p>
 <ul>
-<li>Latent trajectories of trauma symptoms and resilience: the 3-year longitudinal prospective USPER study of Danish veterans deployed in Afghanistan (DOI: <a href="https://doi.org/10.4088/jcp.13m08914" target="_blank">10.4088/JCP.13m08914</a>)</li>
+<li>Latent Trajectories of Trauma Symptoms and Resilience (DOI: <a href="https://doi.org/10.4088/jcp.13m08914" target="_blank">10.4088/JCP.13m08914</a>)</li>
 <li>A Latent Growth Mixture Modeling Approach to PTSD Symptoms in Rape Victims (DOI: <a href="https://doi.org/10.1177/1534765610395627" target="_blank">10.1177/1534765610395627</a>)</li>
 <li>Peace and War: Trajectories of Posttraumatic Stress Disorder Symptoms Before, During, and After Military Deployment in Afghanistan (DOI: <a href="https://doi.org/10.1177/0956797612457389" target="_blank">10.1177/0956797612457389</a>)</li>
 <li>The relationship between course of PTSD symptoms in deployed U.S. Marines and degree of combat exposure (DOI: <a href="https://doi.org/10.1002/jts.21988" target="_blank">10.1002/jts.21988</a>)</li>
 <li>Trajectories of trauma symptoms and resilience in deployed US military service members: Prospective cohort study (DOI: <a href="https://doi.org/10.1192/bjp.bp.111.096552" target="_blank">10.1192/bjp.bp.111.096552</a>)</li>
 </ul>
-<p>To add the relevant records, you click on ‘Search’, copy and paste the titles of these relevant records one by one in the search bar and add them as relevant.</p>
-<p><img src="https://raw.githubusercontent.com/asreview/asreview/main/docs/images/setup_prior_knowledge_random_validate.png" class="img-fluid" style="width:95.0%"></p>
-<p>After adding all five relevant records, you can add some irrelevant ones by clicking the ‘Random’ button (use the arrow in the upper left corner to be able to select this button) and by changing ‘relevant’ to ‘irrelevant’. Select five irrelevant records and click on ‘CLOSE’.</p>
-<p><em>Have you selected five relevant and five irrelevant records? If so, you can proceed to step 6!</em></p>
+<p>To add the relevant records, you click on ‘<code>Search</code>’, copy and paste the titles of these relevant records one by one in the search bar and add them as relevant.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/ASReviewLAB/step_4_V1_6.png" class="img-fluid figure-img" style="width:85.0%"></p>
+</figure>
+</div>
+<p>After adding all five relevant records, you can add some irrelevant ones by clicking the ‘<code>Random</code>’ button (use the arrow in the upper left corner to be able to select this button) and by changing ‘<code>relevant</code>’ to ‘<code>irrelevant</code>’. Select five irrelevant records and click on ‘<code>CLOSE</code>’.</p>
+<p><em>Have you selected five relevant and five irrelevant records? If so, you can proceed to step 5!</em></p>
 </section>
-<section id="step-6-active-learning-model" class="level3">
-<h3 class="anchored" data-anchor-id="step-6-active-learning-model">Step 6: Active learning model</h3>
+<section id="step-5-active-learning-model" class="level3">
+<h3 class="anchored" data-anchor-id="step-5-active-learning-model">Step 5: Active learning model</h3>
 <p>The last step to complete the setup is to select the active learning model you want to use. The default settings (i.e.&nbsp;Naïve Bayes, Max and tf-idf) will suffice for this exercise. If you want to change the mode, read which options are <a href="https://asreview.readthedocs.io/en/latest/project_create.html#model" target="_blank">built-in</a> or add your own model via a <a href="https://github.com/asreview/template-extension-new-model" target="_blank">template</a>.</p>
-<p>You can click on ‘NEXT’. A menu with the defaults will appear. Since we are using the defaults, you can click on ‘NEXT’ again. In the last step of the setup, ASReview LAB runs the feature extractor, trains a model, and ranks the records in your dataset. Depending on the model and the size of your dataset, this can take a couple of minutes (meanwhile, you can enjoy the animation video or read the blog post on <a href="https://asreview.nl/blog/active-learning-explained/" target="_blank">What is Active Learning?</a>).</p>
+<p>You can click on ‘<code>NEXT</code>’. A menu with the defaults will appear. Since we are using the defaults, you can click on ‘<code>NEXT</code>’ again. In the last step of the setup, ASReview LAB runs the feature extractor, trains a model, and ranks the records in your dataset. Depending on the model and the size of your dataset, this can take a couple of minutes (meanwhile, you can enjoy the animation video or read the blog post on <a href="https://asreview.nl/blog/active-learning-explained/" target="_blank">What is Active Learning?</a>).</p>
 <p>After the project is successfully initialized, you can start reviewing.</p>
-<p><img src="images/ASReviewLAB/Interface9.png" class="img-fluid" style="width:95.0%"></p>
-<p><em>Have you finished the setup? If so, you can proceed to step 7!</em></p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/ASReviewLAB/step_5a_V1_6.png" class="img-fluid figure-img" style="width:85.0%"></p>
+</figure>
+</div>
+<p><em>Have you finished the setup? If so, you can proceed to step 6!</em></p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/ASReviewLAB/step_5b_V1_6.png" class="img-fluid figure-img" style="width:85.0%"></p>
+</figure>
+</div>
 </section>
 </section>
 <section id="screening-phase" class="level2">
 <h2 class="anchored" data-anchor-id="screening-phase">Screening phase</h2>
-<section id="step-7-screening-the-records" class="level3">
-<h3 class="anchored" data-anchor-id="step-7-screening-the-records">Step 7: Screening the records</h3>
+<section id="step-6-screening-the-records" class="level3">
+<h3 class="anchored" data-anchor-id="step-6-screening-the-records">Step 6: Screening the records</h3>
 <p>Everything is set up and ready to screen, well done!</p>
 <p>Since we are in the Validation Mode of ASReview, you can pretend to be an expert on the topic of PTSD and pretend you have all the knowledge of the original screeners. All records in the dataset have been labeled as relevant/irrelevant, which is indicated through a banner above each article. Click on the heart shaped Relevant button if the record is marked as relevant. If not, you can press the Irrelevant button.</p>
 <p>Now, all we need is a Stopping Rule to determine when you are confident that you have identified (almost) all relevant records in your dataset. For this exercise, continue screening records until you have marked <em>50 consecutive records as irrelevant</em>. You can check up on your progress in the <a href="https://asreview.readthedocs.io/en/latest/progress.html" target="_blank">Analytics page</a>.</p>
 <p>When you have reached your Stopping Rule and you are done screening, go back to the Analytics page. Here you can see the summary statistics of your project such as the number of records you have labeled relevant or irrelevant. It also shows how many records are in your dataset and how many records you labeled irrelevant since you have screened the last relevant record. For more information about how to read these summary statistics and interpret the corresponding charts, check out the <a href="https://asreview.readthedocs.io/en/latest/progress.html#analytics" target="_blank">documentation</a> on the Analytics page.</p>
-<p>The Van de Schoot (2017) dataset contained 43 relevant records in this particular example. Did you get to label all of them as relevant before you reached your Stopping Rule? If you did, great!</p>
+<p>The Van de Schoot (2017) dataset contained 38 relevant records in this particular example. Did you get to label all of them as relevant before you reached your Stopping Rule? If you did, great!</p>
 <p>What is the percentage of total papers you needed to screen to find the number of relevant records you have found? Is it &lt;100%? Then, you were quicker compared to the original screeners of the dataset!</p>
 <p>You probably had to screen about only 2-3% of the data. Amazing right?! Chances are though that you did not get to see a couple of relevant records before you stopped screening. Do you think this is acceptable? There is a trade-off between the time spent screening and the error rate: the more records you screen, the lower the risk of missing a relevant record. However, screening all records in your dataset is still no guarantee for an error rate of zero, since even traditional screening by humans - which is the gold standard to which we compare AI-assisted screening - is not perfect <a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a>.</p>
 <p>Your willingness to accept the risk that you may exclude some relevant records is something to take into account when deciding on a Stopping Rule. Read more about Stopping Rules and how to decide on a good strategy for your data on the <a href="https://github.com/asreview/asreview/discussions" target="_blank">discussion platform</a>.</p>
 </section>
-<section id="step-8-extracting-and-inspecting-the-data" class="level3">
-<h3 class="anchored" data-anchor-id="step-8-extracting-and-inspecting-the-data">Step 8: Extracting and inspecting the data</h3>
-<p>Now that you found all or most relevant records, you can export your data using <a href="https://asreview.readthedocs.io/en/latest/progress.html#export-results" target="_blank">these instructions</a>. If you choose to inspect your data in Excel, download the data in ‘Excel’ format. If you prefer to inspect your data in R, download the ‘CSV (UTF-8)’ format and open it in R.</p>
+<section id="step-7-extracting-and-inspecting-the-data" class="level3">
+<h3 class="anchored" data-anchor-id="step-7-extracting-and-inspecting-the-data">Step 7: Extracting and inspecting the data</h3>
+<p>Now that you found all or most relevant records, you can export your data using <a href="https://asreview.readthedocs.io/en/latest/progress.html#export-results" target="_blank">these instructions</a>. If you choose to inspect your data in Excel, download the data in ‘<code>Excel</code>’ format. If you prefer to inspect your data in R, download the ‘<code>CSV (UTF-8)</code>’ format and open it in R.</p>
 <p>You can find all the data that was originally imported to ASReview in the exported data file, in a new order and with two new columns added at the end.</p>
 <p>Using the information about the <a href="https://asreview.readthedocs.io/en/latest/progress.html#export-results" target="_blank">Read the Docs page</a> can you reorder your data to appear in the order in which you loaded them into ASReview? And back to the order provided by ASReview?</p>
 <p>Check if the number of records coded <code>included = 1</code> corresponds to the number of relevant records on your Analytics page. From which row number, based on the original ordering, do the included articles come from?</p>
-<p>For the last exercise, it is important to change the order back to the order provided by ASReview. Lastly, check out the first few records with no number in the <code>included</code> column. Are those articles labeled as ‘relevant’ in the original dataset? (Whether or not a record was pre-labeled as relevant is shown in the column <code>label_included</code> in the original dataset.)</p>
+<p>For the last exercise, it is important to change the order back to the order provided by ASReview. Lastly, check out the first few records with no number in the <code>included</code> column. Are those articles labeled as ‘<code>relevant</code>’ in the original dataset? (Whether or not a record was pre-labeled as relevant is shown in the column <code>label_included</code> in the original dataset.)</p>
 </section>
 </section>
 <section id="goal" class="level2">
@@ -364,7 +352,11 @@ Do you like the software, leave a star on <a href="https://github.com/asreview/a
 <li><p>Ready to start your own project? Upload <a href="https://asreview.readthedocs.io/en/latest/data.html" target="_blank">your own data</a> and start screening in the Oracle mode!</p></li>
 <li><p>Try to find the hidden memory game in ASReview (some people found it by going through the <a href="https://github.com/asreview/asreview/tree/master/asreview" target="_blank">source code</a> on Github… +1 for open-science!)</p></li>
 </ul>
-<p><img src="https://raw.githubusercontent.com/asreview/asreview/main/docs/images/game.png" class="img-fluid" style="width:95.0%"></p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/ASReviewLAB/game_V1_6.png" class="img-fluid figure-img" style="width:85.0%"></p>
+</figure>
+</div>
 
 
 </section>
