@@ -23,4 +23,3 @@ This repository is part of the ASReview project ([asreview.ai](https://asreview.
 maintainers of ASReview LAB. See [ASReview
 LAB](https://github.com/asreview/asreview) for contact information and more
 resources.
-
