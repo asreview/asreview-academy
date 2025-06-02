@@ -7,4 +7,3 @@ Welcome to the ASReview Academy! This website contains open teaching materials f
 ## License 
 
 The work is published under the CC BY 4.0 license.
-
