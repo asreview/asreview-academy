@@ -31,13 +31,9 @@ website:
            text: Datatools
          - href: simulation.qmd
            text: Simulation Mode
-          
 
 format:
   html:
     theme: cosmo
     css: styles.css
     toc: true
-
-
-
