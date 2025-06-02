@@ -6,13 +6,13 @@ author: "The ASReview Academy Team"
 ## Introduction to the software ASReview LAB
 
 The **goal** of this exercise is to get familiar with AI-aided screening
-by making use of ASReview LAB v1.x.
+by making use of ASReview LAB v2.x.
 
 You will learn how to install and set up the software, upload data,
 screen records, and export and interpret the results. The exercise will
 guide you through all the steps of AI-aided screening as described in
 the [workflow on
-Read-the-Docs](https://asreview.readthedocs.io/en/latest/about.html#labeling-workflow-with-asreview){target="_blank"}.
+Read-the-Docs](https://asreview.readthedocs.io/en/latest/lab/about.html#general-workflow-with-asreview){target="_blank"}.
 
 Enjoy!
 
@@ -21,10 +21,10 @@ Enjoy!
 Before you start, you might want to read a bit more on:
 
 -   [What is ASReview
-    LAB](https://asreview.readthedocs.io/en/latest/about.html#what-is-asreview-lab){target="_blank"}?
+    LAB](https://asreview.readthedocs.io/en/latest/lab/index.html){target="_blank"}?
 
 -   [The terminology
-    used](https://asreview.readthedocs.io/en/latest/about.html#asreview-lab-terminology){target="_blank"}
+    used](https://asreview.readthedocs.io/en/latest/lab/about.html#asreview-lab-terminology){target="_blank"}
 
 -   The paper that was published in [Nature Machine
     Intelligence](https://www.nature.com/articles/s42256-020-00287-7){target="_blank"}
@@ -37,11 +37,11 @@ First, you need to install [Python](https://www.python.org/downloads/){target="_
 
 Once you have Python installed, you can go through the easy 3-step
 [guide to installing (or upgrading)
-ASReview](https://asreview.nl/download/){target="_blank"} on the ASReview-website.
+ASReview](https://asreview.nl/local-installation/){target="_blank"} on the ASReview-website.
 
 More detailed installation information, troubleshooting, and
 installation on a server or via a Docker are available on
-[ReadTheDocs](https://asreview.readthedocs.io/en/latest/installation.html#install-asreview){target="_blank"}.  
+[ReadTheDocs](https://asreview.readthedocs.io/en/latest/lab/installation.html){target="_blank"}.  
 
 *Have you installed the latest version of ASReview? You can proceed to
 step 2!*
@@ -77,7 +77,7 @@ for complete privacy, right?! Read more about the key principles in the
 
 You can also run the software via a server, but you need to take care of
 [hosting the server
-yourself](https://asreview.readthedocs.io/en/latest/installation.html#server-installation){target="_blank"}
+yourself](https://asreview.readthedocs.io/en/latest/lab/installation.html#server-installation){target="_blank"}
 (or ask your IT-department).
 
 
@@ -89,7 +89,7 @@ step 3!*
 Now that you have installed and opened ASReview LAB, you can create a
 new project. Below you will find a step-by-step guide. Note that the
 screenshots shown below are made in [dark
-mode](https://asreview.readthedocs.io/en/latest/screening.html#display){target="_blank"}.
+mode](https://asreview.readthedocs.io/en/latest/lab/screening.html#dark-mode){target="_blank"}.
 
 1.  *New project;*
 
@@ -107,9 +107,9 @@ that you can fill out your name and a description as well.
 
 For this exercise we are screening in the so-called ‘`Validation Mode`’
 of ASReview. By screening in the [Validation
-Mode](https://asreview.readthedocs.io/en/latest/project_create.html#project-modes){target="_blank"},
+Mode](https://asreview.readthedocs.io/en/latest/lab/validation.html){target="_blank"},
 we are going to make use of a [benchmark
-dataset](https://asreview.readthedocs.io/en/latest/data_labeled.html#fully-labeled-data){target="_blank"}.
+dataset](https://asreview.readthedocs.io/en/latest/lab/project_create.html#from-discovery){target="_blank"}.
 This means that all records in the dataset have already been labeled as
 relevant or irrelevant. This is indicated to the user through a banner
 above each article. Note that in ‘`Oracle Mode`’ - when screening your own
@@ -117,7 +117,7 @@ dataset - the relevant papers will not be marked; you, the oracle, have
 to make the decisions.
 
 More detailed information about setting up a project can be found on
-[ReadTheDocs](https://asreview.readthedocs.io/en/latest/project_create.html#project-information){target="_blank"}.
+[ReadTheDocs](https://asreview.readthedocs.io/en/latest/lab/project_create.html){target="_blank"}.
 
  
 *Have you started creating a new project? If so, you can proceed to step
@@ -165,7 +165,7 @@ already read ALL records.
 
 To select the prior knowledge you first need to click on the ‘`ADD`’
 button next to ‘`Add prior knowledge`’; see also the documentation 
-about the selection of [prior knowledge](https://asreview.readthedocs.io/en/latest/project_create.html#select-prior-knowledge){target="_blank"}.
+about the selection of [prior knowledge](https://asreview.readthedocs.io/en/latest/lab/project_create.html#prior-knowledge){target="_blank"}.
 Now you will see a menu about selecting prior knowledge.
 
 The following five papers are known to be relevant:
@@ -203,7 +203,7 @@ The last step to complete the setup is to select the active learning
 model you want to use. The default settings (i.e. Naïve Bayes, Max and
 tf-idf) will suffice for this exercise. If you want to change the mode,
 read which options are
-[built-in](https://asreview.readthedocs.io/en/latest/project_create.html#model){target="_blank"}
+[built-in](https://asreview.readthedocs.io/en/latest/lab/models.html){target="_blank"}
 or add your own model via a
 [template](https://github.com/asreview/template-extension-new-model){target="_blank"}. 
 
@@ -241,7 +241,7 @@ that you have identified (almost) all relevant records in your dataset.
 For this exercise, continue screening records until you have marked *50
 consecutive records as irrelevant*. You can check up on your progress in
 the [Analytics
-page](https://asreview.readthedocs.io/en/latest/progress.html){target="_blank"}.
+page](https://asreview.readthedocs.io/en/latest/lab/progress.html){target="_blank"}.
 
 When you have reached your Stopping Rule and you are done screening, go
 back to the Analytics page. Here you can see the summary statistics of
@@ -250,7 +250,7 @@ irrelevant. It also shows how many records are in your dataset and how
 many records you labeled irrelevant since you have screened the last
 relevant record. For more information about how to read these summary
 statistics and interpret the corresponding charts, check out the
-[documentation](https://asreview.readthedocs.io/en/latest/progress.html#analytics){target="_blank"}
+[documentation](https://asreview.readthedocs.io/en/latest/lab/progress.html){target="_blank"}
 on the Analytics page.
 
 The Van de Schoot (2017) dataset contained 38 relevant records in this
@@ -281,7 +281,7 @@ platform](https://github.com/asreview/asreview/discussions){target="_blank"}.
 
 Now that you found all or most relevant records, you can export your
 data using [these
-instructions](https://asreview.readthedocs.io/en/latest/progress.html#export-results){target="_blank"}.
+instructions](https://asreview.readthedocs.io/en/latest/lab/progress.html#export-dataset){target="_blank"}.
 If you choose to inspect your data in Excel, download the data in
 ‘`Excel`’ format. If you prefer to inspect your data in R, download the
 ‘`CSV (UTF-8)`’ format and open it in R.
@@ -291,7 +291,7 @@ the exported data file, in a new order and with two new columns added at
 the end.
 
 Using the information about the [Read the Docs
-page](https://asreview.readthedocs.io/en/latest/progress.html#export-results){target="_blank"}
+page](https://asreview.readthedocs.io/en/latest/lab/progress.html#export-dataset){target="_blank"}
 can you reorder your data to appear in the order in which you loaded
 them into ASReview? And back to the order provided by ASReview?
 
@@ -333,7 +333,7 @@ Some suggestions:
         explained](https://asreview.nl/blog/active-learning-explained/){target="_blank"}.
 
 -   Ready to start your own project? Upload [your own
-    data](https://asreview.readthedocs.io/en/latest/data.html){target="_blank"} and start
+    data](https://asreview.readthedocs.io/en/latest/lab/data.html){target="_blank"} and start
     screening in the Oracle mode!
 
 -   Try to find the hidden memory game in ASReview (some people found it
@@ -341,8 +341,6 @@ Some suggestions:
     code](https://github.com/asreview/asreview/tree/master/asreview){target="_blank"} on
     Github… +1 for open-science!)
 
-
-![](https://raw.githubusercontent.com/asreview/asreview/main/docs/images/game.png){width=85% fig-align="center"}
 
 [^1]: Wang Z, Nayfeh T, Tetzlaff J, O’Blenis P, Murad MH (2020) Error
     rates of human reviewers during abstract screening in systematic
