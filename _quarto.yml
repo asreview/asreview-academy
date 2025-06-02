@@ -26,7 +26,7 @@ website:
      - section: "Introduction Courses"
        contents:
          - href: ASReviewLAB.qmd
-           text: ASReview LAB
+           text: ASReview LAB v1.6
          - href: datatools.qmd
            text: Datatools
          - href: simulation.qmd
