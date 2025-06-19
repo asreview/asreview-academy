@@ -27,8 +27,6 @@ website:
        contents:
          - href: ASReviewLAB.qmd
            text: ASReview LAB
-         - href: datatools.qmd
-           text: Datatools
          - href: simulation.qmd
            text: Simulation Mode
 
