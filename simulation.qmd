@@ -52,6 +52,9 @@ During the simulation you will see a loading bar underneath the project. This wi
 
 Note: it can be that running the simulation takes a long time because of the size of your dataset in combination with the chosen model. To give you an idea of the possible differences in runtime between models, see Table 1 on page 15 of [Teijema et al. (2023)](https://doi.org/10.3389/frma.2023.1178181){target="_blank"}. Performing the feature matrix for a dataset with 15K records takes 20 seconds with TF-IDF, and 6 hours with SBERT.
 
+
+![](images/Simulation/v2_metrics.png){width=85% fig-align="center"}
+
 When the simulation is done, navigate to the `Analytics` panel and select `RECALL`. Save the recall plot to your laptop. After saving the plot, check out the other analytics options such as `DENSITY` and `WAVE`. Read the explanations of different options by clicking on the lightbulb icon. Try to understand what the different plots mean and how they can help you understand the performance of your model.
 
 Woohoo! You just performed a simulation study! Easy right?
