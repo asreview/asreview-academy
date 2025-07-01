@@ -21,6 +21,41 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
+/* CSS for syntax highlighting */
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
 </style>
 
 
@@ -151,6 +186,7 @@ ul.task-list li input[type="checkbox"] {
   <ul>
   <li><a href="#introduction" id="toc-introduction" class="nav-link active" data-scroll-target="#introduction">Introduction</a></li>
   <li><a href="#conducting-a-simulation-via-the-web-browser" id="toc-conducting-a-simulation-via-the-web-browser" class="nav-link" data-scroll-target="#conducting-a-simulation-via-the-web-browser">Conducting a simulation via the web browser</a></li>
+  <li><a href="#model-comparison" id="toc-model-comparison" class="nav-link" data-scroll-target="#model-comparison">Model Comparison</a></li>
   <li><a href="#conducting-a-simulation-via-the-command-line-interface" id="toc-conducting-a-simulation-via-the-command-line-interface" class="nav-link" data-scroll-target="#conducting-a-simulation-via-the-command-line-interface">Conducting a simulation via the command line interface</a>
   <ul class="collapse">
   <li><a href="#step-1-choose-a-research-question" id="toc-step-1-choose-a-research-question" class="nav-link" data-scroll-target="#step-1-choose-a-research-question">Step 1: Choose a research question</a></li>
@@ -201,8 +237,8 @@ ul.task-list li input[type="checkbox"] {
 
 <section id="introduction" class="level2">
 <h2 class="anchored" data-anchor-id="introduction">Introduction</h2>
-<p>The <strong>goal</strong> of this exercise is to learn how you can perform simulations on a labeled systematic review dataset using the web browser of ASReview, the command line interface, and the package titled Makita.</p>
-<p>A simulation in the context of AI-assisted reviewing involves mimicking the screening process with a particular model. In a simulation setting, it is already known which records are labeled as relevant, and the software can automatically reenact the screening process as if a human were labeling the records in interaction with the Active Learning model. This allows you to answer questions about the (workings of) the model itself and compare the performance of different models under different circumstances. Read the <a href="https://asreview.readthedocs.io/en/latest/simulation_overview.html" target="_blank">documentation</a> for more information about running simulations.</p>
+<p>The <strong>goal</strong> of this exercise is to learn how you can perform simulations on a labeled systematic review dataset using ASReview LAB (the web interface), the command line interface, and the package titled Makita.</p>
+<p>A simulation in the context of AI-assisted reviewing involves mimicking the screening process with a particular model. In a simulation setting, it is already known which records are labeled as relevant, and the software can automatically reenact the screening process as if a human were labeling the records in interaction with the Active Learning model. This allows you to answer questions about the (workings of) the model and compare the performance of different models under different circumstances. Read the <a href="https://asreview.readthedocs.io/en/stable/lab/simulation_overview.html" target="_blank">documentation</a> for more information about running simulations.</p>
 <p>If writing scripts and running simulations is new to you, don’t worry, you can make it as simple or complicated as you want.</p>
 <p>In this exercise, you will learn how to prepare, run, and interpret the results of a simulation yourself. You will first do this using the web browser with the click-and-run interface you know from the <a href="./ASReviewLAB.html" target="_blank">first exercise</a>. Then you will be guided through the same process in the command-line interface, which has more options than the LAB interface. Lastly, you will run the same simulations, this time using the Makita package. This package automates much of the process, which is great for large-scale simulation studies.</p>
 <p>Enjoy!</p>
@@ -215,53 +251,70 @@ ul.task-list li input[type="checkbox"] {
 </section>
 <section id="conducting-a-simulation-via-the-web-browser" class="level2">
 <h2 class="anchored" data-anchor-id="conducting-a-simulation-via-the-web-browser">Conducting a simulation via the web browser</h2>
-<p>To start off easy, we will run a simulation study using the PTSD benchmark dataset we also used in the <a href="./ASReviewLAB.html" target="_blank">introductory exercise</a>.</p>
+<p>To start off easy, we will run a simulation study using the <code>van de Schoot et al. (2018)</code> benchmark dataset we also used in the <a href="./ASReviewLAB.html" target="_blank">introductory exercise</a>.</p>
 <p>For this exercise, we assume you have already installed Python and the ASReview LAB application. If you haven’t done so yet, you can follow <a href="https://asreview.ai/download" target="_blank">the instructions on installation</a>.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="images/Simulation/Sim_Mode.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:85.0%"></p>
+<p><img src="images/Simulation/v2_simulation_mode.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:85.0%"></p>
 </figure>
 </div>
-<ol type="1">
-<li>Open ASReview LAB with the terminal and start a new project using ‘<code>Simulation</code>’ mode. Follow the steps described in the <a href="https://asreview.readthedocs.io/en/latest/simulation_webapp.html" target="_blank">documentation</a>, and select the <code>van de Schoot et al. (2017)</code> PTSD Trajectories benchmark dataset.</li>
-</ol>
-<p>Add these five prior relevant studies:</p>
+<p>Open ASReview LAB with the terminal. Use the left hand menu to select the <strong>Simulation</strong> mode. Like before, select the <code>DISCOVER</code> tab and select the <code>van de Schoot et al. (2018)</code> dataset from the list of datasets. Download the dataset to start your new project.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/Simulation/v2_start_project.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:85.0%"></p>
+</figure>
+</div>
+<p>Navigate to the <code>Prior knowledge</code> tab. Click <code>Search</code> and add these four relevant studies:</p>
 <ul>
-<li><p>Latent trajectories of trauma symptoms and resilience: the 3-year longitudinal prospective USPER study of Danish veterans deployed in Afghanistan</p></li>
 <li><p>A Latent Growth Mixture Modeling Approach to PTSD Symptoms in Rape Victims</p></li>
-<li><p>Peace and War: Trajectories of Posttraumatic Stress Disorder Symptoms Before, During, and After Military Deployment in Afghanistan</p></li>
+<li><p>Peace and War</p></li>
 <li><p>The relationship between course of PTSD symptoms in deployed U.S. Marines and degree of combat exposure</p></li>
 <li><p>Trajectories of trauma symptoms and resilience in deployed US military service members: Prospective cohort study</p></li>
 </ul>
-<p>Now, also choose five (random) prior irrelevant papers and <strong>copy-paste the selected irrelevant titles to a separate file</strong>. We will use the same studies later!</p>
-<p>Continue to the next screen, Keep the default models and initiate the simulation by clicking “NEXT”.</p>
-<p>After <code>Warming up the AI</code> is done, click on <code>GOT IT</code>. Proceed to the Analytics page and check if the simulation study has finished. ELAS is holding a card with the status of your project. If your simulation is not finished yet, click the REFRESH button in the upper right corner.</p>
+<p>Return to the previous menu. Verify the Prior knowledge tab. It should read <code>Show records (4)</code>. Verify the four records by clicking show records. After verifying everything is in order, click <code>Simulate</code> to start your simulation.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="images/Simulation/step_1.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:85.0%"></p>
+<p><img src="images/Simulation/v2_simulation_finished.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:85.0%"></p>
 </figure>
 </div>
-<p>Note: it can be that running the simulation takes a long time because of the size of your dataset in combination with the chosen model. To give you an idea of the possible differences in runtime between models, see Table 1 on page 15 of <a href="https://psyarxiv.com/t7bpd" target="_blank">Teijema et al.&nbsp;(2022)</a>. Training the feature matrix for a dataset with 15K records took .23 seconds with TF-IDF, but 6 hours with sBert.</p>
-<p>When the simulation is done, save the recall plot on your laptop. For instructions on how to do this, see the <a href="https://asreview.readthedocs.io/en/latest/progress.html#summary-statistics" target="_blank">documentation</a>.</p>
+<p>During the simulation you will see a loading bar underneath the project. This will disappear when the simulation is finished. Open the project to see check out your fresh simulation!</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/Simulation/v2_project_finished.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:85.0%"></p>
+</figure>
+</div>
+<p>Note: it can be that running the simulation takes a long time because of the size of your dataset in combination with the chosen model. To give you an idea of the possible differences in runtime between models, see Table 1 on page 15 of <a href="https://doi.org/10.3389/frma.2023.1178181" target="_blank">Teijema et al.&nbsp;(2023)</a>. Performing the feature matrix for a dataset with 15K records takes 20 seconds with TF-IDF, and 6 hours with SBERT.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/Simulation/v2_analytics.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:85.0%"></p>
+</figure>
+</div>
+<p>When the simulation is done, navigate to the <code>Analytics</code> panel and select <code>RECALL</code>. Save the recall plot to your laptop. After saving the plot, check out the other analytics options such as <code>DENSITY</code> and <code>WAVE</code>. Read the explanations of different options by clicking on the lightbulb icon. Try to understand what the different plots mean and how they can help you understand the performance of your model.</p>
 <p>Woohoo! You just performed a simulation study! Easy right?</p>
-<p>Let’s do some more:</p>
+</section>
+<section id="model-comparison" class="level2">
+<h2 class="anchored" data-anchor-id="model-comparison">Model Comparison</h2>
+<p>Let’s compare the performance of different models. We will do this by running different simulation studies with the same dataset, but with different settings.</p>
+<p>Start a new project (use a different name) from the same dataset, and add the same relevant articles as priors. This time, after selecting your Prior knowledge, navigate to the <code>AI</code> tab. Select the <code>ELAS u3</code> model from the dropdown menu. This is a model that uses a different feature extractor and query strategy than the default <code>ELAS u4</code> model.</p>
+<blockquote class="blockquote">
+<p>Have you read the <code>AI Models Explained</code> section revealed by clicking the lightbulb icon? If not, you can do so now to learn more about the different model types.</p>
+</blockquote>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="images/ASReviewLAB/step_6.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:85.0%"></p>
+<p><img src="images/Simulation/v2_multiple_projects.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:85.0%"></p>
 </figure>
 </div>
-<ol start="2" type="1">
-<li><p>Start a new project (use a different name), add the same dataset, and add the same relevant <em>and</em> irrelevant articles as priors but this time choose a different classification model such as Random Forest or Logistic Regression. Run the simulation study and save the recall plot.</p></li>
-<li><p>Repeat the same process, but now choose a different feature extractor, query strategy or balancing strategy. Run the simulation and save the recall plot.</p></li>
-</ol>
-<p>Compare the three recall plots. What is your conclusion in terms of performance for the three different models? You might observe some differences in how long it takes each model to arrive at the total number of relevant records found.</p>
+<p>Run the simulation study and again save the recall plot.</p>
+<p>Compare the recall plots. What is your conclusion in terms of performance for the different models? You might observe some differences in how long it takes each model to arrive at the total number of relevant records found.</p>
+<p>Compare the <code>Loss</code> and <code>NDCG</code> metrics. Do you understand the differences in performance between the models? Check the lightbulb icon for more information about the metrics. Do the metrics match your observations from the recall plot?</p>
 <p>Many papers have been written about such comparisons; for an overview of such comparisons, see the <a href="https://asreview.nl/blog/project/evaluating-the-performance-of-active-learning-within-systematic-reviews/" target="_blank">systematic review</a> on this topic.</p>
 </section>
 <section id="conducting-a-simulation-via-the-command-line-interface" class="level2">
 <h2 class="anchored" data-anchor-id="conducting-a-simulation-via-the-command-line-interface">Conducting a simulation via the command line interface</h2>
 <section id="step-1-choose-a-research-question" class="level3">
 <h3 class="anchored" data-anchor-id="step-1-choose-a-research-question">Step 1: Choose a research question</h3>
-<p>Many more options for the configuration are available via the <a href="https://asreview.readthedocs.io/en/latest/simulation_cli.html#simulation-options" target="_blank">command line interface</a>. This is useful because 1001 questions can be answered by running a simulation study and every simulation study requires slightly different settings. As example, we will work on three example questions.</p>
+<p>Many more options for the configuration are available via the Command Line Interface (CLI). Read the documentation on the <a href="https://asreview.readthedocs.io/en/stable/lab/simulation_cli.html" target="_blank">CLI</a> to get started.</p>
+<p>The CLI is useful because 1001 questions can be answered by running a simulation study and every simulation study requires slightly different settings. As example, we will work on three example questions.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="images/Simulation/cli.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:85.0%"></p>
@@ -278,7 +331,7 @@ ul.task-list li input[type="checkbox"] {
 </ol>
 <p>This question can be addressed by running the exact same simulation three times, but with different prior knowledge selection. We introduce the metric the percentage of Relevant Records Found (RRF) at a given recall (e.g., after screening 10% of the total number of records).</p>
 <ol start="3" type="1">
-<li>Does, for example, the classifier Naive Bayes (‘nb’) or Logistic Regression (‘logistic’) perform better for a given dataset, when keeping the other settings fixed? For this question, we introduce the metrics the Extra Relevant Records found (ERF) and the Average Time to Discovery (ATD).</li>
+<li>Does, for example, the ELAS u4 or ELAS u3 perform better for a given dataset, when keeping the other settings fixed? For this question, we introduce the metrics the Extra Relevant Records found (ERF) and the Average Time to Discovery (ATD).</li>
 </ol>
 <p>To keep your results organized, we suggest you fill out the table below with your simulation results for each model you run.</p>
 </section>
@@ -299,18 +352,18 @@ ul.task-list li input[type="checkbox"] {
 <li><p><em>Navigate to the folder structure;</em></p></li>
 </ol>
 <p>You can navigate to your folder structure with:</p>
-<p><code>bash cd [file_path]</code></p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="bu">cd</span> <span class="pp">[</span><span class="ss">file_path</span><span class="pp">]</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p>It’s also possible to open a terminal directly at the correct location.</p>
 <p>For MacOS: 1. Right-click on created folder. 2. Click “New Terminal at Folder”. Then the data set will be automatically be put into the designated data folder. For Windows 11 (and sometimes 10): 1. Shift-right click inside the created folder. 2. Click on <code>Open in Terminal</code></p>
 <ol start="3" type="1">
 <li><em>Install the synergy-dataset Python package with:</em> (This package will already be installed after installing ASReview, but better safe than sorry!)</li>
 </ol>
-<p><code>bash pip install synergy-dataset</code></p>
+<div class="sourceCode" id="cb2"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="ex">pip</span> install synergy-dataset </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <ol start="4" type="1">
 <li><em>Build the dataset.</em></li>
 </ol>
 <p>To download and build the SYNERGY dataset, run the following command in the command line:</p>
-<p><code>bash python -m synergy_dataset get -o data</code></p>
+<div class="sourceCode" id="cb3"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="ex">python</span> <span class="at">-m</span> synergy_dataset get <span class="at">-o</span> data </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p>You can also choose to use your own dataset. Do make sure that the dataset is fully labeled and <a href="https://asreview.readthedocs.io/en/latest/data_labeled.html#fully-labeled-data" target="_blank">prepared for simulation</a>.</p>
 </section>
 <section id="step-4-write-and-run-the-simulation-script" class="level3">
@@ -319,22 +372,21 @@ ul.task-list li input[type="checkbox"] {
 <p>The parts between the brackets [ ] need to be filled out by you.</p>
 <ol type="1">
 <li><p><em>Open the Terminal</em></p></li>
-<li><p><em>Navigate to the folder structure;</em></p></li>
-<li><p><em>Run the simulation;</em></p></li>
+<li><p><em>Navigate to the folder structure</em></p></li>
+<li><p><em>Run the simulation</em></p></li>
 </ol>
-<p>Now, we’re going to write the script to run your simulation, using the code below. You still need to fill out at least three pieces of information: the dataset’s name, the name of the output file and two seed values, to make the results reproducible. Some processes in ASReview require (pseudo-)random number generation. The user can give such a process a fixed “seed” to start from, which means the same sequence is generated each time, making any simulation reproducible. The <code>--model_seed</code> command controls the seed of the random number generation that is used after model initialization. The <code>--init_seed</code> command controls the random set of papers to train the model on.</p>
-<p><code>bash asreview simulate data/[name_of_your_data.csv] --state_file output/[results_name].asreview --seed [your favorite number] --init_seed [your second favorite number]</code></p>
+<p>Now, we’re going to write the script to run your simulation, using the code below. You still need to fill out at least three pieces of information: the dataset’s name, the name of the output file and a seed value, to make the results reproducible. Some processes in ASReview require (pseudo-)random number generation. The user can give such a process a fixed “seed” to start from, which means the same sequence is generated each time, making any simulation reproducible. The <code>--seed</code> command controls the seed of the random number generation that is used after model initialization.</p>
+<div class="sourceCode" id="cb4"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="ex">asreview</span> simulate data/<span class="pp">[</span><span class="ss">name_of_your_data.csv</span><span class="pp">]</span> <span class="at">--output</span> output/<span class="pp">[</span><span class="ss">results_name</span><span class="pp">]</span>.asreview <span class="at">--seed</span> [your favorite number]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p>Save this script in the <code>jobs.txt</code> file you just made, to keep track of which code you ran!</p>
-<p>You can also decide to <a href="https://asreview.readthedocs.io/en/latest/simulation_cli.html#simulation-via-command-line" target="_blank">supply more arguments</a>, for example to employ a different model or to specify prior knowledge yourself instead of using <code>--init_seed</code> to select random ones . If no prior knowledge is specified, one relevant and one irrelevant prior are randomly selected. If no model is specified, the software’s <a href="https://asreview.readthedocs.io/en/latest/simulation_cli.html#active-learning" target="_blank">default active learning model</a> is used.</p>
+<p>You can also decide to <a href="https://asreview.readthedocs.io/en/stable/lab/simulation_cli.html" target="_blank">supply more arguments</a>, for example to employ a different model or to specify prior knowledge yourself instead of using <code>--prior_seed</code> to select random ones . If no model is specified, the software’s <a href="https://asreview.readthedocs.io/en/stable/lab/models.html" target="_blank">default active learning model</a> is used.</p>
 <p>Run the simulation by copy-pasting the code in the command line interface.</p>
-<p>While your simulation is running, you can check whether the priors were correctly specified as they appear in the command prompt and you can stare at the progress bar.</p>
 </section>
 <section id="step-5-obtaining-a-recall-curve-and-the-metrics" class="level3">
 <h3 class="anchored" data-anchor-id="step-5-obtaining-a-recall-curve-and-the-metrics">Step 5: Obtaining a recall curve and the metrics</h3>
 <p>For the next steps, you first need to install some extra extensions. You can do so with:</p>
-<p><code>bash pip install asreview-insights asreview-datatools asreview-makita</code></p>
+<div class="sourceCode" id="cb5"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="ex">pip</span> install asreview-insights asreview-makita</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p>You can get the recall plot with this line of code:</p>
-<p><code>bash asreview plot recall output/[results_name].asreview -o output/results.png</code></p>
+<div class="sourceCode" id="cb6"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="ex">asreview</span> plot recall output/<span class="pp">[</span><span class="ss">results_name</span><span class="pp">]</span>.asreview <span class="at">-o</span> output/results.png </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p>Run the code in the CLI (and put it in your <code>jobs.txt</code> file).</p>
 <p>The plot file will appear in your output folder. Inspect the recall curve from the asreview-insights extension. It should look something like the figure below.</p>
 <div class="quarto-figure quarto-figure-center">
@@ -343,7 +395,7 @@ ul.task-list li input[type="checkbox"] {
 </figure>
 </div>
 <p>You can get the metrics with:</p>
-<p><code>bash asreview metrics output/[results_name].asreview -o output/output.json</code></p>
+<div class="sourceCode" id="cb7"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="ex">asreview</span> metrics output/<span class="pp">[</span><span class="ss">results_name</span><span class="pp">]</span>.asreview <span class="at">-o</span> output/output.json</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p>The output will appear in your command prompt and will be saved in the ‘output.json’ file in your output folder. You can scroll up in your CLI or open the file with a text editor like Notepad (or R, Python, or a Jupiter Notebook) to look at the metrics we got from the asreview-insights.</p>
 <p>Fill out the performance statistics in your table under model 1. But what do those statistics mean? Check out the readme of the <a href="https://github.com/asreview/asreview-insights#performance-metrics" target="_blank">Insights packages</a>.</p>
 </section>
@@ -353,18 +405,18 @@ ul.task-list li input[type="checkbox"] {
 </section>
 <section id="research-question-2" class="level3">
 <h3 class="anchored" data-anchor-id="research-question-2">Research Question 2</h3>
-<p>To answer <u>research question 2</u>, you can rerun the same model once more with a different value for <code>--init_seed</code>. A different seed value will result in a different selection of prior knowledge.</p>
+<p>To answer <u>research question 2</u>, you can rerun the same model once more with a different value for <code>--prior_seed</code>. A different seed value will result in a different selection of prior knowledge.</p>
 <p>Make sure to store the results under a different name and write the results in your table under Model 2.</p>
 <p>Can you confirm that the model used different prior knowledge in this run using the information printed in your console?</p>
 <p>Then, run the model a third time (Model 3), but this time specify a specific set of records to be used as training data by using the <code>--prior_idx</code> argument:</p>
-<p><code>bash asreview simulate data/[name_of_your_data.csv] --state_file output/[results_name].asreview --seed [your favorite number] --prior_idx [row nr. relevant record] [row nr. irrelevant record]</code></p>
+<div class="sourceCode" id="cb8"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="ex">asreview</span> simulate data/<span class="pp">[</span><span class="ss">name_of_your_data.csv</span><span class="pp">]</span> <span class="at">--state_file</span> output/<span class="pp">[</span><span class="ss">results_name</span><span class="pp">]</span>.asreview <span class="at">--seed</span> [your favorite number] <span class="at">--prior_idx</span> [row nr. relevant record] [row nr. irrelevant record] </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p>You should search in the data to identify the row numbers of the records you want to use. Be aware we start counting row numbers at zero (and mind the column names).</p>
 <p>You can compare the three runs by looking at (for example) the variation in recall curves and the RRF@10 statistics. A higher percentage of Relevant Records Found after screening any portion of the total records (in this case 10%), indicates a more efficient model.</p>
 </section>
 <section id="research-question-3" class="level3">
 <h3 class="anchored" data-anchor-id="research-question-3">Research Question 3</h3>
-<p>To answer <u>research question 3</u>, rerun the model with the <code>logistic</code> model classifier instead of the default Naive Bayes (<code>nb</code>) setting:</p>
-<p><code>bash asreview simulate data/[name_of_your_data].csv -m logistic --state_file output/[results_name].asreview  --seed [your favorite number] --init_seed [your second favorite number]</code></p>
+<p>To answer <u>research question 3</u>, rerun the model with the <code>ELAS u3</code> model instead of the default setting:</p>
+<div class="sourceCode" id="cb9"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="ex">asreview</span> simulate data/<span class="pp">[</span><span class="ss">name_of_your_data</span><span class="pp">]</span>.csv <span class="at">--ai</span> elas_u3 <span class="at">--output</span> output/<span class="pp">[</span><span class="ss">results_name</span><span class="pp">]</span>.asreview  <span class="at">--seed</span> [your favorite number] <span class="at">--prior-seed</span> [your second favorite number] </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p>You can compare the performance of the models by looking at the (for example) ERF and the ATD. A higher number of Extra Relevant Records found compared to random screening, indicates a a more efficient model. Conversely, a lower Average Time to Discovery means that the model was quicker to find all relevant records in the dataset.</p>
 </section>
 </section>
@@ -373,19 +425,19 @@ ul.task-list li input[type="checkbox"] {
 <p>By now, you can probably imagine that writing the code for running many different simulations is quite time-consuming. Keeping track of everything you ran in a separate <code>jobs.txt</code> file to keep your simulations reproducible and manually filling out that table for comparison can also become cumbersome for large projects. Luckily we have automatized the process ofcreating a folder structure and writing many lines of code by using templates. For this, we use the package <code>Makita</code>: ASReview’s <a href="https://github.com/asreview/asreview-makita" target="_blank"><code>Make It Automatic</code></a>.</p>
 <p>If you want to take a look at the power of Makita, check out our <a href="https://jteijema.github.io/synergy-simulations-website/">simulation page</a>!</p>
 <p>With a single command, Makita generates a folder according to a reproducible folder format, a jobs script with all simulation commands and even a readme file! This way, your study is ready for the world right off the bat.</p>
-<p>For the next steps, you first need to install some extra extensions. You can do so with:</p>
-<p><code>bash pip install asreview-insights asreview-datatools asreview-makita</code></p>
+<p>For the next steps, you first need to install the Makita extension. You can do so with:</p>
+<div class="sourceCode" id="cb10"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="ex">pip</span> install asreview-makita </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <section id="getting-started" class="level3">
 <h3 class="anchored" data-anchor-id="getting-started">Getting started</h3>
-<ol type="1">
-<li><p>Follow the first three steps under the <a href="https://github.com/asreview/asreview-makita#getting-started" target="_blank"><code>Getting started</code></a> section. The result should be a new project folder including a subfolder titled ‘data’. Put at least two <a href="https://github.com/asreview/systematic-review-datasets#datasets" target="_blank">benchmark datasets</a> in the ‘data’ folder. Make sure to save them as <code>.csv</code> files!</p>
-<p><em>Note: if multiple datasets are available in this folder, Makita will automatically create code for running a simulation study for all datasets stored in the data-folder.</em></p>
+<p>Read the <a href="https://github.com/asreview/asreview-makita?tab=readme-ov-file#getting-started" target="_blank">Getting Started documentation</a> to get started with Makita. Follow the steps below to get familiar with the basic functionality of Makita.</p>
+<p>Start with creating a new project folder. You can do this in the same way as you did for the CLI exercise. Inside the project folder, create a subfolder called <code>data</code> and put at least two <a href="https://github.com/asreview/synergy-dataset#datasets" target="_blank">benchmark datasets</a> in the ‘data’ folder. You can copy files from the previous exercise, or use your own datasets.</p>
+<pre><code>*Note: if multiple datasets are available in this folder, Makita will automatically create code for running a simulation study for all datasets stored in the data-folder.*</code></pre>
 <p>To create a study using the <code>basic</code> template, navigate to the folder and run the code:</p>
-<pre><code>asreview makita template basic</code></pre></li>
-<li><p>Run the generated <code>jobs.bat</code> file by clicking on it for Windows, or by typing <code>jobs.sh</code> (Mac OS) in the terminal. This will start the simulation.</p></li>
-</ol>
+<div class="sourceCode" id="cb12"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a><span class="ex">asreview</span> makita template basic</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>This command will create a folder structure with a <code>jobs.bat</code> file (or <code>jobs.sh</code> for Mac OS) in the main folder, and a <code>README.md</code> file. The <code>jobs.bat</code> file contains all the code you need to run your simulations, and the <code>README.md</code> file contains information about the folder structure and how to run the simulations.</p>
+<p>Run the generated <code>jobs.bat</code> file. You can start the file by typing its name in the console, or by clicking on it for Windows. For Mac OS, typing <code>jobs.sh</code> in the terminal will do the trick. This will start the simulation.</p>
 <p>After the simulations have been completed, explore the README.md file that has been created in your project folder. This file can be opened with a text editor and contains a navigation tree showing which output is stored where.</p>
-<p>A big advantage of using Makita is that your project folder is already made fully reproducible and ready for publishing on your Github! Also note that in contrast with the code you ran above, we did not ask you to set a seed. That is because Makita takes care of this too! Makita sets a default seed for you, which automatically makes your simulation study reproducible. If you prefer to set the seed yourself, for example to avoid long-term seed bias, you can still do so using the <a href="https://github.com/asreview/asreview-makita#templates" target="_blank">optional arguments</a>.</p>
+<p>A big advantage of using Makita is that your project folder is already made fully reproducible and ready for publishing on your prefered persistent storage location! Also note that in contrast with the code you ran above, we did not ask you to set a seed. That is because Makita takes care of this too! Makita sets a default seed for you, which automatically makes your simulation study reproducible. If you prefer to set the seed yourself, for example to avoid long-term seed bias, you can still do so using the <a href="https://github.com/asreview/asreview-makita#templates" target="_blank">optional arguments</a>.</p>
 </section>
 <section id="addressing-the-research-questions" class="level3">
 <h3 class="anchored" data-anchor-id="addressing-the-research-questions">Addressing the research questions</h3>
@@ -395,17 +447,21 @@ ul.task-list li input[type="checkbox"] {
 <li><p>Suppose we are investigating the effect using different prior knowledge <em>of relevant records</em>, i.e.keeping the prior knowledge of irrelevant records stable. To answer this question, we can conveniently use the All Relevant, Fixed Irrelevant <a href="https://github.com/asreview/asreview-makita#arfi-template" target="_blank">(ARFI) template</a>. You only need one dataset in your ‘data’ folder, but you can choose to use multiple if you like.</p></li>
 </ol>
 <p>Run the following code:</p>
-<p><code>bash asreview makita template arfi</code></p>
+<div class="sourceCode" id="cb13"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a><span class="ex">asreview</span> makita template arfi </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/Simulation/v2_makita.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:85.0%"></p>
+</figure>
+</div>
 <p>Then run the <code>jobs.sh/bat</code> file.</p>
-<p>NB: One simulation will be run for each relevant record in the dataset (with 50 relevant records, 50 simulation runs will be conduct; for each run the same 10 randomly chosen irrelevant records will be used), so this can take a while! Keep your CLI open to keep an eye on the progress, or go drink some hot chocolate.</p>
-<p>The metrics can be found appear in the ‘tables’ folder. A recall plot summarizing all results can be found in the folder <code>output/simulation/[DATASET NAME]</code>.</p>
+<p>NB: One simulation will be run for each relevant record in the dataset (with 50 relevant records, 50 simulation runs will be conducted; for each run the same 10 randomly chosen irrelevant records will be used), so this can take a while! Keep your CLI open to keep an eye on the progress, or go drink some hot chocolate.</p>
+<p>The metrics can be found appear in the <code>output</code> folder. A recall plot summarizing all results can be found in the <code>figures</code> folder.</p>
 <ol start="3" type="1">
 <li>Makita also contains a <a href="https://github.com/asreview/asreview-makita#multiple-models-template" target="_blank">template</a> to easily compare multiple models.</li>
 </ol>
 <p>Run the following code:</p>
-<p><code>bash asreview makita template multiple_models</code></p>
+<div class="sourceCode" id="cb14"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a><span class="ex">asreview</span> makita template multiple_models</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p>Then run the <code>jobs.sh/bat</code> file.</p>
-<p>The metrics can be found appear in the ‘tables’ folder. A recall plot summarizing all results can be found in the folder <code>output/simulation/[DATASET NAME]</code>.</p>
 </section>
 </section>
 <section id="what-else" class="level2">
