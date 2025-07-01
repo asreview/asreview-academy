@@ -7,9 +7,9 @@ author: "The ASReview Academy Team"
 
 ## Introduction
 
-The **goal** of this exercise is to learn how you can perform simulations on a labeled systematic review dataset using the web browser of ASReview, the command line interface, and the package titled Makita. 
+The **goal** of this exercise is to learn how you can perform simulations on a labeled systematic review dataset using ASReview LAB (the web interface), the command line interface, and the package titled Makita. 
 
-A simulation in the context of AI-assisted reviewing involves mimicking the screening process with a particular model. In a simulation setting, it is already known which records are labeled as relevant, and the software can automatically reenact the screening process as if a human were labeling the records in interaction with the Active Learning model. This allows you to answer questions about the (workings of) the model itself and compare the performance of different models under different circumstances. Read the [documentation](https://asreview.readthedocs.io/en/latest/simulation_overview.html){target="_blank"} for more information about running simulations.
+A simulation in the context of AI-assisted reviewing involves mimicking the screening process with a particular model. In a simulation setting, it is already known which records are labeled as relevant, and the software can automatically reenact the screening process as if a human were labeling the records in interaction with the Active Learning model. This allows you to answer questions about the (workings of) the model and compare the performance of different models under different circumstances. Read the [documentation](https://asreview.readthedocs.io/en/stable/lab/simulation_overview.html){target="_blank"} for more information about running simulations.
 
 If writing scripts and running simulations is new to you, don’t worry, you can make it as simple or complicated as you want.
 
@@ -22,49 +22,55 @@ Enjoy!
 
 ## Conducting a simulation via the web browser
 
-To start off easy, we will run a simulation study using the PTSD benchmark dataset we also used in the [introductory exercise](ASReviewLAB.qmd){target="_blank"}.
+To start off easy, we will run a simulation study using the `van de Schoot et al. (2018)` benchmark dataset we also used in the [introductory exercise](ASReviewLAB.qmd){target="_blank"}.
 
 For this exercise, we assume you have already installed Python and the ASReview LAB application. If you haven’t done so yet, you can follow [the instructions on installation](https://asreview.ai/download){target="_blank"}.
 
-![](images/Simulation/Sim_Mode.png){width=85% fig-align="center"}
+![](images/Simulation/v2_simulation_mode.png){width=85% fig-align="center"}
 
-1.  Open ASReview LAB with the terminal and start a new project using ‘`Simulation`’ mode. Follow the steps described in the [documentation](https://asreview.readthedocs.io/en/latest/simulation_webapp.html){target="_blank"}, and select the `van de Schoot et al. (2017)` PTSD Trajectories benchmark dataset.
+Open ASReview LAB with the terminal. Use the left hand menu to select the **Simulation** mode. Like before, select the `DISCOVER` tab and select the `van de Schoot et al. (2018)` dataset from the list of datasets. Download the dataset to start your new project.
 
-Add these five prior relevant studies:
+![](images/Simulation/v2_start_project.png){width=85% fig-align="center"}
 
--   Latent trajectories of trauma symptoms and resilience: the 3-year longitudinal prospective USPER study of Danish veterans deployed in Afghanistan
+Navtigate to the `Prior knowledge` tab. Click `Search` and add these four relevant studies:
 
 -   A Latent Growth Mixture Modeling Approach to PTSD Symptoms in Rape Victims
 
--   Peace and War: Trajectories of Posttraumatic Stress Disorder Symptoms Before, During, and After Military Deployment in Afghanistan
+-   Peace and War
 
 -   The relationship between course of PTSD symptoms in deployed U.S. Marines and degree of combat exposure
 
 -   Trajectories of trauma symptoms and resilience in deployed US military service members: Prospective cohort study
 
-Now, also choose five (random) prior irrelevant papers and **copy-paste the selected irrelevant titles to a separate file**. We will use the same studies later!
+Return to the previous menu. Verify the Prior knowledge tab. It should read `Show records (4)`. Verify the four records by clicking show records. After verifying everything is in order, click `Simulate` to start your simulation.
 
-Continue to the next screen, Keep the default models and initiate the simulation by clicking “NEXT”.
+![](images/Simulation/v2_simulation_finished.png){width=85% fig-align="center"}
 
-After `Warming up the AI` is done, click on `GOT IT`. Proceed to the Analytics page and check if the simulation study has finished. ELAS is holding a card with the status of your project. If your simulation is not finished yet, click the REFRESH button in the upper right corner.
+During the simulation you will see a loading bar underneath the project. This will disappear when the simulation is finished. Open the project to see check out your fresh simulation!
 
-![](images/Simulation/step_1.png){width=85% fig-align="center"}
+![](images/Simulation/v2_project_finished.png){width=85% fig-align="center"}
 
-Note: it can be that running the simulation takes a long time because of the size of your dataset in combination with the chosen model. To give you an idea of the possible differences in runtime between models, see Table 1 on page 15 of [Teijema et al. (2022)](https://psyarxiv.com/t7bpd){target="_blank"}. Training the feature matrix for a dataset with 15K records took .23 seconds with TF-IDF, but 6 hours with sBert.
+Note: it can be that running the simulation takes a long time because of the size of your dataset in combination with the chosen model. To give you an idea of the possible differences in runtime between models, see Table 1 on page 15 of [Teijema et al. (2023)](https://doi.org/10.3389/frma.2023.1178181){target="_blank"}. Performing the feature matrix for a dataset with 15K records takes 20 seconds with TF-IDF, and 6 hours with SBERT.
 
-When the simulation is done, save the recall plot on your laptop. For instructions on how to do this, see the [documentation](https://asreview.readthedocs.io/en/latest/progress.html#summary-statistics){target="_blank"}.
+When the simulation is done, navigate to the `Analytics` panel and select `RECALL`. Save the recall plot to your laptop. After saving the plot, check out the other analytics options such as `DENSITY` and `WAVE`. Read the explanations of different options by clicking on the lightbulb icon. Try to understand what the different plots mean and how they can help you understand the performance of your model.
 
 Woohoo! You just performed a simulation study! Easy right?
 
-Let’s do some more:
+## Model Comparison
 
-![](images/ASReviewLAB/step_6.png){width=85% fig-align="center"}
+Let’s compare the performance of different models. We will do this by running different simulation studies with the same dataset, but with different settings.
 
-2.  Start a new project (use a different name), add the same dataset, and add the same relevant *and* irrelevant articles as priors but this time choose a different classification model such as Random Forest or Logistic Regression. Run the simulation study and save the recall plot.
+Start a new project (use a different name) from the same dataset, and add the same relevant articles as priors. This time, after selecting your Prior knowledge, navigate to the `AI` tab. Select the `ELAS u3` model from the dropdown menu. This is a model that uses a different feature extractor and query strategy than the default `ELAS u4` model.
 
-3.  Repeat the same process, but now choose a different feature extractor, query strategy or balancing strategy. Run the simulation and save the recall plot.
+> Have you read the `AI Models Explained` section revealed by clicking the lightbulb icon? If not, you can do so now to learn more about the different model types.
 
-Compare the three recall plots. What is your conclusion in terms of performance for the three different models? You might observe some differences in how long it takes each model to arrive at the total number of relevant records found.
+![](images/Simulation/v2_multiple_projects.png){width=85% fig-align="center"}
+
+Run the simulation study and again save the recall plot.
+
+Compare the recall plots. What is your conclusion in terms of performance for the different models? You might observe some differences in how long it takes each model to arrive at the total number of relevant records found. 
+
+Compare the `Loss` and `NDCG` metrics. Do you understand the differences in performance between the models? Check the lightbulb icon for more information about the metrics. Do the metrics match your observations from the recall plot?
 
 Many papers have been written about such comparisons; for an overview of such comparisons, see the [systematic review](https://asreview.nl/blog/project/evaluating-the-performance-of-active-learning-within-systematic-reviews/){target="_blank"} on this topic.
 
